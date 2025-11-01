@@ -27,9 +27,11 @@ https://aclanthology.org/2025.acl-long.1269.pdf?utm_source=chatgpt.com
 
 1. Literature review
    
+   -
+   -
    
  
-## Main Schdeule from Class :
+## Timeline :
 ![schedule]( https://github.com/ayperiKhudaybergenova/Task-12/blob/main/Main%20Schedule.png)
 
 
