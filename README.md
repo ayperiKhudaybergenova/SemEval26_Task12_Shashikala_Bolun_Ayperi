@@ -29,8 +29,8 @@ https://aclanthology.org/2025.acl-long.1269.pdf?utm_source=chatgpt.com
 
 1. Literature review
    
-   -
-   -
+   -  the first paper indicated that they have created LAMP frmaework which consists of the data that was not in training data.
+   - the second paper informed us about four types of experts ; each has unique function.
    
  
 ## Timeline :
