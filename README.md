@@ -50,7 +50,15 @@ https://arxiv.org/html/2502.03671v1#S3
 ## Step 3: Choose a Baseline Model
    -   Llama | Qwen(free model) | DeBERTa
    -   GPU ? try bwHPC?
-     
+
+
+Accuracy is just score/number of questions.
+
+
+| Accuracy | Qwen | Llama | DeBERTa |
+| :--- | :--- | :--- | :--- |
+| Sample_data | 71.25% | ? | ? |
+
 ## Step 4: Prepare Model Input
    - Create prompt
      
