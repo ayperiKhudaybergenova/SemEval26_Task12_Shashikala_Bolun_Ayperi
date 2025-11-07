@@ -5,7 +5,6 @@ The Abductive Event Reasoning (AER) aiming to evaluate large language models' ab
 
 https://sites.google.com/view/semeval2026-task12/
 
-datset https://github.com/sooo66/semeval2026-task12-dataset
 
 #  TODO 
 
@@ -19,6 +18,8 @@ datset https://github.com/sooo66/semeval2026-task12-dataset
 https://arxiv.org/pdf/2305.16646
 
 https://aclanthology.org/2025.acl-long.1269.pdf?utm_source=chatgpt.com
+
+https://arxiv.org/html/2502.03671v1#S3
 
 -by 07.11.25   Running the first code with what provided.
 
