@@ -57,7 +57,7 @@ Accuracy is just score/number of questions.
 
 | Accuracy | Qwen | Llama | DeBERTa |
 | :--- | :--- | :--- | :--- |
-| Sample_data | 71.25% | ? |͌60% |
+| Sample_data | 71.25% | ? |͌ 60% |
 
 ## Step 4: Prepare Model Input
    - Create prompt
