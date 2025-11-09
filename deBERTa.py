@@ -1,5 +1,5 @@
-
-
+#As DeBERTa wasn’t originally trained with a multiple-choice head, we treat each option as a separate "sentence pair" with the question. 
+# and encode (question + option) separately and pick the option with highest score.
 
 
 
