@@ -52,12 +52,16 @@ https://arxiv.org/html/2502.03671v1#S3
    -   GPU ? try bwHPC?
 
 
-Accuracy is just score/number of questions.
+Accuracy is correct score/number of questions. 
 
 
 | Accuracy | Qwen | Llama | DeBERTa |
 | :--- | :--- | :--- | :--- |
 | Sample_data | 71.25% | ? |͌ 60% |
+
+
+
+*As DeBERTa wasn’t originally trained with a multiple-choice head, we treated each option as a separate "sentence pair" with the question and encode (question + option) separately and pick the option with highest score.
 
 ## Step 4: Prepare Model Input
    - Create prompt
