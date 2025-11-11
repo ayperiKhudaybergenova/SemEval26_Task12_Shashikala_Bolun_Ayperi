@@ -55,13 +55,22 @@ https://arxiv.org/html/2502.03671v1#S3
 Accuracy is correct score/number of questions. 
 
 
-| Accuracy | Qwen | Llama | DeBERTa |
+| Peak Accuracy | Qwen | Llama | DeBERTa |
 | :--- | :--- | :--- | :--- |
 | Sample_data | 71.25% | ? |͌ 60% |
 
 
+Details:
 
-*As DeBERTa wasn’t originally trained with a multiple-choice head, we treated each option as a separate "sentence pair" with the question and encode (question + option) separately and pick the option with highest score.
+Qwen: Zero-shot,English prompt is the best, model: [Qwen3-30B-A3B-Thinking-2507-GGUF](https://huggingface.co/unsloth/Qwen3-30B-A3B-Thinking-2507-GGUF)
+| Accuracy | Qwen |
+| :--- | :--- |
+| Zero-shot, English prompt | 71.25% |
+| Zero-shot, Chinese prompt | 66.25% |
+| Few-shot, English prompt | 62.29% |
+
+
+DeBERTa: As DeBERTa wasn’t originally trained with a multiple-choice head, we treated each option as a separate "sentence pair" with the question and encode (question + option) separately and pick the option with highest score.
 
 ## Step 4: Prepare Model Input
    - Create prompt
