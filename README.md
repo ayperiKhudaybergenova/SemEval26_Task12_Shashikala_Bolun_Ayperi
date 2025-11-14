@@ -13,7 +13,7 @@ https://sites.google.com/view/semeval2026-task12/
 
 ## Current Status (Overview)
 
--by 31.10.25    reading releated papers 
+ reading releated papers 
 
 https://arxiv.org/pdf/2305.16646
 
@@ -21,17 +21,7 @@ https://aclanthology.org/2025.acl-long.1269.pdf?utm_source=chatgpt.com
 
 https://arxiv.org/html/2502.03671v1#S3
 
--by 07.11.25   Running the first code with what provided.
 
--by 14.11.25   First presentation.
-
-
-## Prioritized TODO List with Known Issues and details.
-
-1. Literature review
-   
-   -  the first paper indicated that they have created LAMP frmaework which consists of the data that was not in training data.
-   - the second paper informed us about four types of experts ; each has unique function.
    
  
 ## Timeline :
