@@ -6,9 +6,6 @@ The Abductive Event Reasoning (AER) aiming to evaluate large language models' ab
 https://sites.google.com/view/semeval2026-task12/
 
 
-#  TODO 
-
-
  reading releated papers 
 
 https://arxiv.org/pdf/2305.16646
