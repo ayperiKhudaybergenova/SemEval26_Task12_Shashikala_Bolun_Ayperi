@@ -9,10 +9,6 @@ https://sites.google.com/view/semeval2026-task12/
 #  TODO 
 
 
-
-
-## Current Status (Overview)
-
  reading releated papers 
 
 https://arxiv.org/pdf/2305.16646
