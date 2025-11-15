@@ -18,7 +18,7 @@ from datetime import datetime
 MODEL_NAME = "qwen3-30b-Q4KM-256K"
 
 # --- Data source for the main evaluation ---
-EVAL_DATA_DIR = "datasets/sample_data"
+EVAL_DATA_DIR = "datasets/val_data"
 EVAL_QUESTION_FILE = os.path.join(EVAL_DATA_DIR, "questions.jsonl")
 EVAL_DOCS_FILE = os.path.join(EVAL_DATA_DIR, "docs.json")
 
@@ -110,7 +110,7 @@ def get_system_prompt():
     return """
 You are a meticulous AI analytical assistant. Your task is to select the most plausible explanation for a given event, based exclusively on the provided context information.
 
-Read all documents carefully and use logical reasoning.
+Read all documents carefully and use logical reasoning. Be aware that some of the provided documents may be distractors, containing irrelevant or misleading information.
 Your output MUST strictly follow the JSON format below, with no additional explanations or text outside the JSON structure.
 {
   "reasoning": "State your brief reasoning process here.",
