@@ -38,6 +38,22 @@ https://arxiv.org/html/2502.03671v1#S3
 Accuracy is correct score/number of questions. 
 
 
+**Evaluation Dataset: val_data**
+
+
+| Peak Accuracy | Qwen | Llama | DeBERTa |
+| :--- | :--- | :--- | :--- |
+| Sample_data | 77.11% | ? | ? |
+
+
+Details:
+
+Qwen: Zero-shot,English prompt is the best, model: [Qwen3-30B-A3B-Thinking-2507-GGUF](https://huggingface.co/unsloth/Qwen3-30B-A3B-Thinking-2507-GGUF)
+
+
+**Evaluation Dataset: sample_data**
+
+
 | Peak Accuracy | Qwen | Llama | DeBERTa |
 | :--- | :--- | :--- | :--- |
 | Sample_data | 71.25% | ? |͌ 60% |
@@ -45,7 +61,7 @@ Accuracy is correct score/number of questions.
 
 Details:
 
-Qwen: Zero-shot,English prompt is the best, model: [Qwen3-30B-A3B-Thinking-2507-GGUF](https://huggingface.co/unsloth/Qwen3-30B-A3B-Thinking-2507-GGUF)
+Qwen: Zero-shot,English prompt is the best, forgot to mention there're distractor docs in system prompt, model: [Qwen3-30B-A3B-Thinking-2507-GGUF](https://huggingface.co/unsloth/Qwen3-30B-A3B-Thinking-2507-GGUF)
 | Accuracy | Qwen |
 | :--- | :--- |
 | Zero-shot, English prompt | 71.25% |
