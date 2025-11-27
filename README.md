@@ -43,7 +43,7 @@ Accuracy is correct score/number of questions.
 
 | Peak Accuracy | Qwen | Llama | DeBERTa |
 | :--- | :--- | :--- | :--- |
-| Sample_data | 77.11% | ? | ? |
+| Sample_data | 77.11% | 61.67% | ? |
 
 
 Details:
@@ -56,7 +56,7 @@ Qwen: Zero-shot,English prompt is the best, model: [Qwen3-30B-A3B-Thinking-2507-
 
 | Peak Accuracy | Qwen | Llama | DeBERTa |
 | :--- | :--- | :--- | :--- |
-| Sample_data | 71.25% | ? |͌ 60% |
+| Sample_data | 71.25% | 60.00% |͌ 60% |
 
 
 Details:
