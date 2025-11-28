@@ -67,6 +67,7 @@ Qwen: Zero-shot,English prompt is the best, forgot to mention there're distracto
 | Zero-shot, English prompt | 71.25% |
 | Zero-shot, Chinese prompt | 66.25% |
 | Few-shot, English prompt | 62.29% |
+|Multi-Expert, English prompt | 60% |
 
 
 DeBERTa: As DeBERTa wasn’t originally trained with a multiple-choice head, we treated each option as a separate "sentence pair" with the question and encode (question + option) separately and pick the option with highest score.
