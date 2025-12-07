@@ -1,0 +1,119 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{hyperref}
+\title{Interim Report: Abductive Reasoning for SemEval-2026 Task 12}
+
+\author{
+    Your Name \\
+    Your Institution \\
+    \texttt{your.email@example.com}
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This interim report summarizes progress toward solving SemEval-2026 Task 12 on Abductive Reasoning. We describe the problem, datasets, baseline models, prompting strategies, and preliminary results. The goal is to outline current achievements and identify next steps.
+\end{abstract}
+
+\section{Introduction}
+Abductive reasoning requires models to infer the most plausible explanation for a given incomplete context. SemEval-2026 Task 12 focuses on multiple-choice abductive reasoning across narrative scenarios and noisy distractor documents. This report presents our methods, baseline experimentation, and preliminary findings.
+
+\section{Task Description}
+The task provides:
+\begin{itemize}
+    \item Context (observations, questions, and distractor documents)
+    \item Multiple-choice questions to select the most plausible explanation
+    \item Evaluation using accuracy
+\end{itemize}
+
+\section{Dataset}
+We use:
+\begin{itemize}
+    \item \textbf{val\_data}: official validation dataset
+    \item \textbf{sample\_data}: smaller subset for quick benchmarking
+\end{itemize}
+
+Each instance includes context, question, and four candidate answers.
+
+\section{Baseline Models}
+\subsection{Qwen}
+\begin{itemize}
+    \item Model: Qwen3-30B-A3B-Thinking-2507-GGUF
+    \item Strong reasoning, zero-shot English performs best
+\end{itemize}
+
+\subsection{LLaMA}
+\begin{itemize}
+    \item LLaMA-3.1-8B-Instruct
+    \item Lightweight, instruction-following, suitable for multiple-choice
+\end{itemize}
+
+\subsection{DeBERTa}
+\begin{itemize}
+    \item Encoder model; no multiple-choice head
+    \item Encode (question + option) separately and pick the highest score
+\end{itemize}
+
+\section{Prompting Strategies}
+\begin{itemize}
+    \item Zero-shot prompts
+    \item Few-shot prompts
+    \item Expert-style prompts: Causal, Evidence-driven, Domain-specific
+    \item Language variation: English vs. Chinese
+\end{itemize}
+
+\section{Preliminary Results}
+\subsection{Validation Dataset (val\_data)}
+\begin{table}[h]
+\centering
+\begin{tabular}{lccc}
+\toprule
+Model & Qwen & LLaMA & DeBERTa \\
+\midrule
+Accuracy (\%) & 77.11 & ? & ? \\
+\bottomrule
+\end{tabular}
+\caption{Preliminary results on val\_data.}
+\end{table}
+
+\subsection{Sample Dataset (sample\_data)}
+\begin{table}[h]
+\centering
+\begin{tabular}{lccc}
+\toprule
+Model & Qwen & LLaMA & DeBERTa \\
+\midrule
+Accuracy (\%) & 71.25 & ? & $\sim$60 \\
+\bottomrule
+\end{tabular}
+\caption{Sample\_data results.}
+\end{table}
+
+\section{Discussion}
+\begin{itemize}
+    \item Qwen is the strongest model, especially in zero-shot English.
+    \item LLaMA is flexible but output can be unstable.
+    \item DeBERTa is reasonable for semantic matching but weaker on implicit causality.
+\end{itemize}
+
+\section{Next Steps}
+\begin{itemize}
+    \item Hybrid systems combining LLM scoring + encoder features
+    \item RLHF-style feedback for better explanation ranking
+    \item Ensemble multiple experts and retrieval-enhanced reasoning
+\end{itemize}
+
+\section{Conclusion}
+Abductive reasoning is challenging with distractor documents. Qwen shows strong initial performance. Future work focuses on hybrid modeling, structured reasoning, and improved prompting.
+
+\bibliographystyle{acl_natbib}
+\bibliography{custom}
+
+\end{document}
