@@ -1,0 +1,352 @@
+2025-12-19 16:34:10 - INFO - --- Starting QC Process at 2025-12-19 16:34:10.370973 ---
+2025-12-19 16:34:10 - INFO - Loading docs.json...
+2025-12-19 16:34:10 - INFO - Connecting to Ollama (qwen3-30b-Instruct-Q4KM-128K)...
+2025-12-19 16:34:10 - INFO - Processing 24 topics...
+
+2025-12-19 16:34:10 - INFO - [1/24] QC processing: SpaceX successfully launches first crewed Dragon mission to ISS
+2025-12-19 16:34:22 - INFO -   -> Labels: G:8 | H:0 | S:13 | I:0
+2025-12-19 16:34:22 - INFO - [2/24] QC processing: Ever Given container ship blocks Suez Canal, disrupting global trade
+2025-12-19 16:34:30 - INFO -   -> Labels: G:8 | H:0 | S:6 | I:0
+2025-12-19 16:34:30 - INFO - [3/24] QC processing: Biden inaugurated as 46th President of the United States
+2025-12-19 16:34:37 - INFO -   -> Labels: G:8 | H:0 | S:5 | I:0
+2025-12-19 16:34:37 - INFO - [4/24] QC processing: FIFA World Cup 2022 held in Qatar, Argentina wins championship
+2025-12-19 16:34:47 - INFO -   -> Labels: G:7 | H:0 | S:1 | I:9
+2025-12-19 16:34:47 - INFO - [5/24] QC processing: Record-breaking heatwaves hit Europe, causing drought and wildfires
+2025-12-19 16:34:55 - INFO -   -> Labels: G:9 | H:3 | S:2 | I:1
+2025-12-19 16:34:55 - INFO - [6/24] QC processing: James Webb Space Telescope successfully launched, begins sending images from deep space
+2025-12-19 16:35:07 - INFO -   -> Labels: G:8 | H:4 | S:4 | I:4
+2025-12-19 16:35:07 - INFO - [7/24] QC processing: Queen Elizabeth II dies, Charles III becomes King of the United Kingdom
+2025-12-19 16:35:11 - INFO -   -> Labels: G:7 | H:0 | S:0 | I:1
+2025-12-19 16:35:11 - INFO - [8/24] QC processing: Apple unveils Vision Pro mixed reality headset, entering AR/VR market
+2025-12-19 16:35:23 - INFO -   -> Labels: G:9 | H:0 | S:12 | I:0
+2025-12-19 16:35:23 - INFO - [9/24] QC processing: Microsoft announces $69 billion acquisition of Activision Blizzard, largest gaming deal in history
+2025-12-19 16:35:33 - INFO -   -> Labels: G:3 | H:0 | S:14 | I:0
+2025-12-19 16:35:33 - INFO - [10/24] QC processing: Meta launches Threads, a Twitter competitor, gaining millions of users on first day
+2025-12-19 16:35:40 - INFO -   -> Labels: G:4 | H:0 | S:9 | I:0
+2025-12-19 16:35:40 - INFO - [11/24] QC processing: NASA's Artemis I mission launches, marking return to Moon exploration program
+2025-12-19 16:35:52 - INFO -   -> Labels: G:8 | H:4 | S:10 | I:0
+2025-12-19 16:35:52 - INFO - [12/24] QC processing: China's Chang'e 5 mission successfully returns lunar samples to Earth
+2025-12-19 16:36:05 - INFO -   -> Labels: G:11 | H:0 | S:10 | I:2
+2025-12-19 16:36:05 - INFO - [13/24] QC processing: Blue Origin's New Shepard carries first civilian passengers, including Jeff Bezos, into space
+2025-12-19 16:36:12 - INFO -   -> Labels: G:3 | H:0 | S:9 | I:1
+2025-12-19 16:36:12 - INFO - [14/24] QC processing: Google DeepMind's AlphaFold predicts 200 million protein structures, revolutionizing biology
+2025-12-19 16:36:19 - INFO -   -> Labels: G:2 | H:0 | S:11 | I:0
+2025-12-19 16:36:19 - INFO - [15/24] QC processing: Taiwan Hualien hit by powerful 7.4-magnitude earthquake
+2025-12-19 16:36:30 - INFO -   -> Labels: G:9 | H:9 | S:0 | I:1
+2025-12-19 16:36:30 - INFO - [16/24] QC processing: Iranian President Raisi killed in helicopter crash
+2025-12-19 16:36:40 - INFO -   -> Labels: G:10 | H:0 | S:0 | I:7
+2025-12-19 16:36:40 - INFO - [17/24] QC processing: Deadly landslide buries villages in Papua New Guinea
+2025-12-19 16:36:49 - INFO -   -> Labels: G:8 | H:0 | S:8 | I:1
+2025-12-19 16:36:49 - INFO - [18/24] QC processing: Trump survives assassination attempt at Pennsylvania rally
+2025-12-19 16:36:56 - INFO -   -> Labels: G:8 | H:5 | S:0 | I:0
+2025-12-19 16:36:56 - INFO - [19/24] QC processing: CrowdStrike update triggers worldwide IT outage
+2025-12-19 16:37:07 - INFO -   -> Labels: G:17 | H:0 | S:3 | I:0
+2025-12-19 16:37:07 - INFO - [20/24] QC processing: Hezbollah pagers and walkie-talkies explode across Lebanon
+2025-12-19 16:37:16 - INFO -   -> Labels: G:9 | H:0 | S:0 | I:8
+2025-12-19 16:37:16 - INFO - [21/24] QC processing: Israel eliminates Hezbollah leader Hassan Nasrallah in Beirut airstrike
+2025-12-19 16:37:26 - INFO -   -> Labels: G:4 | H:5 | S:8 | I:1
+2025-12-19 16:37:26 - INFO - [22/24] QC processing: Iran launches massive ballistic missile attack on Israel
+2025-12-19 16:37:36 - INFO -   -> Labels: G:8 | H:0 | S:10 | I:0
+2025-12-19 16:37:36 - INFO - [23/24] QC processing: Catastrophic flash floods devastate Valencia region in Spain
+2025-12-19 16:37:46 - INFO -   -> Labels: G:8 | H:6 | S:4 | I:0
+2025-12-19 16:37:46 - INFO - [24/24] QC processing: Syrian rebels seize Damascus, Assad regime collapses
+2025-12-19 16:37:56 - INFO -   -> Labels: G:10 | H:0 | S:2 | I:6
+2025-12-19 16:37:56 - INFO - 
+================================================================================
+ID    | Topic Name                                         | Gold | Hard | Soft | Irr 
+--------------------------------------------------------------------------------
+2025-12-19 16:37:56 - INFO - 37    | SpaceX successfully launches first crewed Drago... | 8    | 0    | 13   | 0   
+2025-12-19 16:37:56 - INFO - 38    | Ever Given container ship blocks Suez Canal, di... | 8    | 0    | 6    | 0   
+2025-12-19 16:37:56 - INFO - 39    | Biden inaugurated as 46th President of the Unit... | 8    | 0    | 5    | 0   
+2025-12-19 16:37:56 - INFO - 40    | FIFA World Cup 2022 held in Qatar, Argentina wi... | 7    | 0    | 1    | 9   
+2025-12-19 16:37:56 - INFO - 41    | Record-breaking heatwaves hit Europe, causing d... | 9    | 3    | 2    | 1   
+2025-12-19 16:37:56 - INFO - 42    | James Webb Space Telescope successfully launche... | 8    | 4    | 4    | 4   
+2025-12-19 16:37:56 - INFO - 43    | Queen Elizabeth II dies, Charles III becomes Ki... | 7    | 0    | 0    | 1   
+2025-12-19 16:37:56 - INFO - 44    | Apple unveils Vision Pro mixed reality headset,... | 9    | 0    | 12   | 0   
+2025-12-19 16:37:56 - INFO - 45    | Microsoft announces $69 billion acquisition of ... | 3    | 0    | 14   | 0   
+2025-12-19 16:37:56 - INFO - 46    | Meta launches Threads, a Twitter competitor, ga... | 4    | 0    | 9    | 0   
+2025-12-19 16:37:56 - INFO - 47    | NASA's Artemis I mission launches, marking retu... | 8    | 4    | 10   | 0   
+2025-12-19 16:37:56 - INFO - 48    | China's Chang'e 5 mission successfully returns ... | 11   | 0    | 10   | 2   
+2025-12-19 16:37:56 - INFO - 49    | Blue Origin's New Shepard carries first civilia... | 3    | 0    | 9    | 1   
+2025-12-19 16:37:56 - INFO - 50    | Google DeepMind's AlphaFold predicts 200 millio... | 2    | 0    | 11   | 0   
+2025-12-19 16:37:56 - INFO - 51    | Taiwan Hualien hit by powerful 7.4-magnitude ea... | 9    | 9    | 0    | 1   
+2025-12-19 16:37:56 - INFO - 52    | Iranian President Raisi killed in helicopter cr... | 10   | 0    | 0    | 7   
+2025-12-19 16:37:56 - INFO - 53    | Deadly landslide buries villages in Papua New G... | 8    | 0    | 8    | 1   
+2025-12-19 16:37:56 - INFO - 54    | Trump survives assassination attempt at Pennsyl... | 8    | 5    | 0    | 0   
+2025-12-19 16:37:56 - INFO - 55    | CrowdStrike update triggers worldwide IT outage... | 17   | 0    | 3    | 0   
+2025-12-19 16:37:56 - INFO - 56    | Hezbollah pagers and walkie-talkies explode acr... | 9    | 0    | 0    | 8   
+2025-12-19 16:37:56 - INFO - 57    | Israel eliminates Hezbollah leader Hassan Nasra... | 4    | 5    | 8    | 1   
+2025-12-19 16:37:56 - INFO - 58    | Iran launches massive ballistic missile attack ... | 8    | 0    | 10   | 0   
+2025-12-19 16:37:56 - INFO - 59    | Catastrophic flash floods devastate Valencia re... | 8    | 6    | 4    | 0   
+2025-12-19 16:37:56 - INFO - 60    | Syrian rebels seize Damascus, Assad regime coll... | 10   | 0    | 2    | 6   
+2025-12-19 16:37:56 - INFO - ================================================================================
+
+#log above is about the offcial testset, log below is about the costom dataset
+
+2025-12-19 16:37:56 - INFO - --- FILTERING CONFIGURATION ---
+2025-12-19 16:37:56 - INFO - (User input required in console)
+2025-12-19 16:40:21 - INFO - --- Starting QC Process at 2025-12-19 16:40:21.479009 ---
+2025-12-19 16:40:21 - INFO - Loading docs.json...
+2025-12-19 16:40:21 - INFO - Connecting to Ollama (qwen3-30b-Instruct-Q4KM-128K)...
+2025-12-19 16:40:21 - INFO - Processing 80 topics...
+
+2025-12-19 16:40:21 - INFO - [1/80] QC processing: Lai Ching-te wins Taiwan presidential election
+2025-12-19 16:41:07 - INFO -   -> Labels: G:4 | H:30 | S:24 | I:5
+2025-12-19 16:41:07 - INFO - [2/80] QC processing: Sweden officially joins NATO as 32nd member
+2025-12-19 16:41:54 - INFO -   -> Labels: G:3 | H:0 | S:44 | I:19
+2025-12-19 16:41:54 - INFO - [3/80] QC processing: Robert Fico survives assassination attempt in Handlová
+2025-12-19 16:42:29 - INFO -   -> Labels: G:17 | H:0 | S:12 | I:21
+2025-12-19 16:42:29 - INFO - [4/80] QC processing: Claudia Sheinbaum elected first female President of Mexico
+2025-12-19 16:43:12 - INFO -   -> Labels: G:9 | H:3 | S:6 | I:42
+2025-12-19 16:43:12 - INFO - [5/80] QC processing: Keir Starmer elected UK Prime Minister in Labour landslide
+2025-12-19 16:43:42 - INFO -   -> Labels: G:7 | H:14 | S:7 | I:17
+2025-12-19 16:43:42 - INFO - [6/80] QC processing: Masoud Pezeshkian elected President of Iran
+2025-12-19 16:44:09 - INFO -   -> Labels: G:11 | H:4 | S:13 | I:14
+2025-12-19 16:44:09 - INFO - [7/80] QC processing: Sheikh Hasina resigns and flees Bangladesh following protests
+2025-12-19 16:44:59 - INFO -   -> Labels: G:11 | H:0 | S:14 | I:45
+2025-12-19 16:44:59 - INFO - [8/80] QC processing: Paetongtarn Shinawatra elected Prime Minister of Thailand
+2025-12-19 16:45:28 - INFO -   -> Labels: G:0 | H:26 | S:4 | I:13
+2025-12-19 16:45:28 - INFO - [9/80] QC processing: Anura Kumara Dissanayake elected President of Sri Lanka
+2025-12-19 16:46:17 - INFO -   -> Labels: G:16 | H:0 | S:16 | I:34
+2025-12-19 16:46:17 - INFO - [10/80] QC processing: Yahya Sinwar killed by Israeli forces in Gaza
+2025-12-19 16:47:09 - INFO -   -> Labels: G:1 | H:17 | S:32 | I:20
+2025-12-19 16:47:09 - INFO - [11/80] QC processing: ICC issues arrest warrants for Netanyahu and Gallant
+2025-12-19 16:47:59 - INFO -   -> Labels: G:23 | H:1 | S:31 | I:15
+2025-12-19 16:47:59 - INFO - [12/80] QC processing: Michel Barnier ousted as French Prime Minister in no-confidence vote
+2025-12-19 16:48:46 - INFO -   -> Labels: G:0 | H:0 | S:12 | I:51
+2025-12-19 16:48:46 - INFO - [13/80] QC processing: Bashar al-Assad flees Syria ending Ba'athist rule
+2025-12-19 16:49:38 - INFO -   -> Labels: G:22 | H:4 | S:22 | I:22
+2025-12-19 16:49:38 - INFO - [14/80] QC processing: Bulgaria and Romania join Schengen Area
+2025-12-19 16:50:05 - INFO -   -> Labels: G:1 | H:0 | S:35 | I:6
+2025-12-19 16:50:05 - INFO - [15/80] QC processing: Indonesia officially joins BRICS
+2025-12-19 16:50:42 - INFO -   -> Labels: G:2 | H:0 | S:32 | I:19
+2025-12-19 16:50:42 - INFO - [16/80] QC processing: Robert Prevost elected Pope Leo XIV
+2025-12-19 16:51:35 - INFO -   -> Labels: G:28 | H:1 | S:17 | I:24
+2025-12-19 16:51:35 - INFO - [17/80] QC processing: Nicaragua constitutional reforms establish Co-Presidency
+2025-12-19 16:52:00 - INFO -   -> Labels: G:1 | H:2 | S:21 | I:15
+2025-12-19 16:52:00 - INFO - [18/80] QC processing: US and Russia hold summit in Saudi Arabia restoring relations
+2025-12-19 16:52:41 - INFO -   -> Labels: G:0 | H:12 | S:29 | I:19
+2025-12-19 16:52:41 - INFO - [19/80] QC processing: Former Philippines President Rodrigo Duterte arrested
+2025-12-19 16:53:33 - INFO -   -> Labels: G:10 | H:14 | S:29 | I:17
+2025-12-19 16:53:33 - INFO - [20/80] QC processing: UK, Canada, and Australia recognize Palestine as sovereign state
+2025-12-19 16:54:04 - INFO -   -> Labels: G:5 | H:1 | S:15 | I:26
+2025-12-19 16:54:04 - INFO - [21/80] QC processing: Former Brazilian President Jair Bolsonaro imprisoned
+2025-12-19 16:54:49 - INFO -   -> Labels: G:43 | H:0 | S:4 | I:15
+2025-12-19 16:54:49 - INFO - [22/80] QC processing: Mark Carney elected Prime Minister of Canada
+2025-12-19 16:55:37 - INFO -   -> Labels: G:20 | H:0 | S:24 | I:22
+2025-12-19 16:55:37 - INFO - [23/80] QC processing: Sanae Takaichi elected first female Prime Minister of Japan
+2025-12-19 16:56:28 - INFO -   -> Labels: G:45 | H:0 | S:5 | I:20
+2025-12-19 16:56:28 - INFO - [24/80] QC processing: Friedrich Merz elected Chancellor of Germany
+2025-12-19 16:57:13 - INFO -   -> Labels: G:3 | H:0 | S:31 | I:28
+2025-12-19 16:57:13 - INFO - [25/80] QC processing: Malagasy President Andry Rajoelina ousted in coup
+2025-12-19 16:58:02 - INFO -   -> Labels: G:35 | H:4 | S:25 | I:6
+2025-12-19 16:58:02 - INFO - [26/80] QC processing: Coup d'état overthrows President of Guinea-Bissau
+2025-12-19 16:58:54 - INFO -   -> Labels: G:29 | H:21 | S:0 | I:20
+2025-12-19 16:58:54 - INFO - [27/80] QC processing: Timor-Leste becomes 11th member of ASEAN
+2025-12-19 16:59:45 - INFO -   -> Labels: G:16 | H:0 | S:51 | I:3
+2025-12-19 16:59:45 - INFO - [28/80] QC processing: Nepal appoints Prime Minister via Discord poll
+2025-12-19 17:00:38 - INFO -   -> Labels: G:5 | H:0 | S:48 | I:17
+2025-12-19 17:00:38 - INFO - [29/80] QC processing: Japan's SLIM lander achieves pin-point landing on Moon
+2025-12-19 17:01:01 - INFO -   -> Labels: G:0 | H:6 | S:9 | I:22
+2025-12-19 17:01:01 - INFO - [30/80] QC processing: Intuitive Machines Odysseus becomes first commercial lander on Moon
+2025-12-19 17:01:14 - INFO -   -> Labels: G:2 | H:1 | S:12 | I:11
+2025-12-19 17:01:14 - INFO - [31/80] QC processing: Boeing Starliner launches first Crewed Flight Test to ISS
+2025-12-19 17:02:03 - INFO -   -> Labels: G:16 | H:0 | S:32 | I:22
+2025-12-19 17:02:03 - INFO - [32/80] QC processing: Polaris Dawn mission conducts first commercial spacewalk
+2025-12-19 17:02:45 - INFO -   -> Labels: G:4 | H:27 | S:19 | I:8
+2025-12-19 17:02:45 - INFO - [33/80] QC processing: SpaceX Starship successfully catches Super Heavy booster
+2025-12-19 17:03:32 - INFO -   -> Labels: G:4 | H:15 | S:11 | I:40
+2025-12-19 17:03:32 - INFO - [34/80] QC processing: Europa Clipper launches to investigate Jupiter's icy moon
+2025-12-19 17:04:05 - INFO -   -> Labels: G:6 | H:0 | S:25 | I:18
+2025-12-19 17:04:05 - INFO - [35/80] QC processing: Parker Solar Probe touches the Sun's atmosphere
+2025-12-19 17:04:58 - INFO -   -> Labels: G:4 | H:0 | S:38 | I:28
+2025-12-19 17:04:58 - INFO - [36/80] QC processing: Fram2 mission launches first human polar orbit spaceflight
+2025-12-19 17:05:16 - INFO -   -> Labels: G:7 | H:0 | S:15 | I:8
+2025-12-19 17:05:16 - INFO - [37/80] QC processing: Firefly Aerospace Blue Ghost lander touches down on Moon
+2025-12-19 17:06:03 - INFO -   -> Labels: G:2 | H:17 | S:41 | I:3
+2025-12-19 17:06:03 - INFO - [38/80] QC processing: Axiom Mission 4 launches to ISS with Polish and Indian astronauts
+2025-12-19 17:06:53 - INFO -   -> Labels: G:24 | H:0 | S:25 | I:19
+2025-12-19 17:06:53 - INFO - [39/80] QC processing: Blue Origin New Glenn rocket booster lands for the first time
+2025-12-19 17:07:41 - INFO -   -> Labels: G:3 | H:20 | S:23 | I:24
+2025-12-19 17:07:41 - INFO - [40/80] QC processing: Biosignatures discovered on exoplanet K2-18b
+2025-12-19 17:08:03 - INFO -   -> Labels: G:2 | H:0 | S:31 | I:2
+2025-12-19 17:08:03 - INFO - [41/80] QC processing: Astronomers capture first close-up image of star WOH G64
+2025-12-19 17:08:39 - INFO -   -> Labels: G:0 | H:0 | S:41 | I:10
+2025-12-19 17:08:39 - INFO - [42/80] QC processing: Comet C/2024 G3 dubbed Great Comet of 2025 reaches perihelion
+2025-12-19 17:09:32 - INFO -   -> Labels: G:48 | H:0 | S:7 | I:15
+2025-12-19 17:09:32 - INFO - [43/80] QC processing: Total solar eclipse visible across North America
+2025-12-19 17:10:10 - INFO -   -> Labels: G:1 | H:14 | S:26 | I:14
+2025-12-19 17:10:10 - INFO - [44/80] QC processing: G5 solar storms create aurorae at low latitudes
+2025-12-19 17:11:02 - INFO -   -> Labels: G:40 | H:0 | S:7 | I:23
+2025-12-19 17:11:02 - INFO - [45/80] QC processing: Blue Origin New Glenn launches on first attempt
+2025-12-19 17:11:51 - INFO -   -> Labels: G:13 | H:6 | S:30 | I:21
+2025-12-19 17:11:51 - INFO - [46/80] QC processing: European Union passes the Artificial Intelligence Act
+2025-12-19 17:12:32 - INFO -   -> Labels: G:6 | H:0 | S:27 | I:27
+2025-12-19 17:12:32 - INFO - [47/80] QC processing: OpenAI releases GPT-5 language model
+2025-12-19 17:13:15 - INFO -   -> Labels: G:9 | H:0 | S:40 | I:21
+2025-12-19 17:13:15 - INFO - [48/80] QC processing: Nvidia stock loses 600 billion dollars in single day
+2025-12-19 17:14:09 - INFO -   -> Labels: G:12 | H:0 | S:56 | I:2
+2025-12-19 17:14:09 - INFO - [49/80] QC processing: First World Humanoid Robot Games held in Beijing
+2025-12-19 17:15:01 - INFO -   -> Labels: G:7 | H:0 | S:53 | I:10
+2025-12-19 17:15:01 - INFO - [50/80] QC processing: Nobel Prize in Physics awarded to Hopfield and Hinton for AI
+2025-12-19 17:15:31 - INFO -   -> Labels: G:1 | H:25 | S:10 | I:9
+2025-12-19 17:15:31 - INFO - [51/80] QC processing: Nobel Prize in Chemistry awarded for protein design AI
+2025-12-19 17:16:23 - INFO -   -> Labels: G:14 | H:0 | S:22 | I:34
+2025-12-19 17:16:23 - INFO - [52/80] QC processing: Honduras president alleges electoral coup via Trump interference
+2025-12-19 17:17:15 - INFO -   -> Labels: G:38 | H:0 | S:12 | I:20
+2025-12-19 17:17:15 - INFO - [53/80] QC processing: Caribbean guilder introduced as new currency for Curaçao and Sint Maarten
+2025-12-19 17:17:53 - INFO -   -> Labels: G:0 | H:2 | S:13 | I:35
+2025-12-19 17:17:53 - INFO - [54/80] QC processing: Norway aims to ban sale of new diesel and petrol cars
+2025-12-19 17:18:37 - INFO -   -> Labels: G:5 | H:11 | S:35 | I:9
+2025-12-19 17:18:37 - INFO - [55/80] QC processing: UnitedHealthcare CEO Brian Thompson killed in Manhattan
+2025-12-19 17:19:26 - INFO -   -> Labels: G:32 | H:0 | S:3 | I:35
+2025-12-19 17:19:26 - INFO - [56/80] QC processing: Thutmose II tomb discovered by archaeologists
+2025-12-19 17:19:47 - INFO -   -> Labels: G:1 | H:5 | S:12 | I:15
+2025-12-19 17:19:47 - INFO - [57/80] QC processing: Kazakhstan approves nuclear power plant in referendum
+2025-12-19 17:20:06 - INFO -   -> Labels: G:6 | H:0 | S:14 | I:11
+2025-12-19 17:20:06 - INFO - [58/80] QC processing: Charlie Kirk assassinated at campus event
+2025-12-19 17:20:56 - INFO -   -> Labels: G:24 | H:19 | S:0 | I:27
+2025-12-19 17:20:56 - INFO - [59/80] QC processing: Massive earthquake strikes Noto Peninsula in Japan
+2025-12-19 17:21:25 - INFO -   -> Labels: G:9 | H:5 | S:19 | I:13
+2025-12-19 17:21:25 - INFO - [60/80] QC processing: Flash floods strike Dubai and Persian Gulf region
+2025-12-19 17:22:18 - INFO -   -> Labels: G:5 | H:5 | S:19 | I:41
+2025-12-19 17:22:18 - INFO - [61/80] QC processing: Devastating floods hit Rio Grande do Sul in Brazil
+2025-12-19 17:23:12 - INFO -   -> Labels: G:1 | H:4 | S:42 | I:23
+2025-12-19 17:23:12 - INFO - [62/80] QC processing: Heavy rains cause deadly floods in Kenya
+2025-12-19 17:24:04 - INFO -   -> Labels: G:0 | H:0 | S:26 | I:44
+2025-12-19 17:24:04 - INFO - [63/80] QC processing: Hurricane Beryl devastates Caribbean islands
+2025-12-19 17:24:57 - INFO -   -> Labels: G:1 | H:38 | S:4 | I:27
+2025-12-19 17:24:57 - INFO - [64/80] QC processing: Landslides kill hundreds in Wayanad district of India
+2025-12-19 17:25:40 - INFO -   -> Labels: G:24 | H:10 | S:27 | I:0
+2025-12-19 17:25:40 - INFO - [65/80] QC processing: Typhoon Yagi causes destruction in Southeast Asia
+2025-12-19 17:26:25 - INFO -   -> Labels: G:9 | H:32 | S:12 | I:9
+2025-12-19 17:26:25 - INFO - [66/80] QC processing: Storm Boris triggers worst floods in Central Europe in decades
+2025-12-19 17:27:19 - INFO -   -> Labels: G:4 | H:0 | S:35 | I:31
+2025-12-19 17:27:19 - INFO - [67/80] QC processing: Hurricane Helene makes landfall in Florida
+2025-12-19 17:28:11 - INFO -   -> Labels: G:21 | H:5 | S:23 | I:21
+2025-12-19 17:28:11 - INFO - [68/80] QC processing: Hurricane Milton becomes intense storm threatening Gulf Coast
+2025-12-19 17:29:02 - INFO -   -> Labels: G:0 | H:31 | S:22 | I:15
+2025-12-19 17:29:02 - INFO - [69/80] QC processing: Major earthquake strikes Tibet
+2025-12-19 17:29:55 - INFO -   -> Labels: G:3 | H:5 | S:21 | I:40
+2025-12-19 17:29:55 - INFO - [70/80] QC processing: Destructive wildfires sweep through Los Angeles area
+2025-12-19 17:30:48 - INFO -   -> Labels: G:23 | H:0 | S:23 | I:24
+2025-12-19 17:30:48 - INFO - [71/80] QC processing: Cyclone Senyar causes flooding in Thailand and Malaysia
+2025-12-19 17:31:40 - INFO -   -> Labels: G:31 | H:0 | S:27 | I:12
+2025-12-19 17:31:40 - INFO - [72/80] QC processing: Extreme heatwave causes deaths during Hajj pilgrimage
+2025-12-19 17:32:04 - INFO -   -> Labels: G:3 | H:3 | S:31 | I:1
+2025-12-19 17:32:04 - INFO - [73/80] QC processing: Spain wins UEFA Euro 2024 championship
+2025-12-19 17:32:59 - INFO -   -> Labels: G:1 | H:5 | S:26 | I:38
+2025-12-19 17:32:59 - INFO - [74/80] QC processing: Argentina wins Copa América 2024 title
+2025-12-19 17:33:54 - INFO -   -> Labels: G:1 | H:0 | S:35 | I:34
+2025-12-19 17:33:54 - INFO - [75/80] QC processing: India wins Men's T20 World Cup 2024
+2025-12-19 17:34:49 - INFO -   -> Labels: G:1 | H:0 | S:57 | I:12
+2025-12-19 17:34:49 - INFO - [76/80] QC processing: New Zealand wins Women's T20 World Cup 2024
+2025-12-19 17:35:33 - INFO -   -> Labels: G:0 | H:42 | S:3 | I:13
+2025-12-19 17:35:33 - INFO - [77/80] QC processing: Francis Scott Key Bridge collapses in Baltimore
+2025-12-19 17:36:22 - INFO -   -> Labels: G:34 | H:1 | S:8 | I:25
+2025-12-19 17:36:22 - INFO - [78/80] QC processing: Notre-Dame Cathedral reopens to public after restoration
+2025-12-19 17:37:01 - INFO -   -> Labels: G:8 | H:0 | S:9 | I:37
+2025-12-19 17:37:01 - INFO - [79/80] QC processing: Indonesia holds first independence celebration in new capital Nusantara
+2025-12-19 17:37:33 - INFO -   -> Labels: G:1 | H:2 | S:36 | I:9
+2025-12-19 17:37:33 - INFO - [80/80] QC processing: French Crown Jewels stolen in Louvre robbery
+2025-12-19 17:38:23 - INFO -   -> Labels: G:50 | H:0 | S:7 | I:11
+2025-12-19 17:38:23 - INFO - 
+================================================================================
+ID    | Topic Name                                         | Gold | Hard | Soft | Irr 
+--------------------------------------------------------------------------------
+2025-12-19 17:38:23 - INFO - 100   | Lai Ching-te wins Taiwan presidential election...  | 4    | 30   | 24   | 5   
+2025-12-19 17:38:23 - INFO - 101   | Sweden officially joins NATO as 32nd member...     | 3    | 0    | 44   | 19  
+2025-12-19 17:38:23 - INFO - 102   | Robert Fico survives assassination attempt in H... | 17   | 0    | 12   | 21  
+2025-12-19 17:38:23 - INFO - 103   | Claudia Sheinbaum elected first female Presiden... | 9    | 3    | 6    | 42  
+2025-12-19 17:38:23 - INFO - 104   | Keir Starmer elected UK Prime Minister in Labou... | 7    | 14   | 7    | 17  
+2025-12-19 17:38:23 - INFO - 105   | Masoud Pezeshkian elected President of Iran...     | 11   | 4    | 13   | 14  
+2025-12-19 17:38:23 - INFO - 106   | Sheikh Hasina resigns and flees Bangladesh foll... | 11   | 0    | 14   | 45  
+2025-12-19 17:38:23 - INFO - 107   | Paetongtarn Shinawatra elected Prime Minister o... | 0    | 26   | 4    | 13  
+2025-12-19 17:38:23 - INFO - 108   | Anura Kumara Dissanayake elected President of S... | 16   | 0    | 16   | 34  
+2025-12-19 17:38:23 - INFO - 109   | Yahya Sinwar killed by Israeli forces in Gaza...   | 1    | 17   | 32   | 20  
+2025-12-19 17:38:23 - INFO - 110   | ICC issues arrest warrants for Netanyahu and Ga... | 23   | 1    | 31   | 15  
+2025-12-19 17:38:23 - INFO - 111   | Michel Barnier ousted as French Prime Minister ... | 0    | 0    | 12   | 51  
+2025-12-19 17:38:23 - INFO - 112   | Bashar al-Assad flees Syria ending Ba'athist ru... | 22   | 4    | 22   | 22  
+2025-12-19 17:38:23 - INFO - 113   | Bulgaria and Romania join Schengen Area...         | 1    | 0    | 35   | 6   
+2025-12-19 17:38:23 - INFO - 114   | Indonesia officially joins BRICS...                | 2    | 0    | 32   | 19  
+2025-12-19 17:38:23 - INFO - 115   | Robert Prevost elected Pope Leo XIV...             | 28   | 1    | 17   | 24  
+2025-12-19 17:38:23 - INFO - 116   | Nicaragua constitutional reforms establish Co-P... | 1    | 2    | 21   | 15  
+2025-12-19 17:38:23 - INFO - 117   | US and Russia hold summit in Saudi Arabia resto... | 0    | 12   | 29   | 19  
+2025-12-19 17:38:23 - INFO - 118   | Former Philippines President Rodrigo Duterte ar... | 10   | 14   | 29   | 17  
+2025-12-19 17:38:23 - INFO - 119   | UK, Canada, and Australia recognize Palestine a... | 5    | 1    | 15   | 26  
+2025-12-19 17:38:23 - INFO - 120   | Former Brazilian President Jair Bolsonaro impri... | 43   | 0    | 4    | 15  
+2025-12-19 17:38:23 - INFO - 121   | Mark Carney elected Prime Minister of Canada...    | 20   | 0    | 24   | 22  
+2025-12-19 17:38:23 - INFO - 122   | Sanae Takaichi elected first female Prime Minis... | 45   | 0    | 5    | 20  
+2025-12-19 17:38:23 - INFO - 123   | Friedrich Merz elected Chancellor of Germany...    | 3    | 0    | 31   | 28  
+2025-12-19 17:38:23 - INFO - 124   | Malagasy President Andry Rajoelina ousted in co... | 35   | 4    | 25   | 6   
+2025-12-19 17:38:23 - INFO - 125   | Coup d'état overthrows President of Guinea-Biss... | 29   | 21   | 0    | 20  
+2025-12-19 17:38:23 - INFO - 126   | Timor-Leste becomes 11th member of ASEAN...        | 16   | 0    | 51   | 3   
+2025-12-19 17:38:23 - INFO - 127   | Nepal appoints Prime Minister via Discord poll...  | 5    | 0    | 48   | 17  
+2025-12-19 17:38:23 - INFO - 128   | Japan's SLIM lander achieves pin-point landing ... | 0    | 6    | 9    | 22  
+2025-12-19 17:38:23 - INFO - 129   | Intuitive Machines Odysseus becomes first comme... | 2    | 1    | 12   | 11  
+2025-12-19 17:38:23 - INFO - 130   | Boeing Starliner launches first Crewed Flight T... | 16   | 0    | 32   | 22  
+2025-12-19 17:38:23 - INFO - 131   | Polaris Dawn mission conducts first commercial ... | 4    | 27   | 19   | 8   
+2025-12-19 17:38:23 - INFO - 132   | SpaceX Starship successfully catches Super Heav... | 4    | 15   | 11   | 40  
+2025-12-19 17:38:23 - INFO - 133   | Europa Clipper launches to investigate Jupiter'... | 6    | 0    | 25   | 18  
+2025-12-19 17:38:23 - INFO - 134   | Parker Solar Probe touches the Sun's atmosphere... | 4    | 0    | 38   | 28  
+2025-12-19 17:38:23 - INFO - 135   | Fram2 mission launches first human polar orbit ... | 7    | 0    | 15   | 8   
+2025-12-19 17:38:23 - INFO - 136   | Firefly Aerospace Blue Ghost lander touches dow... | 2    | 17   | 41   | 3   
+2025-12-19 17:38:23 - INFO - 137   | Axiom Mission 4 launches to ISS with Polish and... | 24   | 0    | 25   | 19  
+2025-12-19 17:38:23 - INFO - 138   | Blue Origin New Glenn rocket booster lands for ... | 3    | 20   | 23   | 24  
+2025-12-19 17:38:23 - INFO - 139   | Biosignatures discovered on exoplanet K2-18b...    | 2    | 0    | 31   | 2   
+2025-12-19 17:38:23 - INFO - 140   | Astronomers capture first close-up image of sta... | 0    | 0    | 41   | 10  
+2025-12-19 17:38:23 - INFO - 141   | Comet C/2024 G3 dubbed Great Comet of 2025 reac... | 48   | 0    | 7    | 15  
+2025-12-19 17:38:23 - INFO - 142   | Total solar eclipse visible across North Americ... | 1    | 14   | 26   | 14  
+2025-12-19 17:38:23 - INFO - 143   | G5 solar storms create aurorae at low latitudes... | 40   | 0    | 7    | 23  
+2025-12-19 17:38:23 - INFO - 144   | Blue Origin New Glenn launches on first attempt... | 13   | 6    | 30   | 21  
+2025-12-19 17:38:23 - INFO - 145   | European Union passes the Artificial Intelligen... | 6    | 0    | 27   | 27  
+2025-12-19 17:38:23 - INFO - 146   | OpenAI releases GPT-5 language model...            | 9    | 0    | 40   | 21  
+2025-12-19 17:38:23 - INFO - 147   | Nvidia stock loses 600 billion dollars in singl... | 12   | 0    | 56   | 2   
+2025-12-19 17:38:23 - INFO - 148   | First World Humanoid Robot Games held in Beijin... | 7    | 0    | 53   | 10  
+2025-12-19 17:38:23 - INFO - 149   | Nobel Prize in Physics awarded to Hopfield and ... | 1    | 25   | 10   | 9   
+2025-12-19 17:38:23 - INFO - 150   | Nobel Prize in Chemistry awarded for protein de... | 14   | 0    | 22   | 34  
+2025-12-19 17:38:23 - INFO - 151   | Honduras president alleges electoral coup via T... | 38   | 0    | 12   | 20  
+2025-12-19 17:38:23 - INFO - 152   | Caribbean guilder introduced as new currency fo... | 0    | 2    | 13   | 35  
+2025-12-19 17:38:23 - INFO - 153   | Norway aims to ban sale of new diesel and petro... | 5    | 11   | 35   | 9   
+2025-12-19 17:38:23 - INFO - 154   | UnitedHealthcare CEO Brian Thompson killed in M... | 32   | 0    | 3    | 35  
+2025-12-19 17:38:23 - INFO - 155   | Thutmose II tomb discovered by archaeologists...   | 1    | 5    | 12   | 15  
+2025-12-19 17:38:23 - INFO - 156   | Kazakhstan approves nuclear power plant in refe... | 6    | 0    | 14   | 11  
+2025-12-19 17:38:23 - INFO - 157   | Charlie Kirk assassinated at campus event...       | 24   | 19   | 0    | 27  
+2025-12-19 17:38:23 - INFO - 158   | Massive earthquake strikes Noto Peninsula in Ja... | 9    | 5    | 19   | 13  
+2025-12-19 17:38:23 - INFO - 159   | Flash floods strike Dubai and Persian Gulf regi... | 5    | 5    | 19   | 41  
+2025-12-19 17:38:23 - INFO - 160   | Devastating floods hit Rio Grande do Sul in Bra... | 1    | 4    | 42   | 23  
+2025-12-19 17:38:23 - INFO - 161   | Heavy rains cause deadly floods in Kenya...        | 0    | 0    | 26   | 44  
+2025-12-19 17:38:23 - INFO - 162   | Hurricane Beryl devastates Caribbean islands...    | 1    | 38   | 4    | 27  
+2025-12-19 17:38:23 - INFO - 163   | Landslides kill hundreds in Wayanad district of... | 24   | 10   | 27   | 0   
+2025-12-19 17:38:23 - INFO - 164   | Typhoon Yagi causes destruction in Southeast As... | 9    | 32   | 12   | 9   
+2025-12-19 17:38:23 - INFO - 165   | Storm Boris triggers worst floods in Central Eu... | 4    | 0    | 35   | 31  
+2025-12-19 17:38:23 - INFO - 166   | Hurricane Helene makes landfall in Florida...      | 21   | 5    | 23   | 21  
+2025-12-19 17:38:23 - INFO - 167   | Hurricane Milton becomes intense storm threaten... | 0    | 31   | 22   | 15  
+2025-12-19 17:38:23 - INFO - 168   | Major earthquake strikes Tibet...                  | 3    | 5    | 21   | 40  
+2025-12-19 17:38:23 - INFO - 169   | Destructive wildfires sweep through Los Angeles... | 23   | 0    | 23   | 24  
+2025-12-19 17:38:23 - INFO - 170   | Cyclone Senyar causes flooding in Thailand and ... | 31   | 0    | 27   | 12  
+2025-12-19 17:38:23 - INFO - 171   | Extreme heatwave causes deaths during Hajj pilg... | 3    | 3    | 31   | 1   
+2025-12-19 17:38:23 - INFO - 172   | Spain wins UEFA Euro 2024 championship...          | 1    | 5    | 26   | 38  
+2025-12-19 17:38:23 - INFO - 173   | Argentina wins Copa América 2024 title...          | 1    | 0    | 35   | 34  
+2025-12-19 17:38:23 - INFO - 174   | India wins Men's T20 World Cup 2024...             | 1    | 0    | 57   | 12  
+2025-12-19 17:38:23 - INFO - 175   | New Zealand wins Women's T20 World Cup 2024...     | 0    | 42   | 3    | 13  
+2025-12-19 17:38:23 - INFO - 176   | Francis Scott Key Bridge collapses in Baltimore... | 34   | 1    | 8    | 25  
+2025-12-19 17:38:23 - INFO - 177   | Notre-Dame Cathedral reopens to public after re... | 8    | 0    | 9    | 37  
+2025-12-19 17:38:23 - INFO - 178   | Indonesia holds first independence celebration ... | 1    | 2    | 36   | 9   
+2025-12-19 17:38:23 - INFO - 179   | French Crown Jewels stolen in Louvre robbery...    | 50   | 0    | 7    | 11  
+2025-12-19 17:38:23 - INFO - ================================================================================
+
+2025-12-19 17:38:23 - INFO - --- FILTERING CONFIGURATION ---
+2025-12-19 17:38:23 - INFO - (User input required in console)
+2025-12-19 17:54:42 - INFO - User selected Min Gold Threshold: 3
+2025-12-19 17:57:27 - INFO - User selected Caps -> Gold:12, Hard:10, Soft:8, Irr:3
+2025-12-19 17:57:27 - INFO - 
+Applying filters and random sampling...
+2025-12-19 17:57:28 - INFO - 
+==============================
+Original Topics: 80
+Final Topics:    55
+Dropped Topics:  25
+==============================
+2025-12-19 17:57:28 - INFO - 
+[Success] Filtered dataset saved to docs_final.json

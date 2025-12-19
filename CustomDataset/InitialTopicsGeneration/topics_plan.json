@@ -1,0 +1,1730 @@
+[
+  {
+    "id": 101,
+    "category": "Politics & Geopolitics",
+    "topic": "Bernardo Arévalo inaugurated as President of Guatemala after delay",
+    "gold_queries": [
+      "\"Bernardo Arévalo\" inaugurated president",
+      "\"Guatemala\" Arévalo takes office",
+      "\"Semilla\" party transition"
+    ],
+    "hard_negative_queries": [
+      "\"Bernardo Arévalo\" election victory",
+      "\"Guatemala\" protests 2023"
+    ],
+    "soft_negative_queries": [
+      "\"Nayib Bukele\" inauguration",
+      "\"Daniel Noboa\" Ecuador"
+    ]
+  },
+  {
+    "id": 102,
+    "category": "Politics & Geopolitics",
+    "topic": "Lai Ching-te wins Taiwan presidential election",
+    "gold_queries": [
+      "\"Lai Ching-te\" wins election",
+      "\"Taiwan\" presidential election DPP",
+      "\"William Lai\" victory speech"
+    ],
+    "hard_negative_queries": [
+      "\"Lai Ching-te\" vice president",
+      "\"Tsai Ing-wen\" speech"
+    ],
+    "soft_negative_queries": [
+      "\"Xi Jinping\" Taiwan remarks",
+      "\"Hou Yu-ih\" KMT"
+    ]
+  },
+  {
+    "id": 103,
+    "category": "Politics & Geopolitics",
+    "topic": "Frederik X proclaimed King of Denmark",
+    "gold_queries": [
+      "\"Frederik X\" proclaimed King",
+      "\"Queen Margrethe II\" abdication",
+      "\"Denmark\" throne succession"
+    ],
+    "hard_negative_queries": [
+      "\"Crown Prince Frederik\" royal run",
+      "\"Margrethe II\" new year speech"
+    ],
+    "soft_negative_queries": [
+      "\"King Charles III\" coronation",
+      "\"Sweden\" King Carl XVI"
+    ]
+  },
+  {
+    "id": 104,
+    "category": "Politics & Geopolitics",
+    "topic": "Sweden officially joins NATO as 32nd member",
+    "gold_queries": [
+      "\"Sweden\" joins NATO",
+      "\"Sweden\" accession alliance",
+      "\"Ulf Kristersson\" Washington ceremony"
+    ],
+    "hard_negative_queries": [
+      "\"Sweden\" NATO application",
+      "\"Turkey\" approves Sweden"
+    ],
+    "soft_negative_queries": [
+      "\"Finland\" joins NATO",
+      "\"Ukraine\" NATO bid"
+    ]
+  },
+  {
+    "id": 105,
+    "category": "Politics & Geopolitics",
+    "topic": "Ecuador police raid Mexican embassy in Quito",
+    "gold_queries": [
+      "\"Ecuador\" raid Mexican embassy",
+      "\"Jorge Glas\" arrest embassy",
+      "\"Mexico\" suspends relations Ecuador"
+    ],
+    "hard_negative_queries": [
+      "\"Daniel Noboa\" state of emergency",
+      "\"Ecuador\" gang violence"
+    ],
+    "soft_negative_queries": [
+      "\"Julian Assange\" embassy",
+      "\"Nicaragua\" asylum"
+    ]
+  },
+  {
+    "id": 106,
+    "category": "Politics & Geopolitics",
+    "topic": "Robert Fico survives assassination attempt in Handlová",
+    "gold_queries": [
+      "\"Robert Fico\" assassination attempt",
+      "\"Slovakia\" PM shot",
+      "\"Handlová\" shooting Fico"
+    ],
+    "hard_negative_queries": [
+      "\"Robert Fico\" election win",
+      "\"Slovakia\" protests"
+    ],
+    "soft_negative_queries": [
+      "\"Shinzo Abe\" assassination",
+      "\"Donald Trump\" Butler shooting"
+    ]
+  },
+  {
+    "id": 107,
+    "category": "Politics & Geopolitics",
+    "topic": "Claudia Sheinbaum elected first female President of Mexico",
+    "gold_queries": [
+      "\"Claudia Sheinbaum\" elected president",
+      "\"Mexico\" first female president",
+      "\"Morena\" party victory"
+    ],
+    "hard_negative_queries": [
+      "\"AMLO\" morning briefing",
+      "\"Xóchitl Gálvez\" concession"
+    ],
+    "soft_negative_queries": [
+      "\"Lula\" Brazil",
+      "\"Petro\" Colombia"
+    ]
+  },
+  {
+    "id": 108,
+    "category": "Politics & Geopolitics",
+    "topic": "Keir Starmer elected UK Prime Minister in Labour landslide",
+    "gold_queries": [
+      "\"Keir Starmer\" prime minister",
+      "\"Labour Party\" election landslide",
+      "\"UK\" general election results"
+    ],
+    "hard_negative_queries": [
+      "\"Rishi Sunak\" concession",
+      "\"Boris Johnson\" memoir"
+    ],
+    "soft_negative_queries": [
+      "\"Nigel Farage\" Reform UK",
+      "\"Ed Davey\" Lib Dems"
+    ]
+  },
+  {
+    "id": 109,
+    "category": "Politics & Geopolitics",
+    "topic": "Masoud Pezeshkian elected President of Iran",
+    "gold_queries": [
+      "\"Masoud Pezeshkian\" elected president",
+      "\"Iran\" presidential runoff",
+      "\"Pezeshkian\" defeats Jalili"
+    ],
+    "hard_negative_queries": [
+      "\"Ebrahim Raisi\" helicopter crash",
+      "\"Khamenei\" funeral prayer"
+    ],
+    "soft_negative_queries": [
+      "\"Mohammad Bagher Ghalibaf\" speaker",
+      "\"Saudi Arabia\" MBS"
+    ]
+  },
+  {
+    "id": 110,
+    "category": "Politics & Geopolitics",
+    "topic": "Sheikh Hasina resigns and flees Bangladesh following protests",
+    "gold_queries": [
+      "\"Sheikh Hasina\" resigns",
+      "\"Bangladesh\" PM flees India",
+      "\"Gen Z\" revolution Bangladesh"
+    ],
+    "hard_negative_queries": [
+      "\"Hasina\" election victory",
+      "\"Bangladesh\" quota reform"
+    ],
+    "soft_negative_queries": [
+      "\"Muhammad Yunus\" interim government",
+      "\"Sri Lanka\" Rajapaksa resigns"
+    ]
+  },
+  {
+    "id": 111,
+    "category": "Politics & Geopolitics",
+    "topic": "Paetongtarn Shinawatra elected Prime Minister of Thailand",
+    "gold_queries": [
+      "\"Paetongtarn Shinawatra\" elected PM",
+      "\"Thailand\" parliament vote",
+      "\"Srettha Thavisin\" dismissed"
+    ],
+    "hard_negative_queries": [
+      "\"Thaksin Shinawatra\" return",
+      "\"Pita Limjaroenrat\" banned"
+    ],
+    "soft_negative_queries": [
+      "\"Move Forward Party\" dissolved",
+      "\"Prayut Chan-o-cha\" retired"
+    ]
+  },
+  {
+    "id": 112,
+    "category": "Politics & Geopolitics",
+    "topic": "Anura Kumara Dissanayake elected President of Sri Lanka",
+    "gold_queries": [
+      "\"Anura Kumara Dissanayake\" elected president",
+      "\"Sri Lanka\" election second count",
+      "\"NPP\" coalition victory"
+    ],
+    "hard_negative_queries": [
+      "\"Ranil Wickremesinghe\" economic reforms",
+      "\"Rajapaksa\" family"
+    ],
+    "soft_negative_queries": [
+      "\"Sajith Premadasa\" opposition",
+      "\"Maldives\" Muizzu"
+    ]
+  },
+  {
+    "id": 113,
+    "category": "Politics & Geopolitics",
+    "topic": "Yahya Sinwar killed by Israeli forces in Gaza",
+    "gold_queries": [
+      "\"Yahya Sinwar\" killed",
+      "\"Sinwar\" Hamas leader dead",
+      "\"Rafah\" operation Sinwar"
+    ],
+    "hard_negative_queries": [
+      "\"Ismail Haniyeh\" assassination",
+      "\"Mohammed Deif\" airstrike"
+    ],
+    "soft_negative_queries": [
+      "\"Hassan Nasrallah\" airstrike",
+      "\"Qasem Soleimani\" drone"
+    ]
+  },
+  {
+    "id": 114,
+    "category": "Politics & Geopolitics",
+    "topic": "Duma Boko elected President of Botswana",
+    "gold_queries": [
+      "\"Duma Boko\" elected president",
+      "\"Botswana\" election BDP defeat",
+      "\"UDC\" party victory"
+    ],
+    "hard_negative_queries": [
+      "\"Mokgweetsi Masisi\" concession",
+      "\"Botswana\" diamond deal"
+    ],
+    "soft_negative_queries": [
+      "\"South Africa\" ANC coalition",
+      "\"Namibia\" SWAPO"
+    ]
+  },
+  {
+    "id": 115,
+    "category": "Politics & Geopolitics",
+    "topic": "ICC issues arrest warrants for Netanyahu and Gallant",
+    "gold_queries": [
+      "\"International Criminal Court\" arrest warrants Netanyahu",
+      "\"ICC\" warrants Gallant Deif",
+      "\"Karim Khan\" application warrants"
+    ],
+    "hard_negative_queries": [
+      "\"ICJ\" genocide ruling",
+      "\"UN\" ceasefire resolution"
+    ],
+    "soft_negative_queries": [
+      "\"Putin\" ICC warrant",
+      "\"Bashir\" ICC warrant"
+    ]
+  },
+  {
+    "id": 116,
+    "category": "Politics & Geopolitics",
+    "topic": "Michel Barnier ousted as French Prime Minister in no-confidence vote",
+    "gold_queries": [
+      "\"Michel Barnier\" no-confidence vote",
+      "\"France\" government collapse 2024",
+      "\"Barnier\" ousted PM"
+    ],
+    "hard_negative_queries": [
+      "\"Gabriel Attal\" resignation",
+      "\"Emmanuel Macron\" dissolution"
+    ],
+    "soft_negative_queries": [
+      "\"Liz Truss\" resigns",
+      "\"Pedro Sanchez\" confidence vote"
+    ]
+  },
+  {
+    "id": 117,
+    "category": "Politics & Geopolitics",
+    "topic": "Bashar al-Assad flees Syria ending Ba'athist rule",
+    "gold_queries": [
+      "\"Bashar al-Assad\" flees Damascus",
+      "\"Syria\" regime overthrow",
+      "\"Assad\" Moscow asylum"
+    ],
+    "hard_negative_queries": [
+      "\"Aleppo\" rebel capture",
+      "\"Syrian\" civil war ceasefire"
+    ],
+    "soft_negative_queries": [
+      "\"Gaddafi\" Libya",
+      "\"Saddam Hussein\" fall"
+    ]
+  },
+  {
+    "id": 118,
+    "category": "Politics & Geopolitics",
+    "topic": "Bulgaria and Romania join Schengen Area",
+    "gold_queries": [
+      "\"Bulgaria\" joins Schengen",
+      "\"Romania\" Schengen air sea",
+      "\"Schengen Area\" expansion 2024"
+    ],
+    "hard_negative_queries": [
+      "\"Austria\" veto Schengen",
+      "\"Croatia\" joins Schengen"
+    ],
+    "soft_negative_queries": [
+      "\"Eurozone\" Croatia",
+      "\"EU\" expansion Ukraine"
+    ]
+  },
+  {
+    "id": 119,
+    "category": "Politics & Geopolitics",
+    "topic": "Indonesia officially joins BRICS",
+    "gold_queries": [
+      "\"Indonesia\" joins BRICS",
+      "\"BRICS\" new member Indonesia",
+      "\"Prabowo\" BRICS accession"
+    ],
+    "hard_negative_queries": [
+      "\"Argentina\" rejects BRICS",
+      "\"Saudi Arabia\" joins BRICS"
+    ],
+    "soft_negative_queries": [
+      "\"OECD\" accession",
+      "\"G20\" summit Indonesia"
+    ]
+  },
+  {
+    "id": 120,
+    "category": "Politics & Geopolitics",
+    "topic": "Robert Prevost elected Pope Leo XIV",
+    "gold_queries": [
+      "\"Robert Prevost\" elected Pope",
+      "\"Pope Leo XIV\" conclave",
+      "\"Robert Francis Prevost\" pontiff"
+    ],
+    "hard_negative_queries": [
+      "\"Pope Francis\" funeral",
+      "\"Vatican\" conclave smoke"
+    ],
+    "soft_negative_queries": [
+      "\"Archbishop of Canterbury\" Justin Welby",
+      "\"Dalai Lama\" successor"
+    ]
+  },
+  {
+    "id": 121,
+    "category": "Politics & Geopolitics",
+    "topic": "Nicaragua constitutional reforms establish Co-Presidency",
+    "gold_queries": [
+      "\"Nicaragua\" constitutional reform",
+      "\"Ortega\" Murillo co-president",
+      "\"Nicaragua\" elevation co-presidency"
+    ],
+    "hard_negative_queries": [
+      "\"Daniel Ortega\" election victory",
+      "\"Rosario Murillo\" vice president"
+    ],
+    "soft_negative_queries": [
+      "\"El Salvador\" Bukele reforms",
+      "\"Venezuela\" Maduro power"
+    ]
+  },
+  {
+    "id": 122,
+    "category": "Politics & Geopolitics",
+    "topic": "US and Russia hold summit in Saudi Arabia restoring relations",
+    "gold_queries": [
+      "\"US\" Russia summit Saudi Arabia",
+      "\"Putin\" Trump meeting Riyadh",
+      "\"diplomatic relations\" US Russia restore"
+    ],
+    "hard_negative_queries": [
+      "\"Geneva\" summit Biden Putin",
+      "\"Helsinki\" summit Trump"
+    ],
+    "soft_negative_queries": [
+      "\"Ukraine\" peace summit",
+      "\"G20\" summit Brazil"
+    ]
+  },
+  {
+    "id": 123,
+    "category": "Politics & Geopolitics",
+    "topic": "Former Philippines President Rodrigo Duterte arrested",
+    "gold_queries": [
+      "\"Rodrigo Duterte\" arrested",
+      "\"Duterte\" ICC warrant served",
+      "\"Philippines\" ex-president custody"
+    ],
+    "hard_negative_queries": [
+      "\"Sara Duterte\" resignation",
+      "\"Marcos Jr\" ICC stance"
+    ],
+    "soft_negative_queries": [
+      "\"Imran Khan\" arrest",
+      "\"Thaksin Shinawatra\" jail"
+    ]
+  },
+  {
+    "id": 124,
+    "category": "Politics & Geopolitics",
+    "topic": "UK, Canada, and Australia recognize Palestine as sovereign state",
+    "gold_queries": [
+      "\"UK\" recognizes Palestine",
+      "\"Canada\" recognition Palestine state",
+      "\"Australia\" Palestine sovereign"
+    ],
+    "hard_negative_queries": [
+      "\"Spain\" Norway Ireland recognition",
+      "\"UN\" Palestine membership vote"
+    ],
+    "soft_negative_queries": [
+      "\"Kosovo\" recognition",
+      "\"Somaliland\" recognition"
+    ]
+  },
+  {
+    "id": 125,
+    "category": "Politics & Geopolitics",
+    "topic": "Former Brazilian President Jair Bolsonaro imprisoned",
+    "gold_queries": [
+      "\"Jair Bolsonaro\" sentenced prison",
+      "\"Bolsonaro\" coup plot conviction",
+      "\"Brazil\" Supreme Court Bolsonaro"
+    ],
+    "hard_negative_queries": [
+      "\"Bolsonaro\" passport seizure",
+      "\"January 8\" riots investigation"
+    ],
+    "soft_negative_queries": [
+      "\"Lula\" corruption charges",
+      "\"Trump\" hush money verdict"
+    ]
+  },
+  {
+    "id": 126,
+    "category": "Politics & Geopolitics",
+    "topic": "Mark Carney elected Prime Minister of Canada",
+    "gold_queries": [
+      "\"Mark Carney\" prime minister",
+      "\"Canada\" election Liberal victory",
+      "\"Mark Carney\" elected leader"
+    ],
+    "hard_negative_queries": [
+      "\"Justin Trudeau\" resignation",
+      "\"Pierre Poilievre\" opposition"
+    ],
+    "soft_negative_queries": [
+      "\"Keir Starmer\" UK",
+      "\"Anthony Albanese\" Australia"
+    ]
+  },
+  {
+    "id": 127,
+    "category": "Politics & Geopolitics",
+    "topic": "Sanae Takaichi elected first female Prime Minister of Japan",
+    "gold_queries": [
+      "\"Sanae Takaichi\" prime minister",
+      "\"Japan\" first female PM",
+      "\"Takaichi\" elected leader"
+    ],
+    "hard_negative_queries": [
+      "\"Shigeru Ishiba\" election",
+      "\"Fumio Kishida\" cabinet"
+    ],
+    "soft_negative_queries": [
+      "\"Claudia Sheinbaum\" Mexico",
+      "\"Halla Tomasdottir\" Iceland"
+    ]
+  },
+  {
+    "id": 128,
+    "category": "Politics & Geopolitics",
+    "topic": "Friedrich Merz elected Chancellor of Germany",
+    "gold_queries": [
+      "\"Friedrich Merz\" elected Chancellor",
+      "\"Germany\" federal election results",
+      "\"CDU/CSU\" election victory"
+    ],
+    "hard_negative_queries": [
+      "\"Olaf Scholz\" dismissal",
+      "\"Christian Lindner\" fired"
+    ],
+    "soft_negative_queries": [
+      "\"AfD\" election gains",
+      "\"Sahra Wagenknecht\" party"
+    ]
+  },
+  {
+    "id": 129,
+    "category": "Politics & Geopolitics",
+    "topic": "Malagasy President Andry Rajoelina ousted in coup",
+    "gold_queries": [
+      "\"Andry Rajoelina\" ousted coup",
+      "\"Madagascar\" coup d'état 2025",
+      "\"Michael Randrianirina\" president"
+    ],
+    "hard_negative_queries": [
+      "\"Rajoelina\" election victory",
+      "\"Madagascar\" protests"
+    ],
+    "soft_negative_queries": [
+      "\"Gabon\" coup",
+      "\"Niger\" coup"
+    ]
+  },
+  {
+    "id": 130,
+    "category": "Politics & Geopolitics",
+    "topic": "Coup d'état overthrows President of Guinea-Bissau",
+    "gold_queries": [
+      "\"Guinea-Bissau\" coup d'état",
+      "\"Umaro Sissoco Embaló\" overthrown",
+      "\"Guinea-Bissau\" military takeover"
+    ],
+    "hard_negative_queries": [
+      "\"Embaló\" dissolves parliament",
+      "\"Guinea-Bissau\" election results"
+    ],
+    "soft_negative_queries": [
+      "\"Guinea\" Mamady Doumbouya",
+      "\"Mali\" Goita"
+    ]
+  },
+  {
+    "id": 131,
+    "category": "Politics & Geopolitics",
+    "topic": "Timor-Leste becomes 11th member of ASEAN",
+    "gold_queries": [
+      "\"Timor-Leste\" joins ASEAN",
+      "\"ASEAN\" 11th member",
+      "\"East Timor\" admission ASEAN"
+    ],
+    "hard_negative_queries": [
+      "\"Timor-Leste\" observer status",
+      "\"ASEAN\" summit Laos"
+    ],
+    "soft_negative_queries": [
+      "\"Papua New Guinea\" ASEAN",
+      "\"EU\" expansion"
+    ]
+  },
+  {
+    "id": 132,
+    "category": "Politics & Geopolitics",
+    "topic": "Nepal appoints Prime Minister via Discord poll",
+    "gold_queries": [
+      "\"Nepal\" PM poll Discord",
+      "\"Sushila Karki\" Discord election",
+      "\"Gen Z\" Nepal protest Discord"
+    ],
+    "hard_negative_queries": [
+      "\"Nepal\" earthquake",
+      "\"Pushpa Kamal Dahal\" vote"
+    ],
+    "soft_negative_queries": [
+      "\"Bangladesh\" student protests",
+      "\"Thailand\" Move Forward"
+    ]
+  },
+  {
+    "id": 133,
+    "category": "Space",
+    "topic": "Japan's SLIM lander achieves pin-point landing on Moon",
+    "gold_queries": [
+      "\"SLIM\" lander moon",
+      "\"Japan\" soft landing moon",
+      "\"Moon Sniper\" landing"
+    ],
+    "hard_negative_queries": [
+      "\"JAXA\" H3 launch",
+      "\"ispace\" Hakuto-R"
+    ],
+    "soft_negative_queries": [
+      "\"Chandrayaan-3\" landing",
+      "\"Peregrine\" lander fail"
+    ]
+  },
+  {
+    "id": 134,
+    "category": "Space",
+    "topic": "Intuitive Machines Odysseus becomes first commercial lander on Moon",
+    "gold_queries": [
+      "\"Intuitive Machines\" moon landing",
+      "\"Nova-C\" Odysseus lander",
+      "\"Odysseus\" south pole moon"
+    ],
+    "hard_negative_queries": [
+      "\"Peregrine\" mission failure",
+      "\"Astrobotic\" lander"
+    ],
+    "soft_negative_queries": [
+      "\"SLIM\" Japan moon",
+      "\"Chandrayaan-3\" India"
+    ]
+  },
+  {
+    "id": 135,
+    "category": "Space",
+    "topic": "Boeing Starliner launches first Crewed Flight Test to ISS",
+    "gold_queries": [
+      "\"Starliner\" crewed flight test",
+      "\"Boeing\" astronaut launch",
+      "\"Butch Wilmore\" Suni Williams"
+    ],
+    "hard_negative_queries": [
+      "\"Starliner\" thruster issues",
+      "\"Starliner\" uncrewed return"
+    ],
+    "soft_negative_queries": [
+      "\"Crew Dragon\" launch",
+      "\"Soyuz\" launch"
+    ]
+  },
+  {
+    "id": 136,
+    "category": "Space",
+    "topic": "Polaris Dawn mission conducts first commercial spacewalk",
+    "gold_queries": [
+      "\"Polaris Dawn\" spacewalk",
+      "\"Jared Isaacman\" EVA",
+      "\"SpaceX\" commercial spacewalk"
+    ],
+    "hard_negative_queries": [
+      "\"Inspiration4\" mission",
+      "\"Crew Dragon\" splashdown"
+    ],
+    "soft_negative_queries": [
+      "\"Axiom\" mission ISS",
+      "\"NASA\" spacewalk"
+    ]
+  },
+  {
+    "id": 137,
+    "category": "Space",
+    "topic": "SpaceX Starship successfully catches Super Heavy booster",
+    "gold_queries": [
+      "\"SpaceX\" catch booster",
+      "\"Starship\" mechazilla",
+      "\"Super Heavy\" mid-air catch"
+    ],
+    "hard_negative_queries": [
+      "\"SpaceX\" Starlink launch",
+      "\"Starship\" splashdown Indian Ocean"
+    ],
+    "soft_negative_queries": [
+      "\"Blue Origin\" launch",
+      "\"SLS\" Artemis launch"
+    ]
+  },
+  {
+    "id": 138,
+    "category": "Space",
+    "topic": "Europa Clipper launches to investigate Jupiter's icy moon",
+    "gold_queries": [
+      "\"Europa Clipper\" launch",
+      "\"Jupiter\" icy moon probe",
+      "\"Falcon Heavy\" Europa Clipper"
+    ],
+    "hard_negative_queries": [
+      "\"JUICE\" mission Jupiter",
+      "\"Juno\" spacecraft"
+    ],
+    "soft_negative_queries": [
+      "\"Enceladus\" probe",
+      "\"Mars Sample Return\""
+    ]
+  },
+  {
+    "id": 139,
+    "category": "Space",
+    "topic": "Parker Solar Probe touches the Sun's atmosphere",
+    "gold_queries": [
+      "\"Parker Solar Probe\" touches sun",
+      "\"NASA\" sun atmosphere probe",
+      "\"closest artificial object\" sun"
+    ],
+    "hard_negative_queries": [
+      "\"Solar Orbiter\" ESA",
+      "\"Aditya-L1\" India"
+    ],
+    "soft_negative_queries": [
+      "\"Voyager 1\" interstellar",
+      "\"New Horizons\" Kuiper Belt"
+    ]
+  },
+  {
+    "id": 140,
+    "category": "Space",
+    "topic": "Fram2 mission launches first human polar orbit spaceflight",
+    "gold_queries": [
+      "\"Fram2\" polar orbit launch",
+      "\"SpaceX\" polar crewed mission",
+      "\"Chun Wang\" mission"
+    ],
+    "hard_negative_queries": [
+      "\"Polaris Dawn\" mission",
+      "\"Inspiration4\" launch"
+    ],
+    "soft_negative_queries": [
+      "\"Soyuz\" polar orbit",
+      "\"Shenzhou\" launch"
+    ]
+  },
+  {
+    "id": 141,
+    "category": "Space",
+    "topic": "Firefly Aerospace Blue Ghost lander touches down on Moon",
+    "gold_queries": [
+      "\"Firefly Aerospace\" moon landing",
+      "\"Blue Ghost\" lander success",
+      "\"Firefly\" lunar mission"
+    ],
+    "hard_negative_queries": [
+      "\"Peregrine\" lander failure",
+      "\"Nova-C\" landing"
+    ],
+    "soft_negative_queries": [
+      "\"ispace\" lander",
+      "\"Chandrayaan-4\""
+    ]
+  },
+  {
+    "id": 142,
+    "category": "Space",
+    "topic": "Axiom Mission 4 launches to ISS with Polish and Indian astronauts",
+    "gold_queries": [
+      "\"Axiom Mission 4\" launch",
+      "\"Ax-4\" astronauts ISS",
+      "\"Shubhanshu Shukla\" space"
+    ],
+    "hard_negative_queries": [
+      "\"Axiom Mission 3\" return",
+      "\"Crew-9\" launch"
+    ],
+    "soft_negative_queries": [
+      "\"Soyuz MS-26\"",
+      "\"Starliner\" crew"
+    ]
+  },
+  {
+    "id": 143,
+    "category": "Space",
+    "topic": "Blue Origin New Glenn rocket booster lands for the first time",
+    "gold_queries": [
+      "\"New Glenn\" booster landing",
+      "\"Blue Origin\" rocket land",
+      "\"Jeff Bezos\" New Glenn success"
+    ],
+    "hard_negative_queries": [
+      "\"New Glenn\" launch failure",
+      "\"New Shepard\" launch"
+    ],
+    "soft_negative_queries": [
+      "\"Starship\" landing",
+      "\"Falcon 9\" landing"
+    ]
+  },
+  {
+    "id": 144,
+    "category": "Space",
+    "topic": "Biosignatures discovered on exoplanet K2-18b",
+    "gold_queries": [
+      "\"K2-18b\" dimethyl sulfide",
+      "\"exoplanet\" biosignatures discovery",
+      "\"Webb telescope\" K2-18b"
+    ],
+    "hard_negative_queries": [
+      "\"TRAPPIST-1\" atmosphere",
+      "\"Proxima b\" signal"
+    ],
+    "soft_negative_queries": [
+      "\"Mars\" methane",
+      "\"Venus\" phosphine"
+    ]
+  },
+  {
+    "id": 145,
+    "category": "Space",
+    "topic": "Astronomers capture first close-up image of star WOH G64",
+    "gold_queries": [
+      "\"WOH G64\" star image",
+      "\"Very Large Telescope\" star close-up",
+      "\"star outside Milky Way\" image"
+    ],
+    "hard_negative_queries": [
+      "\"Betelgeuse\" dimming",
+      "\"James Webb\" Pillars of Creation"
+    ],
+    "soft_negative_queries": [
+      "\"Event Horizon Telescope\" black hole",
+      "\"Hubble\" nebula"
+    ]
+  },
+  {
+    "id": 146,
+    "category": "Space",
+    "topic": "Comet C/2023 A3 Tsuchinshan–ATLAS makes closest approach",
+    "gold_queries": [
+      "\"C/2023 A3\" comet approach",
+      "\"Tsuchinshan–ATLAS\" visibility",
+      "\"comet of the century\" 2024"
+    ],
+    "hard_negative_queries": [
+      "\"Devil Comet\" 12P",
+      "\"Green Comet\" ZTF"
+    ],
+    "soft_negative_queries": [
+      "\"Halley's Comet\"",
+      "\"NEOWISE\" comet"
+    ]
+  },
+  {
+    "id": 147,
+    "category": "Space",
+    "topic": "Comet C/2024 G3 dubbed Great Comet of 2025 reaches perihelion",
+    "gold_queries": [
+      "\"C/2024 G3\" comet perihelion",
+      "\"Great Comet of 2025\" visibility",
+      "\"ATLAS\" comet 2025"
+    ],
+    "hard_negative_queries": [
+      "\"C/2023 A3\" Tsuchinshan",
+      "\"Oumuamua\" object"
+    ],
+    "soft_negative_queries": [
+      "\"Meteor shower\" Perseids",
+      "\"Asteroid\" flyby"
+    ]
+  },
+  {
+    "id": 148,
+    "category": "Space",
+    "topic": "Total solar eclipse visible across North America",
+    "gold_queries": [
+      "\"total solar eclipse\" North America",
+      "\"April 8\" eclipse path",
+      "\"solar eclipse\" Mazatlan"
+    ],
+    "hard_negative_queries": [
+      "\"annular eclipse\" ring of fire",
+      "\"lunar eclipse\" blood moon"
+    ],
+    "soft_negative_queries": [
+      "\"Aurora Borealis\" sighting",
+      "\"Solar storm\" G5"
+    ]
+  },
+  {
+    "id": 149,
+    "category": "Space",
+    "topic": "G5 solar storms create aurorae at low latitudes",
+    "gold_queries": [
+      "\"G5\" solar storm aurora",
+      "\"geomagnetic storm\" NOAA",
+      "\"northern lights\" low latitude"
+    ],
+    "hard_negative_queries": [
+      "\"solar eclipse\" April",
+      "\"sunspot\" cycle"
+    ],
+    "soft_negative_queries": [
+      "\"climate change\" heatwave",
+      "\"volcanic eruption\" ash"
+    ]
+  },
+  {
+    "id": 150,
+    "category": "Space",
+    "topic": "Blue Origin New Glenn launches on first attempt",
+    "gold_queries": [
+      "\"New Glenn\" first launch",
+      "\"Blue Origin\" heavy-lift launch",
+      "\"Jeff Bezos\" rocket debut"
+    ],
+    "hard_negative_queries": [
+      "\"New Glenn\" booster landing",
+      "\"New Shepard\" crew"
+    ],
+    "soft_negative_queries": [
+      "\"Vulcan Centaur\" launch",
+      "\"Ariane 6\" debut"
+    ]
+  },
+  {
+    "id": 151,
+    "category": "Space",
+    "topic": "Russian plane crash in Sudan kills 17 people",
+    "gold_queries": [
+      "\"Antonov An-26\" crash Sudan",
+      "\"Sudanese Air Force\" plane crash",
+      "\"Wadi Seidna\" air base crash"
+    ],
+    "hard_negative_queries": [
+      "\"Il-76\" crash Belgorod",
+      "\"Prigozhin\" plane crash"
+    ],
+    "soft_negative_queries": [
+      "\"Malawi\" VP plane crash",
+      "\"Iran\" Raisi helicopter"
+    ]
+  },
+  {
+    "id": 152,
+    "category": "Space",
+    "topic": "Angara Airlines Flight 2311 crashes in Eastern Siberia",
+    "gold_queries": [
+      "\"Angara Airlines Flight 2311\" crash",
+      "\"Antonov An-24\" crash Tynda",
+      "\"Eastern Siberia\" plane crash"
+    ],
+    "hard_negative_queries": [
+      "\"Kamchatka\" helicopter crash",
+      "\"Il-76\" prisoners crash"
+    ],
+    "soft_negative_queries": [
+      "\"Voepass\" Brazil crash",
+      "\"Yeti Airlines\" Nepal"
+    ]
+  },
+  {
+    "id": 153,
+    "category": "Technology",
+    "topic": "European Union passes the Artificial Intelligence Act",
+    "gold_queries": [
+      "\"Artificial Intelligence Act\" passed EU",
+      "\"EU\" AI regulation law",
+      "\"AI Act\" comprehensive framework"
+    ],
+    "hard_negative_queries": [
+      "\"European Commission\" tech antitrust",
+      "\"GDPR\" fines"
+    ],
+    "soft_negative_queries": [
+      "\"US\" executive order AI",
+      "\"China\" AI regulations"
+    ]
+  },
+  {
+    "id": 154,
+    "category": "Technology",
+    "topic": "Colossal Biosciences creates first artificial womb in marsupials",
+    "gold_queries": [
+      "\"Colossal Biosciences\" artificial womb",
+      "\"thylacine\" de-extinction womb",
+      "\"marsupial\" artificial uterus"
+    ],
+    "hard_negative_queries": [
+      "\"woolly mammoth\" DNA",
+      "\"dodo\" de-extinction"
+    ],
+    "soft_negative_queries": [
+      "\"Neuralink\" implant",
+      "\"Clonaid\" cloning"
+    ]
+  },
+  {
+    "id": 155,
+    "category": "Technology",
+    "topic": "Colossal Biosciences creates woolly mice for de-extinction project",
+    "gold_queries": [
+      "\"Colossal Biosciences\" woolly mice",
+      "\"woolly mammoth\" mouse phenotypes",
+      "\"genetic modification\" grey wolves"
+    ],
+    "hard_negative_queries": [
+      "\"Colossal\" thylacine womb",
+      "\"dodo\" bird project"
+    ],
+    "soft_negative_queries": [
+      "\"CRISPR\" gene editing",
+      "\"23andMe\" data breach"
+    ]
+  },
+  {
+    "id": 156,
+    "category": "Technology",
+    "topic": "OpenAI releases GPT-5 language model",
+    "gold_queries": [
+      "\"OpenAI\" releases GPT-5",
+      "\"GPT-5\" model launch",
+      "\"Sam Altman\" GPT-5"
+    ],
+    "hard_negative_queries": [
+      "\"GPT-4o\" demo",
+      "\"Sora\" video generation"
+    ],
+    "soft_negative_queries": [
+      "\"Google\" Gemini update",
+      "\"Anthropic\" Claude 3"
+    ]
+  },
+  {
+    "id": 157,
+    "category": "Technology",
+    "topic": "Nvidia stock loses 600 billion dollars in single day",
+    "gold_queries": [
+      "\"Nvidia\" stock drop 600 billion",
+      "\"Nvidia\" market cap loss",
+      "\"Jensen Huang\" stock crash"
+    ],
+    "hard_negative_queries": [
+      "\"Nvidia\" earnings beat",
+      "\"Nvidia\" stock split"
+    ],
+    "soft_negative_queries": [
+      "\"Intel\" earnings miss",
+      "\"AMD\" stock"
+    ]
+  },
+  {
+    "id": 158,
+    "category": "Technology",
+    "topic": "First World Humanoid Robot Games held in Beijing",
+    "gold_queries": [
+      "\"World Humanoid Robot Games\" Beijing",
+      "\"robot Olympics\" China",
+      "\"humanoid robots\" competition 2025"
+    ],
+    "hard_negative_queries": [
+      "\"Tesla\" Optimus demo",
+      "\"Boston Dynamics\" Atlas"
+    ],
+    "soft_negative_queries": [
+      "\"World Robot Conference\"",
+      "\"RoboCup\" soccer"
+    ]
+  },
+  {
+    "id": 159,
+    "category": "Technology",
+    "topic": "Brazil Supreme Court upholds ban on platform X",
+    "gold_queries": [
+      "\"Brazil\" ban X platform",
+      "\"Alexandre de Moraes\" X ban",
+      "\"Elon Musk\" Starlink Brazil"
+    ],
+    "hard_negative_queries": [
+      "\"Twitter\" rebrand X",
+      "\"Brazil\" fake news law"
+    ],
+    "soft_negative_queries": [
+      "\"TikTok\" ban US",
+      "\"Telegram\" CEO arrest"
+    ]
+  },
+  {
+    "id": 160,
+    "category": "Technology",
+    "topic": "UK becomes first G7 country to phase out coal power",
+    "gold_queries": [
+      "\"UK\" phase out coal power",
+      "\"Ratcliffe-on-Soar\" closes",
+      "\"G7\" coal free electricity"
+    ],
+    "hard_negative_queries": [
+      "\"UK\" offshore wind",
+      "\"Germany\" coal mine"
+    ],
+    "soft_negative_queries": [
+      "\"COP29\" fossil fuels",
+      "\"China\" coal plants"
+    ]
+  },
+  {
+    "id": 161,
+    "category": "Technology",
+    "topic": "Nobel Prize in Physics awarded to Hopfield and Hinton for AI",
+    "gold_queries": [
+      "\"Nobel Prize\" Physics Hopfield Hinton",
+      "\"Geoffrey Hinton\" Nobel AI",
+      "\"John Hopfield\" neural networks"
+    ],
+    "hard_negative_queries": [
+      "\"Nobel Prize\" Physics quantum",
+      "\"Geoffrey Hinton\" Google resignation"
+    ],
+    "soft_negative_queries": [
+      "\"Nobel Prize\" Chemistry AI",
+      "\"Turing Award\" AI"
+    ]
+  },
+  {
+    "id": 162,
+    "category": "Technology",
+    "topic": "Nobel Prize in Chemistry awarded for protein design AI",
+    "gold_queries": [
+      "\"Nobel Prize\" Chemistry Baker Hassabis",
+      "\"Demis Hassabis\" Nobel AlphaFold",
+      "\"David Baker\" protein design"
+    ],
+    "hard_negative_queries": [
+      "\"AlphaFold\" release",
+      "\"DeepMind\" new model"
+    ],
+    "soft_negative_queries": [
+      "\"Nobel Prize\" Medicine microRNA",
+      "\"CRISPR\" Nobel"
+    ]
+  },
+  {
+    "id": 163,
+    "category": "Technology",
+    "topic": "Honduras president alleges electoral coup via Trump interference",
+    "gold_queries": [
+      "\"Honduras\" electoral coup Trump",
+      "\"Xiomara Castro\" interference claims",
+      "\"Honduras\" election interference 2025"
+    ],
+    "hard_negative_queries": [
+      "\"Honduras\" election results",
+      "\"drug trafficking\" trial"
+    ],
+    "soft_negative_queries": [
+      "\"Guatemala\" Arévalo coup",
+      "\"Bolivia\" coup attempt"
+    ]
+  },
+  {
+    "id": 164,
+    "category": "Technology",
+    "topic": "Caribbean guilder introduced as new currency for Curaçao and Sint Maarten",
+    "gold_queries": [
+      "\"Caribbean guilder\" launched",
+      "\"Curaçao\" new currency",
+      "\"Sint Maarten\" currency change"
+    ],
+    "hard_negative_queries": [
+      "\"Zimbabwe\" gold currency",
+      "\"Argentina\" dollarization"
+    ],
+    "soft_negative_queries": [
+      "\"Euro\" digital currency",
+      "\"Bitcoin\" El Salvador"
+    ]
+  },
+  {
+    "id": 165,
+    "category": "Technology",
+    "topic": "Norway aims to ban sale of new diesel and petrol cars",
+    "gold_queries": [
+      "\"Norway\" ban petrol cars",
+      "\"electric vehicle\" sales Norway",
+      "\"diesel car\" ban 2025"
+    ],
+    "hard_negative_queries": [
+      "\"EU\" combustion engine ban",
+      "\"UK\" delay petrol ban"
+    ],
+    "soft_negative_queries": [
+      "\"Tesla\" sales Norway",
+      "\"BYD\" EV expansion"
+    ]
+  },
+  {
+    "id": 166,
+    "category": "Technology",
+    "topic": "UnitedHealthcare CEO Brian Thompson killed in Manhattan",
+    "gold_queries": [
+      "\"Brian Thompson\" CEO shot",
+      "\"UnitedHealthcare\" CEO killed",
+      "\"Manhattan\" CEO shooting"
+    ],
+    "hard_negative_queries": [
+      "\"UnitedHealthcare\" data breach",
+      "\"health insurance\" protest"
+    ],
+    "soft_negative_queries": [
+      "\"Shinzo Abe\" assassination",
+      "\"Robert Fico\" shooting"
+    ]
+  },
+  {
+    "id": 167,
+    "category": "Technology",
+    "topic": "WikiLeaks founder Julian Assange released from prison",
+    "gold_queries": [
+      "\"Julian Assange\" freed prison",
+      "\"WikiLeaks\" founder plea deal",
+      "\"Assange\" returns Australia"
+    ],
+    "hard_negative_queries": [
+      "\"Assange\" extradition hearing",
+      "\"Edward Snowden\" Russia"
+    ],
+    "soft_negative_queries": [
+      "\"Evan Gershkovich\" released",
+      "\"Paul Whelan\" swap"
+    ]
+  },
+  {
+    "id": 168,
+    "category": "Technology",
+    "topic": "Scientists rediscover spotted hyena in Egypt",
+    "gold_queries": [
+      "\"spotted hyena\" rediscovered Egypt",
+      "\"Crocuta crocuta\" Elba Protected Area",
+      "\"hyena\" Egypt 5000 years"
+    ],
+    "hard_negative_queries": [
+      "\"woolly mammoth\" de-extinction",
+      "\"thylacine\" return"
+    ],
+    "soft_negative_queries": [
+      "\"Attenborough's echidna\" found",
+      "\"Java tiger\" DNA"
+    ]
+  },
+  {
+    "id": 169,
+    "category": "Technology",
+    "topic": "Thutmose II tomb discovered by archaeologists",
+    "gold_queries": [
+      "\"Thutmose II\" tomb discovery",
+      "\"royal tomb\" 18th Dynasty",
+      "\"Egypt\" announces tomb find"
+    ],
+    "hard_negative_queries": [
+      "\"Tutankhamun\" scan",
+      "\"Grand Egyptian Museum\" opening"
+    ],
+    "soft_negative_queries": [
+      "\"Pompeii\" excavation",
+      "\"Mayan\" city found"
+    ]
+  },
+  {
+    "id": 170,
+    "category": "Technology",
+    "topic": "Grey wolves genetically modified to exhibit dire wolf traits",
+    "gold_queries": [
+      "\"grey wolves\" dire wolf traits",
+      "\"Colossal Biosciences\" wolf modification",
+      "\"genetically modified\" wolves"
+    ],
+    "hard_negative_queries": [
+      "\"wolf\" reintroduction Colorado",
+      "\"dire wolf\" fossil"
+    ],
+    "soft_negative_queries": [
+      "\"woolly mammoth\" elephant",
+      "\"dodo\" gene editing"
+    ]
+  },
+  {
+    "id": 171,
+    "category": "Technology",
+    "topic": "Kazakhstan approves nuclear power plant in referendum",
+    "gold_queries": [
+      "\"Kazakhstan\" nuclear power referendum",
+      "\"nuclear plant\" vote Kazakhstan",
+      "\"Kazakh\" energy referendum"
+    ],
+    "hard_negative_queries": [
+      "\"Kazakhstan\" uranium export",
+      "\"Tokayev\" reforms"
+    ],
+    "soft_negative_queries": [
+      "\"Germany\" nuclear shutdown",
+      "\"Japan\" restart nuclear"
+    ]
+  },
+  {
+    "id": 172,
+    "category": "Technology",
+    "topic": "Charlie Kirk assassinated at campus event",
+    "gold_queries": [
+      "\"Charlie Kirk\" assassinated",
+      "\"Utah\" campus shooting Kirk",
+      "\"Turning Point USA\" founder killed"
+    ],
+    "hard_negative_queries": [
+      "\"Donald Trump\" assassination attempt",
+      "\"Tucker Carlson\" interview"
+    ],
+    "soft_negative_queries": [
+      "\"Shinzo Abe\" assassination",
+      "\"Brian Thompson\" CEO killed"
+    ]
+  },
+  {
+    "id": 173,
+    "category": "Disaster & Environment",
+    "topic": "Massive earthquake strikes Noto Peninsula in Japan",
+    "gold_queries": [
+      "\"Noto Peninsula\" earthquake",
+      "\"Japan\" 7.6 magnitude quake",
+      "\"Wajima\" fire earthquake"
+    ],
+    "hard_negative_queries": [
+      "\"Fukushima\" earthquake",
+      "\"Haneda\" plane collision"
+    ],
+    "soft_negative_queries": [
+      "\"Taiwan\" Hualien earthquake",
+      "\"Morocco\" earthquake"
+    ]
+  },
+  {
+    "id": 174,
+    "category": "Disaster & Environment",
+    "topic": "Former Chilean President Sebastián Piñera dies in helicopter crash",
+    "gold_queries": [
+      "\"Sebastián Piñera\" helicopter crash",
+      "\"Chile\" ex-president dies",
+      "\"Lago Ranco\" crash"
+    ],
+    "hard_negative_queries": [
+      "\"Piñera\" election victory",
+      "\"Chile\" wildfires 2024"
+    ],
+    "soft_negative_queries": [
+      "\"Ebrahim Raisi\" crash",
+      "\"Kobe Bryant\" crash"
+    ]
+  },
+  {
+    "id": 175,
+    "category": "Disaster & Environment",
+    "topic": "Flash floods strike Dubai and Persian Gulf region",
+    "gold_queries": [
+      "\"Dubai\" flash floods",
+      "\"Persian Gulf\" heavy rainfall",
+      "\"UAE\" rain record"
+    ],
+    "hard_negative_queries": [
+      "\"Dubai\" cloud seeding claims",
+      "\"COP28\" Dubai"
+    ],
+    "soft_negative_queries": [
+      "\"Saudi Arabia\" floods",
+      "\"Oman\" floods"
+    ]
+  },
+  {
+    "id": 176,
+    "category": "Disaster & Environment",
+    "topic": "Devastating floods hit Rio Grande do Sul in Brazil",
+    "gold_queries": [
+      "\"Rio Grande do Sul\" floods",
+      "\"Brazil\" state flooding",
+      "\"Porto Alegre\" flood"
+    ],
+    "hard_negative_queries": [
+      "\"Amazon\" drought",
+      "\"Pantanal\" wildfires"
+    ],
+    "soft_negative_queries": [
+      "\"Valencia\" floods",
+      "\"Kenya\" floods"
+    ]
+  },
+  {
+    "id": 177,
+    "category": "Disaster & Environment",
+    "topic": "Heavy rains cause deadly floods in Kenya",
+    "gold_queries": [
+      "\"Kenya\" floods Mai Mahiu",
+      "\"Tanzania\" flood deaths",
+      "\"East Africa\" heavy rain"
+    ],
+    "hard_negative_queries": [
+      "\"Kenya\" tax protests",
+      "\"Ruto\" climate summit"
+    ],
+    "soft_negative_queries": [
+      "\"Libya\" Derna flood",
+      "\"Pakistan\" floods"
+    ]
+  },
+  {
+    "id": 178,
+    "category": "Disaster & Environment",
+    "topic": "Hurricane Beryl devastates Caribbean islands",
+    "gold_queries": [
+      "\"Hurricane Beryl\" Carriacou",
+      "\"Grenada\" hurricane damage",
+      "\"Category 5\" Beryl record"
+    ],
+    "hard_negative_queries": [
+      "\"Hurricane Otis\" Acapulco",
+      "\"Hurricane Lee\" Atlantic"
+    ],
+    "soft_negative_queries": [
+      "\"Hurricane Helene\" Florida",
+      "\"Hurricane Milton\""
+    ]
+  },
+  {
+    "id": 179,
+    "category": "Disaster & Environment",
+    "topic": "Landslides kill hundreds in Wayanad district of India",
+    "gold_queries": [
+      "\"Wayanad\" landslides",
+      "\"Kerala\" landslide death toll",
+      "\"Mundakkai\" landslide"
+    ],
+    "hard_negative_queries": [
+      "\"Himachal\" floods",
+      "\"Uttarakhand\" tunnel collapse"
+    ],
+    "soft_negative_queries": [
+      "\"Papua New Guinea\" landslide",
+      "\"Ethiopia\" Gofa landslide"
+    ]
+  },
+  {
+    "id": 180,
+    "category": "Disaster & Environment",
+    "topic": "Typhoon Yagi causes destruction in Southeast Asia",
+    "gold_queries": [
+      "\"Typhoon Yagi\" Vietnam",
+      "\"Hainan\" typhoon landfall",
+      "\"Myanmar\" Yagi floods"
+    ],
+    "hard_negative_queries": [
+      "\"Typhoon Gaemi\" Taiwan",
+      "\"Typhoon Shanshan\" Japan"
+    ],
+    "soft_negative_queries": [
+      "\"Hurricane Beryl\"",
+      "\"Cyclone Remal\""
+    ]
+  },
+  {
+    "id": 181,
+    "category": "Disaster & Environment",
+    "topic": "Storm Boris triggers worst floods in Central Europe in decades",
+    "gold_queries": [
+      "\"Central Europe\" floods 2024",
+      "\"Storm Boris\" flooding",
+      "\"Poland\" flood emergency"
+    ],
+    "hard_negative_queries": [
+      "\"Germany\" floods 2021",
+      "\"Venice\" floods"
+    ],
+    "soft_negative_queries": [
+      "\"Spain\" floods Valencia",
+      "\"Brazil\" floods"
+    ]
+  },
+  {
+    "id": 182,
+    "category": "Disaster & Environment",
+    "topic": "Hurricane Helene makes landfall in Florida",
+    "gold_queries": [
+      "\"Hurricane Helene\" landfall Florida",
+      "\"Asheville\" flooding Helene",
+      "\"Big Bend\" hurricane impact"
+    ],
+    "hard_negative_queries": [
+      "\"Hurricane Idalia\" Florida",
+      "\"Hurricane Ian\" Fort Myers"
+    ],
+    "soft_negative_queries": [
+      "\"Hurricane Milton\" Tampa",
+      "\"Hurricane Beryl\""
+    ]
+  },
+  {
+    "id": 183,
+    "category": "Disaster & Environment",
+    "topic": "Hurricane Milton becomes intense storm threatening Gulf Coast",
+    "gold_queries": [
+      "\"Hurricane Milton\" pressure record",
+      "\"Tampa\" hurricane evacuation",
+      "\"Gulf of Mexico\" rapid intensification"
+    ],
+    "hard_negative_queries": [
+      "\"Hurricane Helene\" aftermath",
+      "\"Hurricane Rita\" record"
+    ],
+    "soft_negative_queries": [
+      "\"Hurricane Katrina\"",
+      "\"Hurricane Otis\""
+    ]
+  },
+  {
+    "id": 184,
+    "category": "Disaster & Environment",
+    "topic": "Cyclone Chido causes devastation in Mayotte",
+    "gold_queries": [
+      "\"Cyclone Chido\" Mayotte",
+      "\"Mayotte\" cyclone deaths",
+      "\"Mozambique Channel\" cyclone"
+    ],
+    "hard_negative_queries": [
+      "\"Cyclone Freddy\" Malawi",
+      "\"Cyclone Belal\" Reunion"
+    ],
+    "soft_negative_queries": [
+      "\"Cyclone Senyar\"",
+      "\"Typhoon Yagi\""
+    ]
+  },
+  {
+    "id": 185,
+    "category": "Disaster & Environment",
+    "topic": "Major earthquake strikes Tibet",
+    "gold_queries": [
+      "\"Tibet\" earthquake 7.1",
+      "\"China\" earthquake January 2025",
+      "\"Tibetan\" region quake"
+    ],
+    "hard_negative_queries": [
+      "\"Gansu\" earthquake",
+      "\"Sichuan\" earthquake"
+    ],
+    "soft_negative_queries": [
+      "\"Nepal\" earthquake",
+      "\"Japan\" Noto quake"
+    ]
+  },
+  {
+    "id": 186,
+    "category": "Disaster & Environment",
+    "topic": "Destructive wildfires sweep through Los Angeles area",
+    "gold_queries": [
+      "\"Los Angeles\" wildfires 2025",
+      "\"Sunset Boulevard\" fire damage",
+      "\"Palisades Fire\" homes destroyed"
+    ],
+    "hard_negative_queries": [
+      "\"Maui\" wildfires",
+      "\"Canada\" wildfire smoke"
+    ],
+    "soft_negative_queries": [
+      "\"Chile\" wildfires",
+      "\"Greece\" wildfires"
+    ]
+  },
+  {
+    "id": 187,
+    "category": "Disaster & Environment",
+    "topic": "Cyclone Senyar causes flooding in Thailand and Malaysia",
+    "gold_queries": [
+      "\"Cyclone Senyar\" flooding",
+      "\"Thailand\" Malaysia storm deaths",
+      "\"Senyar\" cyclone damage"
+    ],
+    "hard_negative_queries": [
+      "\"Typhoon Yagi\" floods",
+      "\"Thailand\" floods 2011"
+    ],
+    "soft_negative_queries": [
+      "\"Cyclone Chido\"",
+      "\"Cyclone Remal\""
+    ]
+  },
+  {
+    "id": 188,
+    "category": "Disaster & Environment",
+    "topic": "Extreme heatwave causes deaths during Hajj pilgrimage",
+    "gold_queries": [
+      "\"Hajj\" heatwave deaths",
+      "\"Mecca\" extreme heat 2024",
+      "\"Saudi Arabia\" pilgrimage heat"
+    ],
+    "hard_negative_queries": [
+      "\"Hajj\" stampede",
+      "\"Umrah\" pilgrimage"
+    ],
+    "soft_negative_queries": [
+      "\"India\" heatwave",
+      "\"Europe\" heatwave Cerberus"
+    ]
+  },
+  {
+    "id": 189,
+    "category": "Sports",
+    "topic": "Spain wins UEFA Euro 2024 championship",
+    "gold_queries": [
+      "\"Spain\" wins Euro 2024",
+      "\"England\" defeat Euro final",
+      "\"Lamine Yamal\" goal"
+    ],
+    "hard_negative_queries": [
+      "\"Spain\" women's world cup",
+      "\"Real Madrid\" wins UCL"
+    ],
+    "soft_negative_queries": [
+      "\"Argentina\" Copa America",
+      "\"Italy\" Euro 2020"
+    ]
+  },
+  {
+    "id": 190,
+    "category": "Sports",
+    "topic": "Argentina wins Copa América 2024 title",
+    "gold_queries": [
+      "\"Argentina\" wins Copa America",
+      "\"Lautaro Martinez\" goal final",
+      "\"Messi\" Copa America 2024"
+    ],
+    "hard_negative_queries": [
+      "\"Argentina\" World Cup 2022",
+      "\"Colombia\" Copa America final"
+    ],
+    "soft_negative_queries": [
+      "\"Spain\" Euro 2024",
+      "\"Brazil\" Copa America"
+    ]
+  },
+  {
+    "id": 191,
+    "category": "Sports",
+    "topic": "India wins Men's T20 World Cup 2024",
+    "gold_queries": [
+      "\"India\" wins T20 World Cup",
+      "\"South Africa\" defeat final cricket",
+      "\"Virat Kohli\" retirement T20"
+    ],
+    "hard_negative_queries": [
+      "\"India\" ODI World Cup loss",
+      "\"IPL\" 2024 winner"
+    ],
+    "soft_negative_queries": [
+      "\"Australia\" cricket world cup",
+      "\"Pakistan\" T20"
+    ]
+  },
+  {
+    "id": 192,
+    "category": "Sports",
+    "topic": "New Zealand wins Women's T20 World Cup 2024",
+    "gold_queries": [
+      "\"New Zealand\" wins Women's T20",
+      "\"White Ferns\" world cup victory",
+      "\"Sophie Devine\" trophy"
+    ],
+    "hard_negative_queries": [
+      "\"Australia\" women's cricket",
+      "\"Women's Premier League\" cricket"
+    ],
+    "soft_negative_queries": [
+      "\"England\" women rugby",
+      "\"Spain\" women football"
+    ]
+  },
+  {
+    "id": 193,
+    "category": "Economy / World Events",
+    "topic": "Francis Scott Key Bridge collapses in Baltimore",
+    "gold_queries": [
+      "\"Francis Scott Key Bridge\" collapse",
+      "\"Dali\" ship bridge collision",
+      "\"Baltimore\" bridge disaster"
+    ],
+    "hard_negative_queries": [
+      "\"Baltimore\" tunnel",
+      "\"Maryland\" port strike"
+    ],
+    "soft_negative_queries": [
+      "\"Genoa\" bridge collapse",
+      "\"Rotterdam\" bridge dismantle"
+    ]
+  },
+  {
+    "id": 194,
+    "category": "Economy / World Events",
+    "topic": "Notre-Dame Cathedral reopens to public after restoration",
+    "gold_queries": [
+      "\"Notre-Dame\" cathedral reopens",
+      "\"Paris\" cathedral restoration complete",
+      "\"Notre-Dame\" first mass fire"
+    ],
+    "hard_negative_queries": [
+      "\"Notre-Dame\" fire 2019",
+      "\"spire\" installation"
+    ],
+    "soft_negative_queries": [
+      "\"Sagrada Familia\" completion",
+      "\"St Peter's Basilica\" jubilee"
+    ]
+  },
+  {
+    "id": 195,
+    "category": "Economy / World Events",
+    "topic": "Indonesia holds first independence celebration in new capital Nusantara",
+    "gold_queries": [
+      "\"Nusantara\" independence day",
+      "\"Indonesia\" new capital inauguration",
+      "\"Jokowi\" ceremony Nusantara"
+    ],
+    "hard_negative_queries": [
+      "\"Jakarta\" sinking",
+      "\"Indonesia\" election"
+    ],
+    "soft_negative_queries": [
+      "\"Cairo\" new administrative capital",
+      "\"Naypyidaw\" Myanmar"
+    ]
+  },
+  {
+    "id": 196,
+    "category": "Economy / World Events",
+    "topic": "French Crown Jewels stolen in Louvre robbery",
+    "gold_queries": [
+      "\"Louvre\" robbery crown jewels",
+      "\"French Crown Jewels\" stolen",
+      "\"Galerie d'Apollon\" heist"
+    ],
+    "hard_negative_queries": [
+      "\"Mona Lisa\" soup protest",
+      "\"Louvre\" museum strike"
+    ],
+    "soft_negative_queries": [
+      "\"Dresden\" Green Vault burglary",
+      "\"British Museum\" theft"
+    ]
+  }
+]

@@ -1,0 +1,1108 @@
+nohup: ignoring input
+Starting processing for 96 topics...
+
+[1/96] Processing Topic: Bernardo Arévalo inaugurated as President of Guatemala after delay
+  - Fetching GOLD Query: "Bernardo Arévalo" inaugurated president
+      -> Low results (0). Retrying with loose query: Bernardo Arévalo inaugurated president
+  - Fetching GOLD Query: "Guatemala" Arévalo takes office
+      -> Low results (1). Retrying with loose query: Guatemala Arévalo takes office
+  - Fetching GOLD Query: "Semilla" party transition
+      -> Low results (1). Retrying with loose query: Semilla party transition
+    -> Aggregated 2 raw. Kept 2 unique candidates.
+    -> Scraped 2 valid docs (Target: 50). Keeping all.
+  [SKIP] Dropped topic 'Bernardo Arévalo inaugurated as President of Guatemala after delay' immediately.
+         Reason: Insufficient Gold Docs (2 < 10).
+
+[2/96] Processing Topic: Lai Ching-te wins Taiwan presidential election
+  - Fetching GOLD Query: "Lai Ching-te" wins election
+      -> Low results (2). Retrying with loose query: Lai Ching-te wins election
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "Taiwan" presidential election DPP
+  - Fetching GOLD Query: "William Lai" victory speech
+      -> Low results (2). Retrying with loose query: William Lai victory speech
+    -> Aggregated 106 raw. Kept 46 unique candidates.
+    -> Scraped 45 valid docs (Target: 50). Keeping all.
+  - Fetching HARD Query: "Lai Ching-te" vice president
+  - Fetching HARD Query: "Tsai Ing-wen" speech
+    -> Aggregated 40 raw. Kept 33 unique candidates.
+    -> Scraped 31 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Xi Jinping" Taiwan remarks
+  - Fetching SOFT Query: "Hou Yu-ih" KMT
+      -> Low results (6). Retrying with loose query: Hou Yu-ih KMT
+    [Error] API returned HTML instead of JSON.
+    -> Aggregated 26 raw. Kept 16 unique candidates.
+    -> Scraped 16 valid docs. Sampling down to 10.
+
+[3/96] Processing Topic: Frederik X proclaimed King of Denmark
+  - Fetching GOLD Query: "Frederik X" proclaimed King
+      -> Low results (0). Retrying with loose query: Frederik X proclaimed King
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "Queen Margrethe II" abdication
+      -> Low results (3). Retrying with loose query: Queen Margrethe II abdication
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "Denmark" throne succession
+      -> Low results (10). Retrying with loose query: Denmark throne succession
+    -> Aggregated 13 raw. Kept 10 unique candidates.
+    -> Scraped 9 valid docs (Target: 50). Keeping all.
+  [SKIP] Dropped topic 'Frederik X proclaimed King of Denmark' immediately.
+         Reason: Insufficient Gold Docs (9 < 10).
+
+[4/96] Processing Topic: Sweden officially joins NATO as 32nd member
+  - Fetching GOLD Query: "Sweden" joins NATO
+      -> Low results (44). Retrying with loose query: Sweden joins NATO
+  - Fetching GOLD Query: "Sweden" accession alliance
+  - Fetching GOLD Query: "Ulf Kristersson" Washington ceremony
+      -> Low results (2). Retrying with loose query: Ulf Kristersson Washington ceremony
+    -> Aggregated 133 raw. Kept 57 unique candidates.
+    -> Scraped 53 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "Sweden" NATO application
+  - Fetching HARD Query: "Turkey" approves Sweden
+      -> Low results (6). Retrying with loose query: Turkey approves Sweden
+    -> Aggregated 26 raw. Kept 23 unique candidates.
+    -> Scraped 21 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Finland" joins NATO
+  - Fetching SOFT Query: "Ukraine" NATO bid
+    -> Aggregated 40 raw. Kept 33 unique candidates.
+    -> Scraped 32 valid docs. Sampling down to 10.
+
+[5/96] Processing Topic: Ecuador police raid Mexican embassy in Quito
+  - Fetching GOLD Query: "Ecuador" raid Mexican embassy
+      -> Low results (3). Retrying with loose query: Ecuador raid Mexican embassy
+  - Fetching GOLD Query: "Jorge Glas" arrest embassy
+      -> Low results (2). Retrying with loose query: Jorge Glas arrest embassy
+  - Fetching GOLD Query: "Mexico" suspends relations Ecuador
+      -> Low results (1). Retrying with loose query: Mexico suspends relations Ecuador
+    -> Aggregated 6 raw. Kept 6 unique candidates.
+    -> Scraped 6 valid docs (Target: 50). Keeping all.
+  [SKIP] Dropped topic 'Ecuador police raid Mexican embassy in Quito' immediately.
+         Reason: Insufficient Gold Docs (6 < 10).
+
+[6/96] Processing Topic: Robert Fico survives assassination attempt in Handlová
+  - Fetching GOLD Query: "Robert Fico" assassination attempt
+      -> Low results (31). Retrying with loose query: Robert Fico assassination attempt
+  - Fetching GOLD Query: "Slovakia" PM shot
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Slovakia PM shot
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "Handlová" shooting Fico
+      -> Low results (14). Retrying with loose query: Handlová shooting Fico
+    -> Aggregated 46 raw. Kept 33 unique candidates.
+    -> Scraped 29 valid docs (Target: 50). Keeping all.
+  - Fetching HARD Query: "Robert Fico" election win
+  - Fetching HARD Query: "Slovakia" protests
+    -> Aggregated 40 raw. Kept 28 unique candidates.
+    -> Scraped 27 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Shinzo Abe" assassination
+  - Fetching SOFT Query: "Donald Trump" Butler shooting
+    -> Aggregated 40 raw. Kept 29 unique candidates.
+    -> Scraped 25 valid docs. Sampling down to 10.
+
+[7/96] Processing Topic: Claudia Sheinbaum elected first female President of Mexico
+  - Fetching GOLD Query: "Claudia Sheinbaum" elected president
+  - Fetching GOLD Query: "Mexico" first female president
+  - Fetching GOLD Query: "Morena" party victory
+      -> Low results (11). Retrying with loose query: Morena party victory
+    -> Aggregated 211 raw. Kept 128 unique candidates.
+    -> Scraped 115 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "AMLO" morning briefing
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: AMLO morning briefing
+  - Fetching HARD Query: "Xóchitl Gálvez" concession
+      -> Low results (0). Retrying with loose query: Xóchitl Gálvez concession
+    -> Aggregated 0 raw. Kept 0 unique candidates.
+    -> Scraped 0 valid docs (Target: 10). Keeping all.
+  - Fetching SOFT Query: "Lula" Brazil
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Lula Brazil
+  - Fetching SOFT Query: "Petro" Colombia
+    -> Aggregated 40 raw. Kept 31 unique candidates.
+    -> Scraped 25 valid docs. Sampling down to 10.
+
+[8/96] Processing Topic: Keir Starmer elected UK Prime Minister in Labour landslide
+  - Fetching GOLD Query: "Keir Starmer" prime minister
+  - Fetching GOLD Query: "Labour Party" election landslide
+  - Fetching GOLD Query: "UK" general election results
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: UK general election results
+    [Error] API returned HTML instead of JSON.
+    -> Aggregated 200 raw. Kept 31 unique candidates.
+    -> Scraped 25 valid docs (Target: 50). Keeping all.
+  - Fetching HARD Query: "Rishi Sunak" concession
+      -> Low results (3). Retrying with loose query: Rishi Sunak concession
+  - Fetching HARD Query: "Boris Johnson" memoir
+    -> Aggregated 23 raw. Kept 21 unique candidates.
+    -> Scraped 20 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Nigel Farage" Reform UK
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Nigel Farage Reform UK
+    [Error] API returned HTML instead of JSON.
+  - Fetching SOFT Query: "Ed Davey" Lib Dems
+    -> Aggregated 20 raw. Kept 8 unique candidates.
+    -> Scraped 8 valid docs (Target: 10). Keeping all.
+
+[9/96] Processing Topic: Masoud Pezeshkian elected President of Iran
+  - Fetching GOLD Query: "Masoud Pezeshkian" elected president
+      -> Low results (22). Retrying with loose query: Masoud Pezeshkian elected president
+  - Fetching GOLD Query: "Iran" presidential runoff
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Iran presidential runoff
+  - Fetching GOLD Query: "Pezeshkian" defeats Jalili
+      -> Low results (0). Retrying with loose query: Pezeshkian defeats Jalili
+    -> Aggregated 36 raw. Kept 30 unique candidates.
+    -> Scraped 30 valid docs (Target: 50). Keeping all.
+  - Fetching HARD Query: "Ebrahim Raisi" helicopter crash
+      -> Low results (3). Retrying with loose query: Ebrahim Raisi helicopter crash
+  - Fetching HARD Query: "Khamenei" funeral prayer
+      -> Low results (0). Retrying with loose query: Khamenei funeral prayer
+    -> Aggregated 3 raw. Kept 3 unique candidates.
+    -> Scraped 3 valid docs (Target: 10). Keeping all.
+  - Fetching SOFT Query: "Mohammad Bagher Ghalibaf" speaker
+  - Fetching SOFT Query: "Saudi Arabia" MBS
+    -> Aggregated 40 raw. Kept 39 unique candidates.
+    -> Scraped 36 valid docs. Sampling down to 10.
+
+[10/96] Processing Topic: Sheikh Hasina resigns and flees Bangladesh following protests
+  - Fetching GOLD Query: "Sheikh Hasina" resigns
+      -> Low results (4). Retrying with loose query: Sheikh Hasina resigns
+  - Fetching GOLD Query: "Bangladesh" PM flees India
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Bangladesh PM flees India
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "Gen Z" revolution Bangladesh
+    -> Aggregated 104 raw. Kept 104 unique candidates.
+    -> Scraped 103 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "Hasina" election victory
+  - Fetching HARD Query: "Bangladesh" quota reform
+    -> Aggregated 40 raw. Kept 34 unique candidates.
+    -> Scraped 32 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Muhammad Yunus" interim government
+  - Fetching SOFT Query: "Sri Lanka" Rajapaksa resigns
+      -> Low results (1). Retrying with loose query: Sri Lanka Rajapaksa resigns
+    -> Aggregated 21 raw. Kept 17 unique candidates.
+    -> Scraped 16 valid docs. Sampling down to 10.
+
+[11/96] Processing Topic: Paetongtarn Shinawatra elected Prime Minister of Thailand
+  - Fetching GOLD Query: "Paetongtarn Shinawatra" elected PM
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Paetongtarn Shinawatra elected PM
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "Thailand" parliament vote
+  - Fetching GOLD Query: "Srettha Thavisin" dismissed
+      -> Low results (4). Retrying with loose query: Srettha Thavisin dismissed
+    -> Aggregated 104 raw. Kept 39 unique candidates.
+    -> Scraped 34 valid docs (Target: 50). Keeping all.
+  - Fetching HARD Query: "Thaksin Shinawatra" return
+  - Fetching HARD Query: "Pita Limjaroenrat" banned
+      -> Low results (0). Retrying with loose query: Pita Limjaroenrat banned
+    -> Aggregated 20 raw. Kept 6 unique candidates.
+    -> Scraped 5 valid docs (Target: 10). Keeping all.
+  - Fetching SOFT Query: "Move Forward Party" dissolved
+  - Fetching SOFT Query: "Prayut Chan-o-cha" retired
+      -> Low results (0). Retrying with loose query: Prayut Chan-o-cha retired
+    [Error] API returned HTML instead of JSON.
+    -> Aggregated 12 raw. Kept 8 unique candidates.
+    -> Scraped 8 valid docs (Target: 10). Keeping all.
+
+[12/96] Processing Topic: Anura Kumara Dissanayake elected President of Sri Lanka
+  - Fetching GOLD Query: "Anura Kumara Dissanayake" elected president
+  - Fetching GOLD Query: "Sri Lanka" election second count
+      -> Low results (13). Retrying with loose query: Sri Lanka election second count
+  - Fetching GOLD Query: "NPP" coalition victory
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: NPP coalition victory
+    -> Aggregated 87 raw. Kept 71 unique candidates.
+    -> Scraped 68 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "Ranil Wickremesinghe" economic reforms
+  - Fetching HARD Query: "Rajapaksa" family
+    -> Aggregated 40 raw. Kept 33 unique candidates.
+    -> Scraped 33 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Sajith Premadasa" opposition
+  - Fetching SOFT Query: "Maldives" Muizzu
+    -> Aggregated 40 raw. Kept 38 unique candidates.
+    -> Scraped 38 valid docs. Sampling down to 10.
+
+[13/96] Processing Topic: Yahya Sinwar killed by Israeli forces in Gaza
+  - Fetching GOLD Query: "Yahya Sinwar" killed
+  - Fetching GOLD Query: "Sinwar" Hamas leader dead
+  - Fetching GOLD Query: "Rafah" operation Sinwar
+      -> Low results (20). Retrying with loose query: Rafah operation Sinwar
+    -> Aggregated 196 raw. Kept 76 unique candidates.
+    -> Scraped 72 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "Ismail Haniyeh" assassination
+  - Fetching HARD Query: "Mohammed Deif" airstrike
+    -> Aggregated 40 raw. Kept 27 unique candidates.
+    -> Scraped 26 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Hassan Nasrallah" airstrike
+  - Fetching SOFT Query: "Qasem Soleimani" drone
+    -> Aggregated 40 raw. Kept 31 unique candidates.
+    -> Scraped 29 valid docs. Sampling down to 10.
+
+[14/96] Processing Topic: Duma Boko elected President of Botswana
+  - Fetching GOLD Query: "Duma Boko" elected president
+      -> Low results (1). Retrying with loose query: Duma Boko elected president
+  - Fetching GOLD Query: "Botswana" election BDP defeat
+      -> Low results (0). Retrying with loose query: Botswana election BDP defeat
+  - Fetching GOLD Query: "UDC" party victory
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: UDC party victory
+    -> Aggregated 6 raw. Kept 6 unique candidates.
+    -> Scraped 6 valid docs (Target: 50). Keeping all.
+  [SKIP] Dropped topic 'Duma Boko elected President of Botswana' immediately.
+         Reason: Insufficient Gold Docs (6 < 10).
+
+[15/96] Processing Topic: ICC issues arrest warrants for Netanyahu and Gallant
+  - Fetching GOLD Query: "International Criminal Court" arrest warrants Netanyahu
+  - Fetching GOLD Query: "ICC" warrants Gallant Deif
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: ICC warrants Gallant Deif
+  - Fetching GOLD Query: "Karim Khan" application warrants
+      -> Low results (5). Retrying with loose query: Karim Khan application warrants
+    -> Aggregated 137 raw. Kept 91 unique candidates.
+    -> Scraped 87 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "ICJ" genocide ruling
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: ICJ genocide ruling
+  - Fetching HARD Query: "UN" ceasefire resolution
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: UN ceasefire resolution
+    [Error] API returned HTML instead of JSON.
+    -> Aggregated 20 raw. Kept 16 unique candidates.
+    -> Scraped 15 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Putin" ICC warrant
+  - Fetching SOFT Query: "Bashir" ICC warrant
+    -> Aggregated 40 raw. Kept 36 unique candidates.
+    -> Scraped 34 valid docs. Sampling down to 10.
+
+[16/96] Processing Topic: Michel Barnier ousted as French Prime Minister in no-confidence vote
+  - Fetching GOLD Query: "Michel Barnier" no-confidence vote
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Michel Barnier no-confidence vote
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "France" government collapse 2024
+  - Fetching GOLD Query: "Barnier" ousted PM
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Barnier ousted PM
+    [Error] API returned HTML instead of JSON.
+    -> Aggregated 100 raw. Kept 57 unique candidates.
+    -> Scraped 53 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "Gabriel Attal" resignation
+  - Fetching HARD Query: "Emmanuel Macron" dissolution
+    -> Aggregated 40 raw. Kept 20 unique candidates.
+    -> Scraped 18 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Liz Truss" resigns
+      -> Low results (1). Retrying with loose query: Liz Truss resigns
+  - Fetching SOFT Query: "Pedro Sanchez" confidence vote
+      -> Low results (4). Retrying with loose query: Pedro Sanchez confidence vote
+    -> Aggregated 7 raw. Kept 7 unique candidates.
+    -> Scraped 6 valid docs (Target: 10). Keeping all.
+
+[17/96] Processing Topic: Bashar al-Assad flees Syria ending Ba'athist rule
+  - Fetching GOLD Query: "Bashar al-Assad" flees Damascus
+      -> Low results (1). Retrying with loose query: Bashar al-Assad flees Damascus
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "Syria" regime overthrow
+  - Fetching GOLD Query: "Assad" Moscow asylum
+    -> Aggregated 180 raw. Kept 94 unique candidates.
+    -> Scraped 83 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "Aleppo" rebel capture
+  - Fetching HARD Query: "Syrian" civil war ceasefire
+    -> Aggregated 40 raw. Kept 24 unique candidates.
+    -> Scraped 20 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Gaddafi" Libya
+  - Fetching SOFT Query: "Saddam Hussein" fall
+    -> Aggregated 40 raw. Kept 36 unique candidates.
+    -> Scraped 35 valid docs. Sampling down to 10.
+
+[18/96] Processing Topic: Bulgaria and Romania join Schengen Area
+  - Fetching GOLD Query: "Bulgaria" joins Schengen
+      -> Low results (1). Retrying with loose query: Bulgaria joins Schengen
+  - Fetching GOLD Query: "Romania" Schengen air sea
+      -> Low results (9). Retrying with loose query: Romania Schengen air sea
+  - Fetching GOLD Query: "Schengen Area" expansion 2024
+      -> Low results (23). Retrying with loose query: Schengen Area expansion
+    -> Aggregated 44 raw. Kept 38 unique candidates.
+    -> Scraped 34 valid docs (Target: 50). Keeping all.
+  - Fetching HARD Query: "Austria" veto Schengen
+      -> Low results (3). Retrying with loose query: Austria veto Schengen
+  - Fetching HARD Query: "Croatia" joins Schengen
+      -> Low results (0). Retrying with loose query: Croatia joins Schengen
+    -> Aggregated 3 raw. Kept 3 unique candidates.
+    -> Scraped 3 valid docs (Target: 10). Keeping all.
+  - Fetching SOFT Query: "Eurozone" Croatia
+  - Fetching SOFT Query: "EU" expansion Ukraine
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: EU expansion Ukraine
+    [Error] API returned HTML instead of JSON.
+    -> Aggregated 20 raw. Kept 18 unique candidates.
+    -> Scraped 18 valid docs. Sampling down to 10.
+
+[19/96] Processing Topic: Indonesia officially joins BRICS
+  - Fetching GOLD Query: "Indonesia" joins BRICS
+      -> Low results (3). Retrying with loose query: Indonesia joins BRICS
+  - Fetching GOLD Query: "BRICS" new member Indonesia
+  - Fetching GOLD Query: "Prabowo" BRICS accession
+      -> Low results (1). Retrying with loose query: Prabowo BRICS accession
+    -> Aggregated 104 raw. Kept 45 unique candidates.
+    -> Scraped 41 valid docs (Target: 50). Keeping all.
+  - Fetching HARD Query: "Argentina" rejects BRICS
+      -> Low results (3). Retrying with loose query: Argentina rejects BRICS
+  - Fetching HARD Query: "Saudi Arabia" joins BRICS
+      -> Low results (3). Retrying with loose query: Saudi Arabia joins BRICS
+    -> Aggregated 6 raw. Kept 6 unique candidates.
+    -> Scraped 5 valid docs (Target: 10). Keeping all.
+  - Fetching SOFT Query: "OECD" accession
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: OECD accession
+  - Fetching SOFT Query: "G20" summit Indonesia
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: G20 summit Indonesia
+    -> Aggregated 40 raw. Kept 24 unique candidates.
+    -> Scraped 23 valid docs. Sampling down to 10.
+
+[20/96] Processing Topic: Robert Prevost elected Pope Leo XIV
+  - Fetching GOLD Query: "Robert Prevost" elected Pope
+  - Fetching GOLD Query: "Pope Leo XIV" conclave
+  - Fetching GOLD Query: "Robert Francis Prevost" pontiff
+      -> Low results (34). Retrying with loose query: Robert Francis Prevost pontiff
+    -> Aggregated 302 raw. Kept 133 unique candidates.
+    -> Scraped 107 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "Pope Francis" funeral
+  - Fetching HARD Query: "Vatican" conclave smoke
+    -> Aggregated 34 raw. Kept 23 unique candidates.
+    -> Scraped 19 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Archbishop of Canterbury" Justin Welby
+  - Fetching SOFT Query: "Dalai Lama" successor
+    -> Aggregated 40 raw. Kept 22 unique candidates.
+    -> Scraped 21 valid docs. Sampling down to 10.
+
+[21/96] Processing Topic: Nicaragua constitutional reforms establish Co-Presidency
+  - Fetching GOLD Query: "Nicaragua" constitutional reform
+      -> Low results (30). Retrying with loose query: Nicaragua constitutional reform
+  - Fetching GOLD Query: "Ortega" Murillo co-president
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Ortega Murillo co-president
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "Nicaragua" elevation co-presidency
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Nicaragua elevation co-presidency
+    [Error] API returned HTML instead of JSON.
+    -> Aggregated 30 raw. Kept 26 unique candidates.
+    -> Scraped 23 valid docs (Target: 50). Keeping all.
+  - Fetching HARD Query: "Daniel Ortega" election victory
+  - Fetching HARD Query: "Rosario Murillo" vice president
+    -> Aggregated 30 raw. Kept 19 unique candidates.
+    -> Scraped 18 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "El Salvador" Bukele reforms
+  - Fetching SOFT Query: "Venezuela" Maduro power
+    -> Aggregated 40 raw. Kept 30 unique candidates.
+    -> Scraped 28 valid docs. Sampling down to 10.
+
+[22/96] Processing Topic: US and Russia hold summit in Saudi Arabia restoring relations
+  - Fetching GOLD Query: "US" Russia summit Saudi Arabia
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: US Russia summit Saudi Arabia
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "Putin" Trump meeting Riyadh
+  - Fetching GOLD Query: "diplomatic relations" US Russia restore
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: diplomatic relations US Russia restore
+    [Error] API returned HTML instead of JSON.
+    -> Aggregated 64 raw. Kept 46 unique candidates.
+    -> Scraped 41 valid docs (Target: 50). Keeping all.
+  - Fetching HARD Query: "Geneva" summit Biden Putin
+  - Fetching HARD Query: "Helsinki" summit Trump
+    -> Aggregated 40 raw. Kept 36 unique candidates.
+    -> Scraped 30 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Ukraine" peace summit
+  - Fetching SOFT Query: "G20" summit Brazil
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: G20 summit Brazil
+    -> Aggregated 40 raw. Kept 31 unique candidates.
+    -> Scraped 28 valid docs. Sampling down to 10.
+
+[23/96] Processing Topic: Former Philippines President Rodrigo Duterte arrested
+  - Fetching GOLD Query: "Rodrigo Duterte" arrested
+  - Fetching GOLD Query: "Duterte" ICC warrant served
+      -> Low results (29). Retrying with loose query: Duterte ICC warrant served
+  - Fetching GOLD Query: "Philippines" ex-president custody
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Philippines ex-president custody
+    [Error] API returned HTML instead of JSON.
+    -> Aggregated 129 raw. Kept 72 unique candidates.
+    -> Scraped 68 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "Sara Duterte" resignation
+  - Fetching HARD Query: "Marcos Jr" ICC stance
+      -> Low results (4). Retrying with loose query: Marcos Jr ICC stance
+    [Error] API returned HTML instead of JSON.
+    -> Aggregated 24 raw. Kept 21 unique candidates.
+    -> Scraped 20 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Imran Khan" arrest
+  - Fetching SOFT Query: "Thaksin Shinawatra" jail
+    -> Aggregated 36 raw. Kept 31 unique candidates.
+    -> Scraped 30 valid docs. Sampling down to 10.
+
+[24/96] Processing Topic: UK, Canada, and Australia recognize Palestine as sovereign state
+  - Fetching GOLD Query: "UK" recognizes Palestine
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: UK recognizes Palestine
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "Canada" recognition Palestine state
+  - Fetching GOLD Query: "Australia" Palestine sovereign
+    [Warning] API returned non-JSON content (Attempt 1/3)
+    [Warning] API returned non-JSON content (Attempt 2/3)
+    [Warning] API returned non-JSON content (Attempt 3/3)
+      -> Low results (0). Retrying with loose query: Australia Palestine sovereign
+    [Warning] API returned non-JSON content (Attempt 1/3)
+    [Warning] API returned non-JSON content (Attempt 2/3)
+    [Warning] API returned non-JSON content (Attempt 3/3)
+    -> Aggregated 100 raw. Kept 47 unique candidates.
+    -> Scraped 31 valid docs (Target: 50). Keeping all.
+  - Fetching HARD Query: "Spain" Norway Ireland recognition
+  - Fetching HARD Query: "UN" Palestine membership vote
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: UN Palestine membership vote
+    [Error] API returned HTML instead of JSON.
+    -> Aggregated 20 raw. Kept 19 unique candidates.
+    -> Scraped 17 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Kosovo" recognition
+  - Fetching SOFT Query: "Somaliland" recognition
+    -> Aggregated 40 raw. Kept 35 unique candidates.
+    -> Scraped 33 valid docs. Sampling down to 10.
+
+[25/96] Processing Topic: Former Brazilian President Jair Bolsonaro imprisoned
+  - Fetching GOLD Query: "Jair Bolsonaro" sentenced prison
+  - Fetching GOLD Query: "Bolsonaro" coup plot conviction
+  - Fetching GOLD Query: "Brazil" Supreme Court Bolsonaro
+    -> Aggregated 300 raw. Kept 161 unique candidates.
+    -> Scraped 148 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "Bolsonaro" passport seizure
+      -> Low results (0). Retrying with loose query: Bolsonaro passport seizure
+  - Fetching HARD Query: "January 8" riots investigation
+      -> Low results (2). Retrying with loose query: January 8 riots investigation
+    [Error] API returned HTML instead of JSON.
+    -> Aggregated 2 raw. Kept 2 unique candidates.
+    -> Scraped 2 valid docs (Target: 10). Keeping all.
+  - Fetching SOFT Query: "Lula" corruption charges
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Lula corruption charges
+  - Fetching SOFT Query: "Trump" hush money verdict
+    -> Aggregated 40 raw. Kept 30 unique candidates.
+    -> Scraped 28 valid docs. Sampling down to 10.
+
+[26/96] Processing Topic: Mark Carney elected Prime Minister of Canada
+  - Fetching GOLD Query: "Mark Carney" prime minister
+  - Fetching GOLD Query: "Canada" election Liberal victory
+  - Fetching GOLD Query: "Mark Carney" elected leader
+    -> Aggregated 300 raw. Kept 194 unique candidates.
+    -> Scraped 119 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "Justin Trudeau" resignation
+  - Fetching HARD Query: "Pierre Poilievre" opposition
+    -> Aggregated 40 raw. Kept 17 unique candidates.
+    -> Scraped 11 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Keir Starmer" UK
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Keir Starmer UK
+    [Error] API returned HTML instead of JSON.
+  - Fetching SOFT Query: "Anthony Albanese" Australia
+    -> Aggregated 20 raw. Kept 12 unique candidates.
+    -> Scraped 11 valid docs. Sampling down to 10.
+
+[27/96] Processing Topic: Sanae Takaichi elected first female Prime Minister of Japan
+  - Fetching GOLD Query: "Sanae Takaichi" prime minister
+  - Fetching GOLD Query: "Japan" first female PM
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Japan first female PM
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "Takaichi" elected leader
+    -> Aggregated 200 raw. Kept 143 unique candidates.
+    -> Scraped 128 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "Shigeru Ishiba" election
+  - Fetching HARD Query: "Fumio Kishida" cabinet
+    -> Aggregated 40 raw. Kept 20 unique candidates.
+    -> Scraped 17 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Claudia Sheinbaum" Mexico
+  - Fetching SOFT Query: "Halla Tomasdottir" Iceland
+    -> Aggregated 30 raw. Kept 28 unique candidates.
+    -> Scraped 26 valid docs. Sampling down to 10.
+
+[28/96] Processing Topic: Friedrich Merz elected Chancellor of Germany
+  - Fetching GOLD Query: "Friedrich Merz" elected Chancellor
+  - Fetching GOLD Query: "Germany" federal election results
+  - Fetching GOLD Query: "CDU/CSU" election victory
+      -> Low results (0). Retrying with loose query: CDU/CSU election victory
+    -> Aggregated 200 raw. Kept 103 unique candidates.
+    -> Scraped 86 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "Olaf Scholz" dismissal
+      -> Low results (0). Retrying with loose query: Olaf Scholz dismissal
+  - Fetching HARD Query: "Christian Lindner" fired
+      -> Low results (1). Retrying with loose query: Christian Lindner fired
+    -> Aggregated 3 raw. Kept 2 unique candidates.
+    -> Scraped 2 valid docs (Target: 10). Keeping all.
+  - Fetching SOFT Query: "AfD" election gains
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: AfD election gains
+  - Fetching SOFT Query: "Sahra Wagenknecht" party
+    -> Aggregated 40 raw. Kept 35 unique candidates.
+    -> Scraped 35 valid docs. Sampling down to 10.
+
+[29/96] Processing Topic: Malagasy President Andry Rajoelina ousted in coup
+  - Fetching GOLD Query: "Andry Rajoelina" ousted coup
+  - Fetching GOLD Query: "Madagascar" coup d'état 2025
+      -> Low results (0). Retrying with loose query: Madagascar coup d'état
+  - Fetching GOLD Query: "Michael Randrianirina" president
+    -> Aggregated 200 raw. Kept 114 unique candidates.
+    -> Scraped 98 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "Rajoelina" election victory
+  - Fetching HARD Query: "Madagascar" protests
+    -> Aggregated 40 raw. Kept 30 unique candidates.
+    -> Scraped 29 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Gabon" coup
+  - Fetching SOFT Query: "Niger" coup
+    -> Aggregated 40 raw. Kept 35 unique candidates.
+    -> Scraped 35 valid docs. Sampling down to 10.
+
+[30/96] Processing Topic: Coup d'état overthrows President of Guinea-Bissau
+  - Fetching GOLD Query: "Guinea-Bissau" coup d'état
+      -> Low results (0). Retrying with loose query: Guinea-Bissau coup d'état
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "Umaro Sissoco Embaló" overthrown
+      -> Low results (26). Retrying with loose query: Umaro Sissoco Embaló overthrown
+  - Fetching GOLD Query: "Guinea-Bissau" military takeover
+    -> Aggregated 126 raw. Kept 94 unique candidates.
+    -> Scraped 88 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "Embaló" dissolves parliament
+      -> Low results (0). Retrying with loose query: Embaló dissolves parliament
+  - Fetching HARD Query: "Guinea-Bissau" election results
+    -> Aggregated 20 raw. Kept 20 unique candidates.
+    -> Scraped 20 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Guinea" Mamady Doumbouya
+  - Fetching SOFT Query: "Mali" Goita
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Mali Goita
+    -> Aggregated 40 raw. Kept 29 unique candidates.
+    -> Scraped 26 valid docs. Sampling down to 10.
+
+[31/96] Processing Topic: Timor-Leste becomes 11th member of ASEAN
+  - Fetching GOLD Query: "Timor-Leste" joins ASEAN
+  - Fetching GOLD Query: "ASEAN" 11th member
+  - Fetching GOLD Query: "East Timor" admission ASEAN
+      -> Low results (40). Retrying with loose query: East Timor admission ASEAN
+    -> Aggregated 231 raw. Kept 147 unique candidates.
+    -> Scraped 130 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "Timor-Leste" observer status
+  - Fetching HARD Query: "ASEAN" summit Laos
+    -> Aggregated 40 raw. Kept 33 unique candidates.
+    -> Scraped 28 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Papua New Guinea" ASEAN
+  - Fetching SOFT Query: "EU" expansion
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: EU expansion
+    [Error] API returned HTML instead of JSON.
+    -> Aggregated 20 raw. Kept 17 unique candidates.
+    -> Scraped 14 valid docs. Sampling down to 10.
+
+[32/96] Processing Topic: Nepal appoints Prime Minister via Discord poll
+  - Fetching GOLD Query: "Nepal" PM poll Discord
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Nepal PM poll Discord
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "Sushila Karki" Discord election
+      -> Low results (29). Retrying with loose query: Sushila Karki Discord election
+  - Fetching GOLD Query: "Gen Z" Nepal protest Discord
+    -> Aggregated 129 raw. Kept 71 unique candidates.
+    -> Scraped 63 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "Nepal" earthquake
+  - Fetching HARD Query: "Pushpa Kamal Dahal" vote
+      -> Low results (8). Retrying with loose query: Pushpa Kamal Dahal vote
+    -> Aggregated 28 raw. Kept 23 unique candidates.
+    -> Scraped 21 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Bangladesh" student protests
+  - Fetching SOFT Query: "Thailand" Move Forward
+    -> Aggregated 40 raw. Kept 32 unique candidates.
+    -> Scraped 29 valid docs. Sampling down to 10.
+
+[33/96] Processing Topic: Japan's SLIM lander achieves pin-point landing on Moon
+  - Fetching GOLD Query: "SLIM" lander moon
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: SLIM lander moon
+  - Fetching GOLD Query: "Japan" soft landing moon
+      -> Low results (13). Retrying with loose query: Japan soft landing moon
+  - Fetching GOLD Query: "Moon Sniper" landing
+      -> Low results (0). Retrying with loose query: Moon Sniper landing
+    -> Aggregated 25 raw. Kept 21 unique candidates.
+    -> Scraped 19 valid docs (Target: 50). Keeping all.
+  - Fetching HARD Query: "JAXA" H3 launch
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: JAXA H3 launch
+  - Fetching HARD Query: "ispace" Hakuto-R
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: ispace Hakuto-R
+    [Error] API returned HTML instead of JSON.
+    -> Aggregated 20 raw. Kept 17 unique candidates.
+    -> Scraped 17 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Chandrayaan-3" landing
+  - Fetching SOFT Query: "Peregrine" lander fail
+      -> Low results (0). Retrying with loose query: Peregrine lander fail
+    -> Aggregated 20 raw. Kept 13 unique candidates.
+    -> Scraped 11 valid docs. Sampling down to 10.
+
+[34/96] Processing Topic: Intuitive Machines Odysseus becomes first commercial lander on Moon
+  - Fetching GOLD Query: "Intuitive Machines" moon landing
+      -> Low results (38). Retrying with loose query: Intuitive Machines moon landing
+  - Fetching GOLD Query: "Nova-C" Odysseus lander
+      -> Low results (29). Retrying with loose query: Nova-C Odysseus lander
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "Odysseus" south pole moon
+      -> Low results (31). Retrying with loose query: Odysseus south pole moon
+    -> Aggregated 104 raw. Kept 15 unique candidates.
+    -> Scraped 11 valid docs (Target: 50). Keeping all.
+  - Fetching HARD Query: "Peregrine" mission failure
+  - Fetching HARD Query: "Astrobotic" lander
+    -> Aggregated 40 raw. Kept 9 unique candidates.
+    -> Scraped 7 valid docs (Target: 10). Keeping all.
+  - Fetching SOFT Query: "SLIM" Japan moon
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: SLIM Japan moon
+  - Fetching SOFT Query: "Chandrayaan-3" India
+    -> Aggregated 33 raw. Kept 23 unique candidates.
+    -> Scraped 19 valid docs. Sampling down to 10.
+
+[35/96] Processing Topic: Boeing Starliner launches first Crewed Flight Test to ISS
+  - Fetching GOLD Query: "Starliner" crewed flight test
+  - Fetching GOLD Query: "Boeing" astronaut launch
+  - Fetching GOLD Query: "Butch Wilmore" Suni Williams
+    -> Aggregated 275 raw. Kept 95 unique candidates.
+    -> Scraped 86 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "Starliner" thruster issues
+  - Fetching HARD Query: "Starliner" uncrewed return
+    -> Aggregated 40 raw. Kept 26 unique candidates.
+    -> Scraped 24 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Crew Dragon" launch
+  - Fetching SOFT Query: "Soyuz" launch
+    -> Aggregated 40 raw. Kept 25 unique candidates.
+    -> Scraped 21 valid docs. Sampling down to 10.
+
+[36/96] Processing Topic: Polaris Dawn mission conducts first commercial spacewalk
+  - Fetching GOLD Query: "Polaris Dawn" spacewalk
+  - Fetching GOLD Query: "Jared Isaacman" EVA
+      -> Low results (1). Retrying with loose query: Jared Isaacman EVA
+  - Fetching GOLD Query: "SpaceX" commercial spacewalk
+    -> Aggregated 191 raw. Kept 45 unique candidates.
+    -> Scraped 40 valid docs (Target: 50). Keeping all.
+  - Fetching HARD Query: "Inspiration4" mission
+  - Fetching HARD Query: "Crew Dragon" splashdown
+      -> Low results (2). Retrying with loose query: Crew Dragon splashdown
+    -> Aggregated 24 raw. Kept 16 unique candidates.
+    -> Scraped 12 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Axiom" mission ISS
+  - Fetching SOFT Query: "NASA" spacewalk
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: NASA spacewalk
+    -> Aggregated 40 raw. Kept 17 unique candidates.
+    -> Scraped 13 valid docs. Sampling down to 10.
+
+[37/96] Processing Topic: SpaceX Starship successfully catches Super Heavy booster
+  - Fetching GOLD Query: "SpaceX" catch booster
+  - Fetching GOLD Query: "Starship" mechazilla
+      -> Low results (14). Retrying with loose query: Starship mechazilla
+  - Fetching GOLD Query: "Super Heavy" mid-air catch
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Super Heavy mid-air catch
+    [Error] API returned HTML instead of JSON.
+    -> Aggregated 114 raw. Kept 64 unique candidates.
+    -> Scraped 62 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "SpaceX" Starlink launch
+  - Fetching HARD Query: "Starship" splashdown Indian Ocean
+    -> Aggregated 40 raw. Kept 28 unique candidates.
+    -> Scraped 25 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Blue Origin" launch
+  - Fetching SOFT Query: "SLS" Artemis launch
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: SLS Artemis launch
+    -> Aggregated 40 raw. Kept 27 unique candidates.
+    -> Scraped 24 valid docs. Sampling down to 10.
+
+[38/96] Processing Topic: Europa Clipper launches to investigate Jupiter's icy moon
+  - Fetching GOLD Query: "Europa Clipper" launch
+  - Fetching GOLD Query: "Jupiter" icy moon probe
+      -> Low results (49). Retrying with loose query: Jupiter icy moon probe
+  - Fetching GOLD Query: "Falcon Heavy" Europa Clipper
+      -> Low results (30). Retrying with loose query: Falcon Heavy Europa Clipper
+    -> Aggregated 143 raw. Kept 36 unique candidates.
+    -> Scraped 29 valid docs (Target: 50). Keeping all.
+  - Fetching HARD Query: "JUICE" mission Jupiter
+  - Fetching HARD Query: "Juno" spacecraft
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Juno spacecraft
+    -> Aggregated 40 raw. Kept 23 unique candidates.
+    -> Scraped 23 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Enceladus" probe
+  - Fetching SOFT Query: "Mars Sample Return"
+    -> Aggregated 40 raw. Kept 39 unique candidates.
+    -> Scraped 35 valid docs. Sampling down to 10.
+
+[39/96] Processing Topic: Parker Solar Probe touches the Sun's atmosphere
+  - Fetching GOLD Query: "Parker Solar Probe" touches sun
+      -> Low results (0). Retrying with loose query: Parker Solar Probe touches sun
+  - Fetching GOLD Query: "NASA" sun atmosphere probe
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: NASA sun atmosphere probe
+  - Fetching GOLD Query: "closest artificial object" sun
+      -> Low results (1). Retrying with loose query: closest artificial object sun
+    -> Aggregated 200 raw. Kept 153 unique candidates.
+    -> Scraped 138 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "Solar Orbiter" ESA
+  - Fetching HARD Query: "Aditya-L1" India
+    -> Aggregated 40 raw. Kept 30 unique candidates.
+    -> Scraped 22 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Voyager 1" interstellar
+  - Fetching SOFT Query: "New Horizons" Kuiper Belt
+      -> Low results (9). Retrying with loose query: New Horizons Kuiper Belt
+    -> Aggregated 30 raw. Kept 23 unique candidates.
+    -> Scraped 19 valid docs. Sampling down to 10.
+
+[40/96] Processing Topic: Fram2 mission launches first human polar orbit spaceflight
+  - Fetching GOLD Query: "Fram2" polar orbit launch
+      -> Low results (30). Retrying with loose query: Fram2 polar orbit launch
+  - Fetching GOLD Query: "SpaceX" polar crewed mission
+      -> Low results (40). Retrying with loose query: SpaceX polar crewed mission
+  - Fetching GOLD Query: "Chun Wang" mission
+      -> Low results (30). Retrying with loose query: Chun Wang mission
+    -> Aggregated 108 raw. Kept 19 unique candidates.
+    -> Scraped 15 valid docs (Target: 50). Keeping all.
+  - Fetching HARD Query: "Polaris Dawn" mission
+  - Fetching HARD Query: "Inspiration4" launch
+    -> Aggregated 40 raw. Kept 11 unique candidates.
+    -> Scraped 6 valid docs (Target: 10). Keeping all.
+  - Fetching SOFT Query: "Soyuz" polar orbit
+  - Fetching SOFT Query: "Shenzhou" launch
+    -> Aggregated 40 raw. Kept 21 unique candidates.
+    -> Scraped 20 valid docs. Sampling down to 10.
+
+[41/96] Processing Topic: Firefly Aerospace Blue Ghost lander touches down on Moon
+  - Fetching GOLD Query: "Firefly Aerospace" moon landing
+  - Fetching GOLD Query: "Blue Ghost" lander success
+      -> Low results (9). Retrying with loose query: Blue Ghost lander success
+  - Fetching GOLD Query: "Firefly" lunar mission
+    -> Aggregated 179 raw. Kept 62 unique candidates.
+    -> Scraped 57 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "Peregrine" lander failure
+  - Fetching HARD Query: "Nova-C" landing
+    -> Aggregated 40 raw. Kept 4 unique candidates.
+    -> Scraped 3 valid docs (Target: 10). Keeping all.
+  - Fetching SOFT Query: "ispace" lander
+  - Fetching SOFT Query: "Chandrayaan-4"
+    -> Aggregated 40 raw. Kept 23 unique candidates.
+    -> Scraped 19 valid docs. Sampling down to 10.
+
+[42/96] Processing Topic: Axiom Mission 4 launches to ISS with Polish and Indian astronauts
+  - Fetching GOLD Query: "Axiom Mission 4" launch
+      -> Low results (3). Retrying with loose query: Axiom Mission 4 launch
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "Ax-4" astronauts ISS
+      -> Low results (31). Retrying with loose query: Ax-4 astronauts ISS
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "Shubhanshu Shukla" space
+    -> Aggregated 134 raw. Kept 61 unique candidates.
+    -> Scraped 47 valid docs (Target: 50). Keeping all.
+  - Fetching HARD Query: "Axiom Mission 3" return
+      -> Low results (1). Retrying with loose query: Axiom Mission 3 return
+    [Error] API returned HTML instead of JSON.
+  - Fetching HARD Query: "Crew-9" launch
+    -> Aggregated 21 raw. Kept 12 unique candidates.
+    -> Scraped 11 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Soyuz MS-26"
+      -> Low results (3). Retrying with loose query: Soyuz MS-26
+    [Error] API returned HTML instead of JSON.
+  - Fetching SOFT Query: "Starliner" crew
+    -> Aggregated 23 raw. Kept 15 unique candidates.
+    -> Scraped 14 valid docs. Sampling down to 10.
+
+[43/96] Processing Topic: Blue Origin New Glenn rocket booster lands for the first time
+  - Fetching GOLD Query: "New Glenn" booster landing
+  - Fetching GOLD Query: "Blue Origin" rocket land
+  - Fetching GOLD Query: "Jeff Bezos" New Glenn success
+    -> Aggregated 287 raw. Kept 140 unique candidates.
+    -> Scraped 129 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "New Glenn" launch failure
+  - Fetching HARD Query: "New Shepard" launch
+    -> Aggregated 40 raw. Kept 23 unique candidates.
+    -> Scraped 20 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Starship" landing
+  - Fetching SOFT Query: "Falcon 9" landing
+    -> Aggregated 40 raw. Kept 33 unique candidates.
+    -> Scraped 31 valid docs. Sampling down to 10.
+
+[44/96] Processing Topic: Biosignatures discovered on exoplanet K2-18b
+  - Fetching GOLD Query: "K2-18b" dimethyl sulfide
+      -> Low results (7). Retrying with loose query: K2-18b dimethyl sulfide
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "exoplanet" biosignatures discovery
+      -> Low results (9). Retrying with loose query: exoplanet biosignatures discovery
+  - Fetching GOLD Query: "Webb telescope" K2-18b
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Webb telescope K2-18b
+    [Error] API returned HTML instead of JSON.
+    -> Aggregated 16 raw. Kept 15 unique candidates.
+    -> Scraped 15 valid docs (Target: 50). Keeping all.
+  - Fetching HARD Query: "TRAPPIST-1" atmosphere
+  - Fetching HARD Query: "Proxima b" signal
+      -> Low results (4). Retrying with loose query: Proxima b signal
+    [Error] API returned HTML instead of JSON.
+    -> Aggregated 22 raw. Kept 21 unique candidates.
+    -> Scraped 19 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Mars" methane
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Mars methane
+  - Fetching SOFT Query: "Venus" phosphine
+    -> Aggregated 30 raw. Kept 28 unique candidates.
+    -> Scraped 26 valid docs. Sampling down to 10.
+
+[45/96] Processing Topic: Astronomers capture first close-up image of star WOH G64
+  - Fetching GOLD Query: "WOH G64" star image
+      -> Low results (1). Retrying with loose query: WOH G64 star image
+  - Fetching GOLD Query: "Very Large Telescope" star close-up
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Very Large Telescope star close-up
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "star outside Milky Way" image
+      -> Low results (2). Retrying with loose query: star outside Milky Way image
+    -> Aggregated 48 raw. Kept 42 unique candidates.
+    -> Scraped 39 valid docs (Target: 50). Keeping all.
+  - Fetching HARD Query: "Betelgeuse" dimming
+      -> Low results (3). Retrying with loose query: Betelgeuse dimming
+  - Fetching HARD Query: "James Webb" Pillars of Creation
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: James Webb Pillars of Creation
+    [Error] API returned HTML instead of JSON.
+    -> Aggregated 3 raw. Kept 3 unique candidates.
+    -> Scraped 3 valid docs (Target: 10). Keeping all.
+  - Fetching SOFT Query: "Event Horizon Telescope" black hole
+  - Fetching SOFT Query: "Hubble" nebula
+    -> Aggregated 40 raw. Kept 37 unique candidates.
+    -> Scraped 34 valid docs. Sampling down to 10.
+
+[46/96] Processing Topic: Comet C/2023 A3 Tsuchinshan–ATLAS makes closest approach
+  - Fetching GOLD Query: "C/2023 A3" comet approach
+      -> Low results (0). Retrying with loose query: C/2023 A3 comet approach
+  - Fetching GOLD Query: "Tsuchinshan–ATLAS" visibility
+      -> Low results (4). Retrying with loose query: Tsuchinshan–ATLAS visibility
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "comet of the century" 2024
+      -> Low results (1). Retrying with loose query: comet of the century
+    [Error] API returned HTML instead of JSON.
+    -> Aggregated 5 raw. Kept 5 unique candidates.
+    -> Scraped 2 valid docs (Target: 50). Keeping all.
+  [SKIP] Dropped topic 'Comet C/2023 A3 Tsuchinshan–ATLAS makes closest approach' immediately.
+         Reason: Insufficient Gold Docs (2 < 10).
+
+[47/96] Processing Topic: Comet C/2024 G3 dubbed Great Comet of 2025 reaches perihelion
+  - Fetching GOLD Query: "C/2024 G3" comet perihelion
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: C/ G3 comet perihelion
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "Great Comet of 2025" visibility
+      -> Low results (2). Retrying with loose query: Great Comet of  visibility
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "ATLAS" comet 2025
+    -> Aggregated 102 raw. Kept 86 unique candidates.
+    -> Scraped 81 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "C/2023 A3" Tsuchinshan
+      -> Low results (0). Retrying with loose query: C/2023 A3 Tsuchinshan
+  - Fetching HARD Query: "Oumuamua" object
+    -> Aggregated 20 raw. Kept 17 unique candidates.
+    -> Scraped 16 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Meteor shower" Perseids
+  - Fetching SOFT Query: "Asteroid" flyby
+    -> Aggregated 40 raw. Kept 33 unique candidates.
+    -> Scraped 32 valid docs. Sampling down to 10.
+
+[48/96] Processing Topic: Total solar eclipse visible across North America
+  - Fetching GOLD Query: "total solar eclipse" North America
+  - Fetching GOLD Query: "April 8" eclipse path
+  - Fetching GOLD Query: "solar eclipse" Mazatlan
+      -> Low results (0). Retrying with loose query: solar eclipse Mazatlan
+    -> Aggregated 151 raw. Kept 45 unique candidates.
+    -> Scraped 35 valid docs (Target: 50). Keeping all.
+  - Fetching HARD Query: "annular eclipse" ring of fire
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: annular eclipse ring of fire
+    [Error] API returned HTML instead of JSON.
+  - Fetching HARD Query: "lunar eclipse" blood moon
+    -> Aggregated 20 raw. Kept 18 unique candidates.
+    -> Scraped 14 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Aurora Borealis" sighting
+  - Fetching SOFT Query: "Solar storm" G5
+    -> Aggregated 40 raw. Kept 31 unique candidates.
+    -> Scraped 29 valid docs. Sampling down to 10.
+
+[49/96] Processing Topic: G5 solar storms create aurorae at low latitudes
+  - Fetching GOLD Query: "G5" solar storm aurora
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: G5 solar storm aurora
+  - Fetching GOLD Query: "geomagnetic storm" NOAA
+  - Fetching GOLD Query: "northern lights" low latitude
+      -> Low results (36). Retrying with loose query: northern lights low latitude
+    -> Aggregated 243 raw. Kept 137 unique candidates.
+    -> Scraped 106 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "solar eclipse" April
+  - Fetching HARD Query: "sunspot" cycle
+    -> Aggregated 40 raw. Kept 30 unique candidates.
+    -> Scraped 27 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "climate change" heatwave
+  - Fetching SOFT Query: "volcanic eruption" ash
+    -> Aggregated 40 raw. Kept 33 unique candidates.
+    -> Scraped 30 valid docs. Sampling down to 10.
+
+[50/96] Processing Topic: Blue Origin New Glenn launches on first attempt
+  - Fetching GOLD Query: "New Glenn" first launch
+  - Fetching GOLD Query: "Blue Origin" heavy-lift launch
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Blue Origin heavy-lift launch
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "Jeff Bezos" rocket debut
+      -> Low results (24). Retrying with loose query: Jeff Bezos rocket debut
+    -> Aggregated 133 raw. Kept 112 unique candidates.
+    -> Scraped 107 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "New Glenn" booster landing
+  - Fetching HARD Query: "New Shepard" crew
+    -> Aggregated 40 raw. Kept 36 unique candidates.
+    -> Scraped 27 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Vulcan Centaur" launch
+  - Fetching SOFT Query: "Ariane 6" debut
+      -> Low results (5). Retrying with loose query: Ariane 6 debut
+    [Error] API returned HTML instead of JSON.
+    -> Aggregated 25 raw. Kept 15 unique candidates.
+    -> Scraped 13 valid docs. Sampling down to 10.
+
+[51/96] Processing Topic: Russian plane crash in Sudan kills 17 people
+  - Fetching GOLD Query: "Antonov An-26" crash Sudan
+      -> Low results (0). Retrying with loose query: Antonov An-26 crash Sudan
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "Sudanese Air Force" plane crash
+      -> Low results (1). Retrying with loose query: Sudanese Air Force plane crash
+  - Fetching GOLD Query: "Wadi Seidna" air base crash
+      -> Low results (0). Retrying with loose query: Wadi Seidna air base crash
+    -> Aggregated 6 raw. Kept 6 unique candidates.
+    -> Scraped 6 valid docs (Target: 50). Keeping all.
+  [SKIP] Dropped topic 'Russian plane crash in Sudan kills 17 people' immediately.
+         Reason: Insufficient Gold Docs (6 < 10).
+
+[52/96] Processing Topic: Angara Airlines Flight 2311 crashes in Eastern Siberia
+  - Fetching GOLD Query: "Angara Airlines Flight 2311" crash
+      -> Low results (0). Retrying with loose query: Angara Airlines Flight 2311 crash
+  - Fetching GOLD Query: "Antonov An-24" crash Tynda
+      -> Low results (1). Retrying with loose query: Antonov An-24 crash Tynda
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "Eastern Siberia" plane crash
+      -> Low results (0). Retrying with loose query: Eastern Siberia plane crash
+    -> Aggregated 2 raw. Kept 2 unique candidates.
+    -> Scraped 2 valid docs (Target: 50). Keeping all.
+  [SKIP] Dropped topic 'Angara Airlines Flight 2311 crashes in Eastern Siberia' immediately.
+         Reason: Insufficient Gold Docs (2 < 10).
+
+[53/96] Processing Topic: European Union passes the Artificial Intelligence Act
+  - Fetching GOLD Query: "Artificial Intelligence Act" passed EU
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Artificial Intelligence Act passed EU
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "EU" AI regulation law
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: EU AI regulation law
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "AI Act" comprehensive framework
+    -> Aggregated 100 raw. Kept 83 unique candidates.
+    -> Scraped 74 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "European Commission" tech antitrust
+  - Fetching HARD Query: "GDPR" fines
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: GDPR fines
+    -> Aggregated 40 raw. Kept 37 unique candidates.
+    -> Scraped 35 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "US" executive order AI
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: US executive order AI
+    [Error] API returned HTML instead of JSON.
+  - Fetching SOFT Query: "China" AI regulations
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: China AI regulations
+    [Error] API returned HTML instead of JSON.
+    -> Aggregated 0 raw. Kept 0 unique candidates.
+    -> Scraped 0 valid docs (Target: 10). Keeping all.
+
+[54/96] Processing Topic: Colossal Biosciences creates first artificial womb in marsupials
+  - Fetching GOLD Query: "Colossal Biosciences" artificial womb
+      -> Low results (0). Retrying with loose query: Colossal Biosciences artificial womb
+  - Fetching GOLD Query: "thylacine" de-extinction womb
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: thylacine de-extinction womb
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "marsupial" artificial uterus
+      -> Low results (0). Retrying with loose query: marsupial artificial uterus
+    -> Aggregated 0 raw. Kept 0 unique candidates.
+    -> Scraped 0 valid docs (Target: 50). Keeping all.
+  [SKIP] Dropped topic 'Colossal Biosciences creates first artificial womb in marsupials' immediately.
+         Reason: Insufficient Gold Docs (0 < 10).
+
+[55/96] Processing Topic: Colossal Biosciences creates woolly mice for de-extinction project
+  - Fetching GOLD Query: "Colossal Biosciences" woolly mice
+      -> Low results (1). Retrying with loose query: Colossal Biosciences woolly mice
+  - Fetching GOLD Query: "woolly mammoth" mouse phenotypes
+      -> Low results (0). Retrying with loose query: woolly mammoth mouse phenotypes
+  - Fetching GOLD Query: "genetic modification" grey wolves
+      -> Low results (0). Retrying with loose query: genetic modification grey wolves
+    -> Aggregated 1 raw. Kept 1 unique candidates.
+    -> Scraped 1 valid docs (Target: 50). Keeping all.
+  [SKIP] Dropped topic 'Colossal Biosciences creates woolly mice for de-extinction project' immediately.
+         Reason: Insufficient Gold Docs (1 < 10).
+
+[56/96] Processing Topic: OpenAI releases GPT-5 language model
+  - Fetching GOLD Query: "OpenAI" releases GPT-5
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: OpenAI releases GPT-5
+    [Error] API returned HTML instead of JSON.
+  - Fetching GOLD Query: "GPT-5" model launch
+  - Fetching GOLD Query: "Sam Altman" GPT-5
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Sam Altman GPT-5
+    [Error] API returned HTML instead of JSON.
+    -> Aggregated 100 raw. Kept 83 unique candidates.
+    -> Scraped 79 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "GPT-4o" demo
+  - Fetching HARD Query: "Sora" video generation
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Sora video generation
+    -> Aggregated 32 raw. Kept 16 unique candidates.
+    -> Scraped 15 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Google" Gemini update
+  - Fetching SOFT Query: "Anthropic" Claude 3
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: Anthropic Claude 3
+    [Error] API returned HTML instead of JSON.
+    -> Aggregated 20 raw. Kept 19 unique candidates.
+    -> Scraped 19 valid docs. Sampling down to 10.
+
+[57/96] Processing Topic: Nvidia stock loses 600 billion dollars in single day
+  - Fetching GOLD Query: "Nvidia" stock drop 600 billion
+  - Fetching GOLD Query: "Nvidia" market cap loss
+  - Fetching GOLD Query: "Jensen Huang" stock crash
+    -> Aggregated 254 raw. Kept 229 unique candidates.
+    -> Scraped 205 valid docs. Sampling down to 50.
+  - Fetching HARD Query: "Nvidia" earnings beat
+  - Fetching HARD Query: "Nvidia" stock split
+    -> Aggregated 40 raw. Kept 27 unique candidates.
+    -> Scraped 24 valid docs. Sampling down to 10.
+  - Fetching SOFT Query: "Intel" earnings miss
+  - Fetching SOFT Query: "AMD" stock
+    [Error] API returned HTML instead of JSON.
+      -> Low results (0). Retrying with loose query: AMD stock
+    -> Aggregated 40 raw. Kept 36 unique candidates.
+    -> Scraped 31 valid docs. Sampling down to 10.
+
+[58/96] Processing Topic: First World Humanoid Robot Games held in Beijing
+  - Fetching GOLD Query: "World Humanoid Robot Games" Beijing
+      -> Low results (24). Retrying with loose query: World Humanoid Robot Games Beijing
+  - Fetching GOLD Query: "robot Olympics" China
+      -> Low results (2). Retrying with loose query: robot Olympics China
+  - Fetching GOLD Query: "humanoid robots" competition 2025
+    -> Aggregated 190 raw. Kept 108 unique candidates.
