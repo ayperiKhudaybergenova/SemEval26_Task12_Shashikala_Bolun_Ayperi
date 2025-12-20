@@ -1,0 +1,222 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{float}
+
+\title{Interim Report\\
+Abductive Event Reasoning: Towards Real-World Event Causal Inference for Large Language Models\\ 
+
+\large SemEval-2026 Task 12
+}
+
+
+\author{
+  Ayperi Khudaybergenova \quad
+  Bolun Liang \quad
+  Shashikala Kankanamge \\
+  \texttt{ayperiayperi23@gmail.com, bolun.liang@student.uni-tuebingen.de} \\
+  \texttt{akssewwandi4@gmail.com}
+}
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper presents an interim report on our ongoing work for SemEval 2026 Task 12: Abductive Event Reasoning : Towards Real-World Event Causal Inference for Large Language. The task focuses on identifying the most plausible causal explanation for a given real-world event based on contextual documents. We describe the task formulation, datasets, and baseline systems, including both large language models and encoder-based approaches. We further examine different prompting strategies and report preliminary experimental results, highlighting the strengths and limitations of current models. Finally, we outline planned directions for improving abductive reasoning performance in future work.
+\end{abstract}
+
+
+\section{Introduction}
+Abductive reasoning requires models to infer the most plausible explanation for a given incomplete context. SemEval-2026 Task 12 focuses on multiple-choice abductive reasoning across narrative scenarios and noisy distractor documents. This report presents our methods, baseline experimentation, and preliminary findings.
+
+\section{Task Description}
+
+SemEval 2026 Task 12 focuses on the problem of Abductive Event Reasoning, where the goal is to identify the most plausible cause of a given real-world event. For each instance, the task provides a target event description along with a set of retrieved contextual documents, which may include both relevant evidence and distractor information.
+
+Based on the provided context, systems are required to answer a multiple-choice question by selecting the correct causal explanation from four candidate options. The candidate explanations are designed to be semantically plausible, increasing the difficulty of the task and requiring models to perform fine-grained causal reasoning rather than surface-level pattern matching.
+
+System performance is evaluated using accuracy, defined as the proportion of instances for which the model correctly identifies the ground-truth causal explanation.
+
+
+\section{Dataset}
+
+Our experiments are conducted on the datasets released for SemEval 2026 Task 12: Abductive Event Reasoning. We utilize two subsets provided by the task organizers for development and preliminary evaluation.
+
+\textbf{Validation Set (val\_data).}  
+The official validation set is used for systematic evaluation and comparison of baseline models. It reflects the full task complexity, including diverse real-world domains and the presence of distractor documents.
+
+\textbf{Sample Set (sample\_data).}  
+The sample set is a smaller subset designed for rapid experimentation and prompt-level analysis. We use this subset primarily for iterative prompt development .
+
+Each instance in both datasets consists of a target event description, a collection of retrieved contextual documents, and a multiple-choice question with four candidate causal hypotheses. The objective is to identify the most plausible and direct cause of the given event based on the provided evidence and background context.
+
+\section{Baseline Models}
+
+We evaluate three representative baseline models spanning large language models and encoder-based architectures: Qwen, LLaMA, and DeBERTa. These models were selected to assess performance across different model sizes, reasoning capabilities, and architectural paradigms.
+
+\subsection{Qwen}
+
+We use \textit{Qwen3-30B-A3B-Thinking-2507-GGUF} as our primary large language model baseline. This model is designed to support explicit reasoning and demonstrates strong performance in zero-shot settings. In our experiments, zero-shot prompting with English instructions consistently outperformed alternative prompting strategies, making it the most effective configuration for this model.
+
+\subsection{LLaMA}
+
+We employ \textit{LLaMA-3.1-8B-Instruct} as a lightweight instruction-following baseline. Compared to larger models, this variant offers a favorable trade-off between computational efficiency and task performance. Its instruction-tuned nature makes it well-suited for multiple-choice reasoning tasks, serving as a practical baseline for resource-constrained settings.
+
+\subsection{DeBERTa}
+
+As an encoder-based baseline, we use DeBERTa to provide a non-generative point of comparison. Since DeBERTa is not originally trained with a multiple-choice classification head, we reformulate the task by encoding each candidate option independently as a sentence pair with the question. The model assigns a score to each (question, option) pair, and the option with the highest score is selected as the predicted causal explanation.
+
+
+\section{Prompting Strategies}
+
+We explore a range of prompting strategies to evaluate their impact on abductive reasoning performance. These strategies are designed to assess both the robustness of large language models and their sensitivity to prompt formulation.
+
+We consider \textit{zero-shot} prompting, where models are provided only with task instructions and input context, as well as \textit{few-shot} prompting, which includes a small number of annotated examples to guide model behavior. In addition, we investigate \textit{expert-style prompting} \ref{fig:prompt-example} , in which the system prompt explicitly instructs the model to adopt different expert roles, such as causal analyst, evidence-driven reasoner, or domain-specific expert.
+
+Finally, we examine the effect of \textit{language variation} by comparing prompts written in English and Chinese. This allows us to analyze cross-lingual prompt sensitivity and its influence on model performance.
+
+\section{Preliminary Results}
+
+\subsection{Validation Dataset (val\_data)}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lccc}
+\toprule
+Model & Qwen & LLaMA & DeBERTa \\
+\midrule
+Accuracy (\%) & 77.11 & $\sim$61.67 & ? \\
+\bottomrule
+\end{tabular}
+\caption{Preliminary results on val\_data.}
+\label{tab:val-results}
+\end{table}
+
+\subsection{Sample Dataset (sample\_data)}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lccc}
+\toprule
+Model & Qwen & LLaMA & DeBERTa \\
+\midrule
+Accuracy (\%) & 71.25 & $\sim$60 & $\sim$60 \\
+\bottomrule
+\end{tabular}
+\caption{Results on sample\_data.}
+\label{tab:sample-results}
+\end{table}
+
+\subsection{Qwen Prompting Performance}
+
+Table~\ref{tab:qwen-prompting} summarizes the performance of Qwen under different prompting strategies on the \texttt{sample\_data} dataset. We evaluate zero-shot, few-shot, and multi-expert prompting in both English and Chinese.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{l c}
+\toprule
+Prompting Strategy & Accuracy (\%) \\
+\midrule
+Zero-shot, English & 71.25 \\
+Zero-shot, Chinese & 66.25 \\
+Few-shot, English & 62.29 \\
+Multi-Expert, English & 60.00 \\
+\bottomrule
+\end{tabular}
+\caption{Qwen performance across different prompting strategies on the sample\_data dataset.}
+\label{tab:qwen-prompting}
+\end{table}
+
+These results indicate that **zero-shot prompting in English** achieves the highest accuracy, outperforming both few-shot and multi-expert prompting strategies. The performance drop in few-shot and multi-expert setups suggests that Qwen is particularly effective with direct English instructions, while additional examples or complex expert-style prompts may introduce semantic distraction in this task. Furthermore, performance in Chinese is lower, highlighting cross-lingual sensitivity in zero-shot reasoning.
+
+
+
+
+% \subsection{Validation Dataset (val\_data)}
+% \begin{table}
+% \centering
+% \begin{tabular}{lccc}
+% \toprule
+% Model & Qwen & LLaMA & DeBERTa \\
+% \midrule
+% Accuracy (\%) & 77.11 & ? & ? \\
+% \bottomrule
+% \end{tabular}
+% \caption{Preliminary results on val\_data.}
+% \label{tab:val-results}
+% \end{table}
+
+
+
+
+% \subsection{Sample Dataset (sample\_data)}
+% \begin{table}
+% \centering
+% \begin{tabular}{lccc}
+% \toprule
+% Model & Qwen & LLaMA & DeBERTa \\
+% \midrule
+% Accuracy (\%) & 71.25 & ? & $\sim$60 \\
+% \bottomrule
+% \end{tabular}
+% \caption{Results on sample\_data.}
+% \label{tab:sample-results}
+% \end{table}
+
+\section{Discussion}
+
+Our preliminary experiments reveal notable differences in the performance and behavior of the evaluated baseline models. Among the three, Qwen consistently achieves the strongest results, particularly under zero-shot English prompting, suggesting that larger instruction-tuned language models with explicit reasoning capabilities are better suited for abductive event reasoning.
+
+LLaMA demonstrates reasonable flexibility and generalization ability; however, its outputs exhibit higher variability, occasionally producing inconsistent or less well-structured explanations. This instability indicates limitations in reliably selecting the most plausible causal hypothesis under challenging distractor settings.
+
+DeBERTa, as an encoder-based model, performs adequately in capturing surface-level semantic relevance between questions and candidate options. Nevertheless, it struggles with implicit causal reasoning that requires integrating distributed contextual evidence, resulting in weaker overall performance compared to generative LLM-based approaches.
+
+
+\section{Next Steps}
+
+We plan to extend our baseline system with structured and multi-expert reasoning,
+as illustrated in Figure~\ref{fig:cot-methods}.
+
+\begin{itemize}
+    \item Hybrid systems combining LLM scoring and encoder-based features
+    \item RLHF-style feedback for improved explanation ranking
+    \item Multi-expert ensemble and retrieval-enhanced reasoning
+\end{itemize}
+
+
+\section{Conclusion}
+
+This work presents an initial investigation into abductive event reasoning for SemEval 2026 Task 12. Our results indicate that abductive reasoning remains a challenging problem, particularly in settings that include distractor documents and semantically plausible alternative explanations. Among the evaluated baselines, Qwen demonstrates strong preliminary performance, highlighting the effectiveness of large instruction-tuned language models for this task. Future work will focus on developing hybrid modeling approaches, incorporating structured and multi-expert reasoning mechanisms, and refining prompting strategies to improve robustness and causal inference accuracy.
+
+\newpage
+
+\appendix
+
+\section{Chain-of-Thought Methods}
+\begin{figure}[h]
+\centering
+\includegraphics[width=1.0\linewidth]{cot_methods.png}
+\caption{Multi-expert chain-of-thought reasoning strategy planned for future work.}
+\label{fig:cot-methods}
+\end{figure}
+
+\section{Prompt Examples}
+\begin{figure}[t]
+\centering
+\includegraphics[width=1.0\linewidth]{prompt_image.jpeg}
+\caption{Full multi-expert prompt used in our experiments.}
+\label{fig:prompt-example}
+\end{figure}
+
+
+\bibliographystyle{acl_natbib}
+\bibliography{custom}
+
+\end{document}
