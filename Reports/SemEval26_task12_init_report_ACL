@@ -1,0 +1,175 @@
+\documentclass[11pt]{article}
+
+% ===== ACL STYLE =====
+\usepackage{acl}  
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% ===== STANDARD PACKAGES =====
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{hyperref}
+
+\title{
+Interim Report\\
+Abductive Event Reasoning: Towards Real-World Event Causal Inference for Large Language Models\\
+SemEval-2026 Task 12
+}
+
+\author{
+  Ayperi Khudaybergenova \\
+  \texttt{ayperiayperi23@gmail.com}
+  \And
+  Bolun Liang \\
+  \texttt{bolun.liang@student.uni-tuebingen.de}
+  \And
+  Shashikala Kankanamge \\
+  \texttt{akssewwandi4@gmail.com}
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper presents an interim report on our ongoing work for SemEval 2026 Task 12: Abductive Event Reasoning: Towards Real-World Event Causal Inference for Large Language Models. The task focuses on identifying the most plausible causal explanation for a given real-world event based on contextual documents. We describe the task formulation, datasets, and baseline systems, including both large language models and encoder-based approaches. We further examine different prompting strategies and report preliminary experimental results, highlighting the strengths and limitations of current models. Finally, we outline planned directions for improving abductive reasoning performance in future work.
+\end{abstract}
+
+\section{Introduction}
+
+Abductive reasoning requires models to infer the most plausible explanation for a given incomplete context. SemEval-2026 Task 12 focuses on multiple-choice abductive reasoning across narrative scenarios and noisy distractor documents. This report presents our methods, baseline experimentation, and preliminary findings.
+
+\section{Task Description}
+
+SemEval 2026 Task 12 focuses on the problem of Abductive Event Reasoning, where the goal is to identify the most plausible cause of a given real-world event. For each instance, the task provides a target event description along with a set of retrieved contextual documents, which may include both relevant evidence and distractor information.
+
+Based on the provided context, systems are required to answer a multiple-choice question by selecting the correct causal explanation from four candidate options. The candidate explanations are designed to be semantically plausible, increasing the difficulty of the task and requiring models to perform fine-grained causal reasoning rather than surface-level pattern matching.
+
+System performance is evaluated using accuracy, defined as the proportion of instances for which the model correctly identifies the ground-truth causal explanation.
+
+\section{Dataset}
+
+Our experiments are conducted on the datasets released for SemEval 2026 Task 12.
+
+\paragraph{Validation Set (val\_data).}
+The official validation set is used for systematic evaluation and comparison of baseline models.
+
+\paragraph{Sample Set (sample\_data).}
+The sample set is a smaller subset designed for rapid experimentation and prompt-level analysis.
+
+Each instance consists of a target event description, a collection of retrieved contextual documents, and a multiple-choice question with four candidate causal hypotheses.
+
+\section{Baseline Models}
+
+We evaluate three representative baseline models: Qwen, LLaMA, and DeBERTa.
+
+\subsection{Qwen}
+
+We use \textit{Qwen3-30B-A3B-Thinking-2507-GGUF} as our primary LLM baseline. Zero-shot English prompting yields the best results.
+
+\subsection{LLaMA}
+
+We employ \textit{LLaMA-3.1-8B-Instruct} as a lightweight instruction-following baseline.
+
+\subsection{DeBERTa}
+
+As an encoder-based baseline, we reformulate the task as independent (question, option) pair scoring and select the highest-scoring option.
+
+\section{Prompting Strategies}
+
+We explore zero-shot, few-shot, and multi-expert prompting. We additionally compare English and Chinese prompt variants to analyze cross-lingual sensitivity.
+
+\section{Preliminary Results}
+
+\subsection{Validation Dataset}
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lccc}
+\toprule
+Model & Qwen & LLaMA & DeBERTa \\
+\midrule
+Accuracy (\%) & 77.11 & $\sim$61.67 & $\sim$83.00 \\
+\bottomrule
+\end{tabular}
+\caption{Preliminary results on val\_data.}
+\label{tab:val-results}
+\end{table}
+
+\subsection{Sample Dataset}
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lccc}
+\toprule
+Model & Qwen & LLaMA & DeBERTa \\
+\midrule
+Accuracy (\%) & 71.25 & $\sim$60.00 & $\sim$60.00 \\
+\bottomrule
+\end{tabular}
+\caption{Results on sample\_data.}
+\label{tab:sample-results}
+\end{table}
+
+\subsection{Qwen Prompting Performance}
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lc}
+\toprule
+Prompting Strategy & Accuracy (\%) \\
+\midrule
+Zero-shot, English & 71.25 \\
+Zero-shot, Chinese & 66.25 \\
+Few-shot, English & 62.29 \\
+Multi-Expert, English & 60.00 \\
+\bottomrule
+\end{tabular}
+\caption{Qwen performance across prompting strategies on sample\_data.}
+\label{tab:qwen-prompting}
+\end{table}
+
+\section{Discussion}
+
+Qwen achieves the strongest results, particularly under zero-shot English prompting. LLaMA exhibits higher output variability, while DeBERTa captures surface-level relevance but struggles with implicit causal reasoning.
+
+\section{Next Steps}
+
+We plan to extend our system with structured and multi-expert reasoning:
+\begin{itemize}
+    \item Hybrid LLM–encoder systems
+    \item RLHF-style feedback for explanation ranking
+    \item Retrieval-enhanced multi-expert ensembles
+\end{itemize}
+
+\section{Conclusion}
+
+This interim report highlights the challenges of abductive event reasoning under noisy evidence conditions. Our results suggest that large instruction-tuned models provide strong baselines, with further gains expected from hybrid and structured reasoning approaches.
+
+\appendix
+
+\section{Chain-of-Thought Methods}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{cot_methods.png}
+\caption{Planned multi-expert chain-of-thought strategy.}
+\label{fig:cot-methods}
+\end{figure}
+
+\section{Prompt Examples}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{prompt_image.jpeg}
+\caption{Multi-expert prompt used in experiments.}
+\label{fig:prompt-example}
+\end{figure}
+
+\bibliographystyle{acl_natbib}
+\bibliography{custom}
+
+\end{document}
