@@ -41,9 +41,9 @@ Accuracy is correct score/number of questions.
 **Evaluation Dataset: val_data**
 
 
-| Peak Accuracy | Qwen | Llama | DeBERTa |
-| :--- | :--- | :--- | :--- |
-| Sample_data | 77.11% | 61.67% | ? |
+| Peak Accuracy | Qwen | Llama | DeBERTa | DeBERTa *Properly done with new metric | Qwen *ToT with new metric |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Sample_data | 77.11% | 61.67% | ? | 62.2% | 51.74% |
 
 
 Details:
@@ -78,9 +78,29 @@ DeBERTa: As DeBERTa wasn’t originally trained with a multiple-choice head, we 
 ## Step 5: Train the Model
    - Using train split
      
-## Step 6: Evaluate the Model
+# Step 6: Evaluate the Model (Official Metric just Changed Recently)
+
+### Old metric(score without * on this readme)
    - Get predited asnwers
    - Compare with correct answers (Full match → 1.0 | Partial match → 0.5 | Wrong → 0.0)
+
+### New metric(score with * on this readme)
+
+System performance is evaluated at the instance level using an exact and partial matching scheme over the predicted answer options.
+
+Let G denote the set of gold-standard correct options for an instance, and P denote the set of options predicted by the system.
+
+Each instance is scored as follows:
+
+1.0 (Full Match): if P = G
+
+0.5 (Partial Match): if P is a non-empty proper subset of G (i.e., the prediction covers at least one correct option and contains no incorrect options)
+
+0.0 (Incorrect): otherwise, including cases where the prediction contains any incorrect option or is empty
+
+The final system score is computed as the average score across all evaluation instances.
+
+Predictions must contain only valid option labels (A–D). Invalid labels result in a score of 0 for the corresponding instance.
      
 ## Step 7: Addional Evaluation (Extra)
    - Multi-Step Reasoning
