@@ -32,7 +32,7 @@ https://arxiv.org/html/2502.03671v1#S3
    
 ## Step 3: Choose a Baseline Model
    -   Llama | Qwen(free model) | DeBERTa
-   -   GPU ? try bwHPC?
+   -   GPU  try bwHPC
 
 
 Accuracy is correct score/number of questions. 
