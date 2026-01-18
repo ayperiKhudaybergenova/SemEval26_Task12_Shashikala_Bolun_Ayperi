@@ -43,7 +43,7 @@ Accuracy is correct score/number of questions.
 
 | Peak Accuracy | Qwen | Llama | DeBERTa | DeBERTa *Properly done with new metric | Qwen *ToT with new metric |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Sample_data | 77.11% | 61.67% | ? | 62.2% | 51.74% |
+| Sample_data | 77.11% | 61.67% | 70 | 62.2% | 51.74% |
 
 
 Details:
