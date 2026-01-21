@@ -451,7 +451,7 @@ def main():
     checkpoint_path = os.path.join(OUTPUT_DIR, "fristrun")
     
     if os.path.exists(checkpoint_path):
-        print(f"🔄 Resuming from specific checkpoint: {checkpoint_path}")
+        print(f"🔄 Resuming from specific checkpoint: {checkpoint-492}")
         trainer.train(resume_from_checkpoint=checkpoint_path)
     else:
         print("⚠️ Checkpoint not found, starting from scratch!")
