@@ -19,7 +19,7 @@ os.environ["TORCH_COMPILE_DISABLE_CACHE"] = "1"
 os.environ["NCCL_P2P_DISABLE"] = "1"
 os.environ["NCCL_IB_DISABLE"] = "1"
 os.environ["NCCL_SHM_DISABLE"] = "1"
-os.environ["VLLM_GPU_MEMORY_UTILIZATION"] = "0.45" 
+os.environ["VLLM_GPU_MEMORY_UTILIZATION"] = "0.6" 
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
@@ -68,8 +68,8 @@ MAX_STEPS = 500
 SAVE_STEPS = 20
 
 # Batching (Adapted for vLLM multi-GPU)
-PER_DEVICE_BATCH_SIZE = 4   # Conservative setting for vLLM
-GRAD_ACCUM_STEPS = 2        # Maintain effective batch size
+PER_DEVICE_BATCH_SIZE = 2   # Conservative setting for vLLM
+GRAD_ACCUM_STEPS = 4        # Maintain effective batch size
 NUM_GENERATIONS = 4
 
 SYSTEM_PROMPT = """You are an expert in Abductive Event Reasoning.
@@ -412,7 +412,7 @@ model, tokenizer = FastLanguageModel.from_pretrained(
     dtype=None,
     load_in_4bit=True,
     fast_inference=True,
-    gpu_memory_utilization=0.45, 
+    gpu_memory_utilization=0.35, 
     device_map={"": current_device},
 )
 
@@ -474,7 +474,7 @@ training_args = GRPOConfig(
     max_completion_length=MAX_COMPLETION_LENGTH,
     # vLLM Configuration
     use_vllm=True,
-    vllm_gpu_memory_utilization=0.45, 
+    vllm_gpu_memory_utilization=0.6, 
     report_to="none",
     temperature=0.6,
     top_p=0.95,
