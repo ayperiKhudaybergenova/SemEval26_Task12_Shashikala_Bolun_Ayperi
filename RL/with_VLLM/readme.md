@@ -53,7 +53,7 @@ You must define where your project files reside.
 
 ## 3. Handling OOM (Out of Memory)
 
-If you encounter CUDA Out of Memory (OOM) errors, you need to balance the `PER_DEVICE_BATCH_SIZE` and `GRAD_ACCUM_STEPS` in `trainRLVLLM.py` (approx. lines 63-64).
+If you encounter CUDA Out of Memory (OOM) errors, you need to balance the `PER_DEVICE_BATCH_SIZE` and `GRAD_ACCUM_STEPS` in `trainRLVLLM.py`.
 
 **Goal:** Keep the **Total Batch Size** constant to maintain training stability, while reducing the memory load per GPU.
 
@@ -66,12 +66,13 @@ If you encounter CUDA Out of Memory (OOM) errors, you need to balance the `PER_D
 
 | Scenario | Per Device Batch | Grad Accum Steps | GPUs | **Total Batch Size** | Memory Usage |
 | --- | --- | --- | --- | --- | --- |
-| **Current** | 4 | 2 | 2 | **16** | High |
-| **Fix 1** | 2 | 4 | 2 | **16** | Medium |
+| **Fix 1** | 4 | 2 | 2 | **16** | High |
+| **Current** | 2 | 4 | 2 | **16** | Medium |
 | **Fix 2** | 1 | 8 | 2 | **16** | Low |
 
 *Note: `PER_DEVICE_BATCH_SIZE` for vLLM usually needs to be smaller than standard training because vLLM reserves memory for the KV cache.*
 
+*Note: as long as the gpu(s) can go full power, it's better to have lower `PER_DEVICE_BATCH_SIZE`, to avoid OOM or deadlock caused by VRAM shortage*
 ---
 
 ## 4. Execution & Testing
