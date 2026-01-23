@@ -73,6 +73,13 @@ If you encounter CUDA Out of Memory (OOM) errors, you need to balance the `PER_D
 *Note: `PER_DEVICE_BATCH_SIZE` for vLLM usually needs to be smaller than standard training because vLLM reserves memory for the KV cache.*
 
 *Note: as long as the gpu(s) can go full power, it's better to have lower `PER_DEVICE_BATCH_SIZE`, to avoid OOM or deadlock caused by VRAM shortage*
+
+*Tip*: 
+
+srun --jobid=<your_Job_ID> --pty /bin/bash
+
+watch -n 1 nvidia-smi
+
 ---
 
 ## 4. Execution & Testing
