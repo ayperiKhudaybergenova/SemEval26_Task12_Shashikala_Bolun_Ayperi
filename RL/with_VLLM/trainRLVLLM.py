@@ -3,9 +3,9 @@ import sys
 import warnings
 
 # =============================================================================
-# 1. Pure Python Preprocessing (Zero Dependency)
+# 1. Pure Python preprocessing (zero dependencies)
 # =============================================================================
-# [Mamba Shielding] 
+# [Mamba Shield] 
 sys.modules["mamba_ssm"] = None 
 
 # [Hard Masking] 
@@ -13,7 +13,7 @@ local_rank = int(os.environ.get("LOCAL_RANK", 0))
 os.environ["CUDA_VISIBLE_DEVICES"] = str(local_rank)
 print(f"🔒 [Rank {local_rank}] Hard Masking: Visible GPU = {local_rank}")
 
-# [Critical Parameter Configuration]
+# [Critical parameter configuration]
 os.environ["VLLM_DISABLE_COMPILE_CACHE"] = "1"
 os.environ["TORCH_COMPILE_DISABLE_CACHE"] = "1"
 os.environ["NCCL_P2P_DISABLE"] = "1"
@@ -24,13 +24,13 @@ os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 # =============================================================================
-# 2. Import Unsloth (Absolutely First!)
+# 2. Import Unsloth (MUST be first!)
 # =============================================================================
 from unsloth import FastLanguageModel
 from unsloth import is_bfloat16_supported
 
 # =============================================================================
-# 3. Other Dependencies
+# 3. Other dependencies
 # =============================================================================
 import torch
 import json
@@ -50,7 +50,7 @@ if accelerator.is_main_process:
     print(f"🚀 [Master] Unsloth imported FIRST. Optimizations active.")
 
 # =============================================================================
-# 4. CONFIGURATION (Migrated from trainRL.py)
+# 4. CONFIGURATION (migrated from trainRL.py)
 # =============================================================================
 MODEL_ID = "Qwen/Qwen3-32B"
 TRAIN_DOCS_PATH = "datasets/train_data_ranked/docs.json"
@@ -67,7 +67,7 @@ LEARNING_RATE = 5e-7
 MAX_STEPS = 500
 SAVE_STEPS = 20
 
-# Batching (Adapted for vLLM multi-GPU)
+# Batching (adapted for vLLM multi-GPU)
 PER_DEVICE_BATCH_SIZE = 2   # Conservative setting for vLLM
 GRAD_ACCUM_STEPS = 4        # Maintain effective batch size
 NUM_GENERATIONS = 4
@@ -77,18 +77,18 @@ Your task is to analyze the provided context documents and identify **all and on
 
 Important rules:
 - There may be **one or more correct answers**.
-- You **MUST NOT select any incorrect option** – even one wrong choice results in zero reward.
-- You **MUST select every correct option** – omitting a correct one reduces reward unless you avoid all errors.
+- You **MUST NOT select any incorrect option** — even one wrong choice results in zero reward.
+- You **MUST select every correct option** — omitting a correct one reduces reward unless you avoid all errors.
 - Base your judgment **strictly on evidence in the context documents**. Do not use external knowledge.
 
 Output ONLY a valid JSON object with keys A, B, C, D.
-Each value must be: {"reasoning": "concise justification (100 tokens for each reasoning)", "is_correct": true/false}.
+Each value must be: {"reasoning": "concise justification (50 tokens for each reasoning)", "is_correct": true/false}.
 
-!!!IMPORTANT: Completions longer than 8192 tokens will be truncated without any warning, resulting failure in parsing answer and lead to extreme penalty!!!
+!!!IMPORTANT: Be concise, Keep your internal thinking under 768 tokens, 512 is optimal, the more you exceed, the greater the penalty!!!
 DO NOT include any text outside the JSON. DO NOT use markdown."""
 
 # =============================================================================
-# 5. DATA LOADING (Migrated from trainRL.py)
+# 5. DATA LOADING (migrated from trainRL.py)
 # =============================================================================
 def load_local_dataset():
     if local_rank == 0:
@@ -125,7 +125,7 @@ def load_local_dataset():
         return Dataset.from_list([])
 
 # =============================================================================
-# 6. PROMPT FORMATTING (Migrated from trainRL.py)
+# 6. PROMPT FORMATTING (migrated from trainRL.py)
 # =============================================================================
 def prompt_formatting_func(examples, tokenizer, max_seq_length, max_completion_length):
     """
@@ -189,7 +189,7 @@ def prompt_formatting_func(examples, tokenizer, max_seq_length, max_completion_l
     return {"prompt": inputs, "answer": examples['answer']}
 
 # =============================================================================
-# 7. REWARD FUNCTIONS (Migrated from trainRL.py)
+# 7. REWARD FUNCTIONS (migrated from trainRL.py)
 # =============================================================================
 def extract_json_answer(completion):
     """
@@ -286,19 +286,19 @@ def length_reward(prompts, completions, answer, tokenizer=None, **kwargs):
     rewards = []
     
     # --- Configuration for Thinking Process ---
-    THINK_OPTIMAL = 2048
-    THINK_ZERO_THRESHOLD = 4096
-    THINK_DANGER_THRESHOLD = 4096
-    THINK_MAX_LIMIT = 8192
-    THINK_MAX_REWARD = 0.4
-    THINK_MAX_PENALTY = 0.4
+    THINK_OPTIMAL = 512
+    THINK_ZERO_THRESHOLD = 768
+    THINK_DANGER_THRESHOLD = 768
+    THINK_MAX_LIMIT = 1536
+    THINK_MAX_REWARD = 0.5
+    THINK_MAX_PENALTY = 0.5
 
     # --- Configuration for JSON Reasoning Fields ---
-    JSON_OPTIMAL = 400
-    JSON_LOWER_BOUND = 200
-    JSON_UPPER_BOUND = 600
-    JSON_MAX_REWARD = 0.4
-    JSON_MIN_REWARD = -0.4 # Penalty floor
+    JSON_OPTIMAL = 200
+    JSON_LOWER_BOUND = 100
+    JSON_UPPER_BOUND = 300
+    JSON_MAX_REWARD = 0.3
+    JSON_MIN_REWARD = -0.3 # Penalty floor
 
     # Debug helper to print only once
     if not hasattr(length_reward, "has_printed") and local_rank == 0:
@@ -397,124 +397,241 @@ def format_reward(completions, **kwargs):
     return [0.5 if extract_json_answer(c) is not None else 0.0 for c in completions]
 
 # =============================================================================
-# 8. MODEL LOADING
+# 8. DDP HEALTH CHECK CALLBACK
 # =============================================================================
-if local_rank == 0:
-    print(f"🔥 Loading Model: {MODEL_ID}")
-    print(f"Context Window: {MAX_SEQ_LENGTH}")
-    print(f"Max Completion Length: {MAX_COMPLETION_LENGTH}")
+from transformers import TrainerCallback
+import torch.distributed as dist
 
-current_device = "cuda:0" # After Hard Masking takes effect, unified as cuda:0
+class DDPHealthCheckCallback(TrainerCallback):
+    """
+    Deep DDP Health Check:
+    1. Verify communication link survival (Heartbeat).
+    2. Verify if LoRA weights across GPUs are identical (Weight Sync Check).
+    """
+    def on_step_end(self, args, state, control, model=None, **kwargs):
+        # Frequency control: Check every 5 steps (too frequent slows down training; too sparse detects issues late)
+        #if state.global_step % 5 != 0:
+        #    return
+        try:
+            # --- 1. Preparation ---
+            # Get current process rank
+            rank = dist.get_rank() if dist.is_initialized() else 0
+            world_size = dist.get_world_size() if dist.is_initialized() else 1
+            
+            # Skip check if in single-GPU mode
+            if world_size < 2:
+                return
 
-model, tokenizer = FastLanguageModel.from_pretrained(
-    model_name=MODEL_ID,
-    max_seq_length=MAX_SEQ_LENGTH,
-    dtype=None,
-    load_in_4bit=True,
-    fast_inference=True,
-    gpu_memory_utilization=0.35, 
-    device_map={"": current_device},
-)
+            # --- 2. Extract Model Fingerprint ---
+            # CRITICAL: Must find a parameter with requires_grad=True (i.e., LoRA layers).
+            # Frozen base parameters never change; checking them won't detect gradient sync failures.
+            check_param = None
+            param_name = "Unknown"
+            
+            # Attempt to unwrap potential model wrappers (DDP, PeftModel, etc.) used by Unsloth
+            base_model = model.module if hasattr(model, "module") else model
+            
+            for name, p in base_model.named_parameters():
+                if p.requires_grad:
+                    check_param = p
+                    param_name = name
+                    break
+            
+            if check_param is None:
+                # Fallback: If no trainable params found (rare), take the first parameter
+                check_param = next(base_model.parameters())
+                if rank == 0:
+                    print(f"⚠️ [DDP Warning] No trainable params found? Checking frozen param instead.")
 
-model = FastLanguageModel.get_peft_model(
-    model,
-    r=LORA_RANK,
-    target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
-    lora_alpha=LORA_RANK,
-    lora_dropout=0,
-    bias="none",
-    use_gradient_checkpointing="unsloth",
-    random_state=3407,
-)
+            # Use the first value of the parameter tensor as the fingerprint
+            local_val = check_param.data.view(-1)[0].item()
+            
+            # --- 3. Construct Check Tensor ---
+            # [0]: Local fingerprint value, [1]: Counter 1.0 (to calculate total rank count)
+            # Must be on cuda:0 (due to Hard Masking)
+            check_tensor = torch.tensor([local_val, 1.0], device="cuda:0", dtype=torch.float32)
+
+            # --- 4. Execute Collective Communication (All-Reduce) ---
+            # This step blocks until all GPUs submit data. If it hangs here, the link is broken.
+            dist.all_reduce(check_tensor, op=dist.ReduceOp.SUM)
+
+            # --- 5. Main Process Verification ---
+            if rank == 0:
+                global_sum_val = check_tensor[0].item()
+                global_count = check_tensor[1].item()
+                
+                # Theoretical sum (if no Split Brain, values across cards should be identical)
+                expected_sum = local_val * world_size
+                
+                # A. Verify node count (Prevent Split Brain)
+                if int(global_count) != world_size:
+                    print(f"\n❌ [DDP FATAL] Split Brain detected! Expected {world_size} GPUs, found {int(global_count)}.")
+                    # You could raise an exception here to abort training
+                
+                # B. Verify weight consistency (Verify gradient sync)
+                # Allow tiny floating-point errors (BF16 precision is approx 1e-2 ~ 1e-3)
+                elif abs(global_sum_val - expected_sum) > 1e-3:
+                    print(f"\n❌ [DDP FATAL] Weight Divergence! Gradients are NOT syncing.")
+                    print(f"   - Local (Rank 0): {local_val:.6f}")
+                    print(f"   - Global Avg:     {global_sum_val / world_size:.6f}")
+                    print(f"   - Param checked:  {param_name}")
+                
+                # C. All clear
+                else:
+                    # Print only at lower logging levels to avoid cluttering
+                    pass 
+                    print(f"✅ [DDP OK] Step {state.global_step}: Sync verified on {param_name}")
+
+        except Exception as e:
+            print(f"\n❌ [DDP ERROR] Health check failed: {str(e)}")
 
 # =============================================================================
-# 9. DATASET PREPARATION
+# 9. MAIN TRAINING FUNCTION
 # =============================================================================
-dataset = load_local_dataset()
-
-if len(dataset) > 0:
-    # Inject tokenizer into map function via closure
-    def map_with_tokenizer(examples):
-        return prompt_formatting_func(
-            examples,
-            tokenizer=tokenizer,
-            max_seq_length=MAX_SEQ_LENGTH,
-            max_completion_length=MAX_COMPLETION_LENGTH
-        )
+def main():
+    """
+    Main training function that orchestrates the entire GRPO training pipeline.
+    Steps:
+    1. Load model with Unsloth optimizations
+    2. Prepare dataset with proper synchronization
+    3. Configure GRPO trainer
+    4. Execute training with checkpoint resume support
+    5. Save final model
+    """
     
-    # Prepare length_reward with tokenizer
-    length_reward_func = partial(length_reward, tokenizer=tokenizer)
-    length_reward_func.__name__ = "length_reward"
-    
-    dataset = dataset.map(map_with_tokenizer, batched=True)
-    dataset = dataset.map(lambda x: {'len': len(x['prompt'])}).sort('len', reverse=True)
-    
+    # -------------------------------------------------------------------------
+    # Step 1: Model Loading
+    # -------------------------------------------------------------------------
     if local_rank == 0:
-        print(f"✅ Dataset prepared: {len(dataset)} samples")
+        print(f"🔥 Loading Model: {MODEL_ID}")
+        print(f"Context Window: {MAX_SEQ_LENGTH}")
+        print(f"Max Completion Length: {MAX_COMPLETION_LENGTH}")
+
+    current_device = "cuda:0"  # Hard Masking takes effect, unified to cuda:0
+
+    model, tokenizer = FastLanguageModel.from_pretrained(
+        model_name=MODEL_ID,
+        max_seq_length=MAX_SEQ_LENGTH,
+        dtype=None,
+        load_in_4bit=True,
+        fast_inference=True,
+        gpu_memory_utilization=0.35, 
+        device_map={"": current_device},
+    )
+
+    model = FastLanguageModel.get_peft_model(
+        model,
+        r=LORA_RANK,
+        target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+        lora_alpha=LORA_RANK,
+        lora_dropout=0,
+        bias="none",
+        use_gradient_checkpointing="unsloth",
+        random_state=3407,
+    )
+
+    # -------------------------------------------------------------------------
+    # Step 2: Dataset Preparation
+    # -------------------------------------------------------------------------
+    # 🔥 [Data Synchronization] Wrap complex processing logic with main_process_first
+    with accelerator.main_process_first():
+        dataset = load_local_dataset()
+
+        if len(dataset) > 0:
+            # Inject tokenizer into map function via closure (fully reuse your code)
+            def map_with_tokenizer(examples):
+                return prompt_formatting_func(
+                    examples,
+                    tokenizer=tokenizer,
+                    max_seq_length=MAX_SEQ_LENGTH,
+                    max_completion_length=MAX_COMPLETION_LENGTH
+                )
+            
+            # Prepare length_reward with tokenizer (fully reuse your code)
+            length_reward_func = partial(length_reward, tokenizer=tokenizer)
+            length_reward_func.__name__ = "length_reward"
+            
+            # Execute Map and Sort (ordering is critical for batch packing efficiency)
+            dataset = dataset.map(map_with_tokenizer, batched=True, load_from_cache_file=True)
+            dataset = dataset.map(lambda x: {'len': len(x['prompt'])}).sort('len', reverse=True)
+            
+            if local_rank == 0:
+                print(f"✅ Dataset prepared: {len(dataset)} samples (Sorted by length)")
+        else:
+            # Fallback to prevent empty dataset from causing reference errors below
+            length_reward_func = partial(length_reward, tokenizer=tokenizer)
+
+    # -------------------------------------------------------------------------
+    # Step 3: Training Configuration
+    # -------------------------------------------------------------------------
+    training_args = GRPOConfig(
+        output_dir=OUTPUT_DIR,
+        resume_from_checkpoint=True,  # Enable auto-resume
+        run_name="qwen3-32b-aer-GRPO-NF4",
+        learning_rate=LEARNING_RATE,
+        max_steps=MAX_STEPS,
+        save_steps=SAVE_STEPS,
+        save_total_limit=25,
+        logging_steps=1,
+        per_device_train_batch_size=PER_DEVICE_BATCH_SIZE,
+        gradient_accumulation_steps=GRAD_ACCUM_STEPS,
+        gradient_checkpointing=True,
+        bf16=is_bfloat16_supported(),
+        tf32=is_bfloat16_supported(),
+        num_generations=NUM_GENERATIONS,
+        max_prompt_length=MAX_SEQ_LENGTH,
+        max_completion_length=MAX_COMPLETION_LENGTH,
+        # vLLM configuration
+        use_vllm=True,
+        vllm_gpu_memory_utilization=0.6, 
+        report_to="none",
+        temperature=0.6,
+        top_p=0.95,
+        top_k=20,
+        min_p=0.0,
+    )
+
+    # -------------------------------------------------------------------------
+    # Step 4: Trainer Initialization
+    # -------------------------------------------------------------------------
+    trainer = GRPOTrainer(
+        model=model,
+        processing_class=tokenizer,
+        reward_funcs=[format_reward, semeval_score_reward, length_reward_func],
+        args=training_args,
+        train_dataset=dataset,
+        callbacks=[DDPHealthCheckCallback()],
+    )
+
+    # -------------------------------------------------------------------------
+    # Step 5: Training Execution with Checkpoint Resume
+    # -------------------------------------------------------------------------
+    if accelerator.is_main_process:
+        print("🎯 Starting GRPO Training (Unsloth + vLLM Optimized)...")
+
+    # Checkpoint resume mechanism
+    checkpoint_path = os.path.join(OUTPUT_DIR, "none")  # Modify to your desired checkpoint
+
+    if os.path.exists(checkpoint_path):
+        if local_rank == 0:
+            print(f"📄 Resuming from specific checkpoint: {checkpoint_path}")
+        trainer.train(resume_from_checkpoint=checkpoint_path)
+    else:
+        if local_rank == 0:
+            print("⚠️ Checkpoint not found, starting from scratch!")
+        trainer.train()
+
+    # -------------------------------------------------------------------------
+    # Step 6: Save Final Model
+    # -------------------------------------------------------------------------
+    if accelerator.is_main_process:
+        print("💾 Saving final adapter...")
+        model.save_lora(os.path.join(OUTPUT_DIR, "final_checkpoint"))
+        print("✅ Training completed!")
+
 
 # =============================================================================
-# 10. TRAINING CONFIGURATION
+# 10. ENTRY POINT
 # =============================================================================
-training_args = GRPOConfig(
-    output_dir=OUTPUT_DIR,
-    resume_from_checkpoint=True,  # Enable auto-resume
-    run_name="qwen3-32b-aer-GRPO-NF4",
-    learning_rate=LEARNING_RATE,
-    max_steps=MAX_STEPS,
-    save_steps=SAVE_STEPS,
-    save_total_limit=25,
-    logging_steps=1,
-    per_device_train_batch_size=PER_DEVICE_BATCH_SIZE,
-    gradient_accumulation_steps=GRAD_ACCUM_STEPS,
-    gradient_checkpointing=True,
-    bf16=is_bfloat16_supported(),
-    tf32=is_bfloat16_supported(),
-    num_generations=NUM_GENERATIONS,
-    max_prompt_length=MAX_SEQ_LENGTH,
-    max_completion_length=MAX_COMPLETION_LENGTH,
-    # vLLM Configuration
-    use_vllm=True,
-    vllm_gpu_memory_utilization=0.6, 
-    report_to="none",
-    temperature=0.6,
-    top_p=0.95,
-    top_k=20,
-    min_p=0.0,
-)
-
-# =============================================================================
-# 11. TRAINER INITIALIZATION
-# =============================================================================
-trainer = GRPOTrainer(
-    model=model,
-    processing_class=tokenizer,
-    reward_funcs=[format_reward, semeval_score_reward, length_reward_func],
-    args=training_args,
-    train_dataset=dataset,
-)
-
-# =============================================================================
-# 12. TRAINING WITH CHECKPOINT RESUME (Migrated from trainRL.py)
-# =============================================================================
-if accelerator.is_main_process:
-    print("🏁 Starting GRPO Training (Unsloth + vLLM Optimized)...")
-
-# Checkpoint resume mechanism
-checkpoint_path = os.path.join(OUTPUT_DIR, "none")  # Can be modified to your desired checkpoint
-
-if os.path.exists(checkpoint_path):
-    if local_rank == 0:
-        print(f"📄 Resuming from specific checkpoint: {checkpoint_path}")
-    trainer.train(resume_from_checkpoint=checkpoint_path)
-else:
-    if local_rank == 0:
-        print("⚠️ Checkpoint not found, starting from scratch!")
-    trainer.train()
-
-# =============================================================================
-# 13. SAVE FINAL MODEL
-# =============================================================================
-if accelerator.is_main_process:
-    print("💾 Saving final adapter...")
-    model.save_lora(os.path.join(OUTPUT_DIR, "final_checkpoint"))
-    print("✅ Training completed!")
+if __name__ == "__main__":
+    main()
