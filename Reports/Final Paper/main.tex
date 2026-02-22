@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{SemEval_task12}
+\author{}
+\date{January 2026}
+
+\begin{document}
+
+\section{Introduction}
+Abductive reasoning the task of inferring the most plausible explanation for a set of incomplete or partially observed facts is a fundamental component of human cognition. Unlike deductive reasoning, which guarantees logically valid conclusions, or inductive reasoning, which generalizes from observed patterns, abductive reasoning operates under uncertainty and requires generating explanatory hypotheses that best account for available evidence. This form of reasoning underlies many natural language understanding tasks, including commonsense inference, narrative completion, multi-hop question answering, and scientific hypothesis formation.
+
+Recent advances in large language models (LLMs) have substantially improved performance across a wide range of reasoning benchmarks. Transformer-based architectures such as the LLaMA family have demonstrated strong capabilities when trained with large-scale pretraining followed by supervised fine-tuning (SFT) and instruction tuning. Despite these advances, prior work has shown that LLMs often struggle with structured explanatory reasoning. In abductive settings, models may produce fluent but logically inconsistent or weakly grounded explanations, reflecting reliance on surface-level correlations rather than principled hypothesis generation.
+
+Most existing approaches rely primarily on supervised fine-tuning, which optimizes next-token likelihood under labeled examples. While effective for distribution alignment, SFT does not explicitly optimize reasoning quality, explanatory coherence, or plausibility under uncertainty. Consequently, models may fail to distinguish between merely plausible continuations and genuinely explanatory hypotheses.
+
+In this work, we investigate whether reinforcement learning (RL) can enhance abductive reasoning in large language models. Reinforcement learning enables direct optimization of task-specific reward signals beyond likelihood maximization. By designing reward functions that capture explanatory plausibility, logical consistency, and coherence with observed evidence, we aim to guide the model toward generating higher-quality abductive inferences.
+
+We propose a reinforcement learning fine-tuning framework built on top of a LLaMA-based instruction-tuned model. Our method augments supervised training with policy optimization using structured reward signals tailored to abductive reasoning tasks. We conduct systematic experiments and ablation studies to evaluate the impact of reward design and training strategy on reasoning performance.
+
+Our contributions are threefold:
+
+We introduce a reinforcement learning framework specifically designed to improve abductive reasoning in large language models.
+
+We analyze the role of reward shaping and optimization strategies through controlled ablation experiments.
+
+We demonstrate consistent improvements over supervised fine-tuning baselines on abductive reasoning benchmarks.
+
+Our findings suggest that reinforcement learning provides a promising direction for moving beyond pattern-based generation toward more structured and explanation-driven reasoning in large language models.
+
+\section{Related Work}
+
+\section{Method}
+\subsection{Base Models}
+
+\subsection{Supervised Fine-Tuning}
+
+\subsection{Reinforcement Learning Framework}
+
+\subsection{Reward Design}
+
+\section{Results}
+
+\section{Conclusion}
+
+
+
+
+\bibliographystyle{plain}
+\bibliography{ref}
+\nocite{*}
+
+
+\end{document}
+
+
+
