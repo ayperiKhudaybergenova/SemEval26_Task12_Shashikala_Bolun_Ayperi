@@ -30,15 +30,39 @@ Our findings suggest that reinforcement learning provides a promising direction 
 
 \section{Related Work}
 
-### Related Work
-
-**Li et al. (2023), *Language Models Can Improve Event Prediction by Few‑Shot Abductive Reasoning*** investigates the use of large pretrained language models to generate plausible explanatory hypotheses for event prediction tasks. A key methodological contribution of this work is the use of *few‑shot prompting* to structure model reasoning and improve inference quality. We draw on this insight by similarly structuring model outputs — instead of treating reasoning as implicit — and use explicit reasoning text as intermediate representations. Unlike the few‑shot prompt strategy, our approach trains a verifier model to learn from explicit reasoning errors.
+Language Models Can Improve Event Prediction by Few‑Shot Abductive Reasoning investigates the use of large pretrained language models to generate plausible explanatory hypotheses for event prediction tasks \cite{li2023language}. A key methodological contribution of this work is the use of *few‑shot prompting* to structure model reasoning and improve inference quality. We draw on this insight by similarly structuring model outputs — instead of treating reasoning as implicit — and use explicit reasoning text as intermediate representations. Unlike the few‑shot prompt strategy, our approach trains a verifier model to learn from explicit reasoning errors.
 
 **Zhao et al. (2025), *Advancing Reasoning in Large Language Models*** provides a comprehensive analysis of reasoning capabilities in large language models, categorizing different reasoning paradigms and identifying recurrent failure modes such as shallow pattern matching and lack of contextual grounding. Critically, this work highlights the value of *auxiliary feedback mechanisms and multi‑stage reasoning pipelines* to mitigate reasoning brittleness. We adopt this principle by combining a primary reasoning model (Qwen) with an auxiliary verification model (DeBERTa), enabling systematic detection and correction of reasoning weaknesses.
 
 **Wang et al. (2025), *Causal Event Understanding with Contextual Inference*** (ACL Long Paper 1269) focuses on models that must integrate rich contextual evidence to disambiguate competing causal explanations. This work introduces *contextual document integration and multi‑label causal classification* as core components of its methodology. Inspired by this, our fine‑tuned DeBERTa multi‑label classifier also treats each option as a separate target and encodes the combined event, context, and options to capture nuanced causal signals, using sliding window tokenization to preserve relevant long‑range context.
 
 Together, these studies inform our methodology: we explicitly structure reasoning outputs drawing from few‑shot guidance, incorporate a learned verification stage to address reasoning brittleness, and design multi‑label classification with contextual integration to handle complex abductive inference scenarios.
+
+\section{Data Setup \& Preprocessing}
+\subsection{Validation Set}
+During our initial data exploration, we observed that the officially provided development and sample sets were true subsets of the main training set. To ensure a rigorous and unbiased evaluation of our models, and to effectively monitor generalization during training without data leakage, we deemed it necessary to construct an independent, custom validation set directly from the provided training data.
+
+The official training dataset consists of 36 distinct topics. To construct a validation set that accurately reflects the thematic diversity of the entire corpus, we implemented a stratified splitting approach. First, we developed an automated classification pipeline utilizing the Qwen3-30B model to categorize all 36 topics into predefined domains. The model was prompted to assign a single descriptive label to each topic, focusing on categories such as Politics, Economy, Technology, Science, and Environment.
+
+Following this classification, we analyzed the overall distribution of these categories across the training set. To ensure a balanced thematic representation, we proportionally sampled topics from each identified category. Specifically, we selected [PLACEHOLDERCOUNT1] topics from Politics, [PLACEHOLDERCOUNT2] from Economy, [PLACEHOLDERCOUNT3] from Technology, [PLACEHOLDERCOUNT4] from Science, and [PLACEHOLDERCOUNT5] from Environment.
+
+Using a dataset splitting script, we isolated these selected topics—specifically, Topic IDs: 2, 7, 18, 27, 29, and 33—along with their associated documents and questions, moving them into a dedicated validation directory. This process resulted in a robust validation set comprising 6 distinct topics, leaving the remaining 30 topics strictly for model training. Because the official testing phase concluded before we could evaluate all our experimental configurations, this custom validation set served as the primary, reliable benchmark for our internal evaluations, ablation studies, and the iterative refinement of our Reinforcement Learning and ensemble pipelines.
+
+\subsection{Context Management}
+
+A critical challenge in applying Reinforcement Learning, specifically Group Relative Policy Optimization (GRPO), to this abductive reasoning task is the substantial computational overhead. GRPO requires generating multiple reasoning trajectories (at least four completions) per question simultaneously during the training phase. Given our available computational resources, this immense memory and GPU time requirement strictly constrained our models to a maximum context window of 16,384 tokens per generation. To accommodate the extensive reasoning traces produced by thinking models, we allocated this window symmetrically: 8,192 tokens for the input documents and 8,192 tokens reserved for the model's generation (including the chain-of-thought and final JSON output).
+
+To quantitatively assess the feasibility of this token budget, we conducted a comprehensive token analysis on the official raw training dataset. The analysis revealed that an average topic contains 22.9 retrieved documents. If included in their entirety (uncapped), these documents would consume an average of 36,070 tokens. Even with a naive truncation strategy—capping each document at its first 5,000 characters—the input would still require 17,321 tokens on average. Both scenarios drastically exceed our strict 8,192-token input budget, where an 8K window can only accommodate approximately 7.6 uncapped or 10.2 capped documents. This extreme context overflow demonstrated that a sophisticated context management strategy was not merely an optimization, but an absolute necessity to prevent catastrophic information loss during model training and inference.
+
+\subsection{Filtering \& Reranking Pipeline}
+
+To bridge the gap between the massive raw context and our strict 8,192-token input limit, we designed a two-stage data refinement pipeline comprising Large Language Model (LLM) based soft filtering and cross-encoder semantic reranking.
+
+In the first stage, we employed the \textit{Qwen3-30B-Instruct} model to perform intelligent document filtering. We prompted the model to evaluate the causal relevance of each retrieved document against the target events associated with the topic. The model applied specific inclusion criteria: retaining direct causes, indirect causes (such as competitor actions or market trends), and essential background context, while discarding entirely irrelevant topics or purely duplicate information. This semantic filtering effectively reduced the noise in the dataset, dropping the average number of documents per topic from 22.9 down to 14.7.
+
+Despite this reduction, the cleaned data still required an average of 11,766 tokens (capped at 5,000 characters per document), continuing to exceed our budget limit. To address this, we implemented a second stage utilizing a state-of-the-art multilingual reranker, \textit{BAAI/bge-reranker-v2-m3}. By treating the target event description as the query, we scored and sorted the filtered documents in descending order of semantic relevance.
+
+This two-stage pipeline guarantees an optimal context density. By sorting the documents, we can safely apply a hard token truncation at the 8,192-token boundary. The model is therefore consistently fed the highest-quality, most causally relevant information (typically the top 8 to 10 truncated documents), ensuring that the GRPO training process is grounded in robust and pertinent evidence without exceeding memory constraints.
 
 \section{Method}
 \subsection{Base Models}
@@ -55,11 +79,37 @@ microsoft/deberta-v3-base
 3.2.1 ( Fine-Tuned DeBERTa Multi-Label Classification)
 For this method, we fine-tuned microsoft/deberta-v3-base on the SemEval Task 12 dataset. Each instance consists of the target event, contextual documents, and four candidate options (A–D). Because the contexts can be long, we applied a sliding window tokenization strategy with overlapping strides to ensure that all relevant context is captured within the model’s maximum sequence length. The gold answers are encoded as a multi-hot vector, allowing the model to predict the correctness of each option simultaneously. The model is trained with a multi-label classification head to minimize binary cross-entropy loss, and the checkpoint with the lowest training loss is saved for evaluation. During inference, the model outputs a vector of probabilities for each option, and a threshold of 0.5 determines predicted correctness.
 
-\subsection{Reinforcement Learning Framework}
+\subsection{Reinforcement Learning}
+
+To enhance the abductive reasoning capabilities of our base model without relying on extensive, human-annotated chain-of-thought datasets, we opted for a Reinforcement Learning (RL) approach rather than traditional Supervised Fine-Tuning (SFT). Specifically, we employed Group Relative Policy Optimization (GRPO) \cite{shao2024deepseekmath}. By the time of this system's development, GRPO had established itself as a highly efficient and popular algorithm for eliciting reasoning capabilities in Large Language Models. Unlike Proximal Policy Optimization (PPO), which requires a separate value model that heavily consumes GPU memory, GRPO estimates the baseline by averaging the rewards from a group of outputs generated from the same prompt. This memory efficiency was crucial for our pipeline.
+
+We selected the \texttt{Qwen3-4B-Thinking} model as our foundation. To train within our hardware constraints while maintaining a massive 16,384-token context window (8,192 for documents and 8,192 for completions), we integrated the Unsloth framework for memory-efficient FlashAttention-2 and applied Low-Rank Adaptation (LoRA) \cite{hu2021lora}. We injected LoRA adapters (with a rank $r=64$) into all linear layers of the attention and feed-forward networks. For the GRPO configuration, we generated a group of 4 distinct completions for each training prompt, allowing the model to explore different reasoning trajectories and learn from the relative reward advantages within each group.
 
 \subsection{Reward Design}
 
-\subsection{Qwen Reasoning Generation and DeBERTa Verification}
+\subsubsection{Reward Function Design}
+
+A significant challenge in applying RL to an event reasoning task is preventing the model from generating either overly brief guesses or endlessly verbose, rambling chain-of-thought traces. To address this, we designed a composite reward system consisting of three distinct functions: Format Reward, Accuracy Reward, and a novel Structural Length Reward.
+
+\paragraph{Format Reward}
+Before evaluating the logic, the system must parse the output. This rule-based reward grants a flat $+0.5$ if a valid JSON object can be successfully extracted from the completion, effectively ignoring any generated \texttt{<think>} tags or markdown wrappers. If parsing fails, the reward is $0.0$, strictly enforcing the required output structure.
+
+\paragraph{Accuracy Reward}
+This function directly mirrors the official SemEval Task 12 evaluation metric but applies a scaling factor to provide a stronger optimization signal. We process the model's JSON output to extract the options marked as \texttt{is_correct: true}.
+\begin{itemize}
+\item \textbf{Exact Match (+2.0):} The predicted set of options exactly matches the ground-truth set.
+\item \textbf{Partial Match (+1.0):} The predicted set is a non-empty proper subset of the ground-truth set, containing no incorrect options.
+\item \textbf{Penalty (0.0):} The prediction includes any incorrect options, or no options are selected.
+\end{itemize}
+
+\paragraph{Structural Length Reward}
+To explicitly guide the model's reasoning verbosity, we introduced a two-part length reward with a combined range of $[-0.8, +0.8]$. This function independently evaluates the internal reasoning process and the final justification.
+
+First, we constrain the internal \texttt{<think>} process. The optimal target is set below 2,048 tokens. If the thinking process remains under the safe threshold of 4,096 tokens, it receives a positive reward (up to $+0.4$). However, if it exceeds this threshold, a linear penalty is applied, reaching a maximum penalty of $-0.4$ as it approaches the hard limit of 8,192 tokens. This prevents context overflow and infinite reasoning loops.
+
+Second, we regulate the final JSON \texttt{reasoning} fields provided for the options (A, B, C, D). We empirically determined that concise but informative justifications require approximately 400 tokens in total. We applied a tent-shaped reward function bounded between 200 and 600 tokens. Generating exactly 400 tokens yields the peak reward of $+0.4$. As the length deviates from this peak toward the bounds, the reward linearly decays, turning into a flat $-0.4$ penalty if the justification is too brief (under 200 tokens) or overly verbose (over 600 tokens). This mechanism forces the model to distill its lengthy internal thoughts into sharp, high-density explanations.
+
+\subsection{Qwen Reasoning Generation and DeBERTa Verification I THINK THIS PART LOOKS A BIT JANKY, WILL REFINE IT LATER}
 The system follows a two-stage reasoning and verification pipeline. First, the Qwen model receives the target event, candidate explanations (Option A–D), and contextual documents. Instead of producing only a final prediction, Qwen generates structured outputs for each option in the following format:
 Option A is correct: True/False
 Reasoning: explanation generated by Qwen
