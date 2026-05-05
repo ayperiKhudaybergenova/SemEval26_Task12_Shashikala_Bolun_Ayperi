@@ -5,6 +5,8 @@ The Abductive Event Reasoning (AER) aiming to evaluate large language models' ab
 
 https://sites.google.com/view/semeval2026-task12/
 
+# For the public final repository shown in the paper, see https://github.com/AlanLoeng/SemEval2026-Task12-RL-Verifier
+
 
  # Releated papers for the task
 
