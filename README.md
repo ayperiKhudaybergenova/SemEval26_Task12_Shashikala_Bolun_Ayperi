@@ -25,21 +25,6 @@ https://arxiv.org/html/2502.03671v1#S3
 ![schedule]( https://github.com/ayperiKhudaybergenova/Task-12/blob/main/Main%20Schedule.png)
 
 
-# Identified Steps 
-## Step 1: Load and Understand the Data
-   - Get the dataset from GitHub:
-   - https://github.com/sooo66/semeval2026-task12-dataset
-   
-
-## Step 2: Preprocess the Data
-   - preporocess data | if need format the data .
-   
-## Step 3: Choose a Baseline Model
-   -   Llama | Qwen(free model) | DeBERTa
-   -   GPU  try bwHPC
-
-
-Accuracy is correct score/number of questions. 
 
 
 **Evaluation Dataset: val_data**
